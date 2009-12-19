@@ -2,7 +2,7 @@
 
 class Three20Controller extends Keystone_Controller {
 
-  public function setup() {
+  public function beforeAction() {
     $this->view->addMeta(array(
       'http-equiv'  => 'Content-Type',
       'content'     => 'text/html; charset=utf-8'

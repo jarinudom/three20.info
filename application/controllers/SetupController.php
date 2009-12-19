@@ -2,8 +2,8 @@
 
 class SetupController extends Three20Controller {
 
-  public function setup() {
-    parent::setup();
+  public function beforeAction() {
+    parent::beforeAction();
 
     $this->view->addMeta(array(
       'name'    => 'description',

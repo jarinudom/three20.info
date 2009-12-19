@@ -2,11 +2,6 @@ application/data/cache
 application/config/config.php
 library/
 www/blog
-www/js/date.format.js
-www/js/github.js
-www/js/jquery.js
-www/js/shCore.js
-www/swf/clipboard.swf
 wordpress/wp-config.php
 scripts/Three20Docs.docset/
 

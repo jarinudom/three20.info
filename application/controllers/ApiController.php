@@ -2,8 +2,8 @@
 
 class ApiController extends Three20Controller {
 
-  public function setup() {
-    parent::setup();
+  public function beforeAction() {
+    parent::beforeAction();
 
     $this->view->addJsFootFile('/js/apilookup.js');
     $this->view->addMeta(array(
