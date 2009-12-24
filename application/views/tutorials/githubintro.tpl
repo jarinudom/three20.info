@@ -18,7 +18,7 @@ Building an app like this would take a lot longer to develop and design without 
 Let's get started!
 
 To begin, let's start a new project. We're going to build this app using Core Data (don't worry if
-you haven't used it yet, it's surprisingly easy to pick up). To speed up this step, I'm going to
+you haven't used it yet, it's surprisingly easy to pick up). To speed this step up, I'm going to
 use [the three20 project templates](/setup/templates).
 
 <div class="image" markdown=1>![Create a new project](/gfx/tutorial/github/newproject.png 409x318)</div>
@@ -31,7 +31,7 @@ Let's start looking at the code.
 Three20 and URL-Based Navigation
 ================================
 
-Open AppDelegate.m and check out the following code in `applicationDidFinishLaunching`.
+Open AppDelegate.m and look at the following code in `applicationDidFinishLaunching`.
 
 <div class="sectiontags" markdown="1">
 * AppDelegate.m
@@ -66,9 +66,14 @@ Now let's look at the URL mappings.
     TTURLMap* map = navigator.URLMap;
     [map from:@"*" toViewController:[TTWebController class]];
 
-This is where we start adding the basic navigation mappings. This mapping will catch any url and
-open it with the standard three20 web controller, which displays a web view with standard toolbar
-buttons.
+This is where we start adding the basic navigation mappings. The @"*" mapping will catch any url
+and open it with the standard three20 web controller, which displays a web view with standard
+toolbar buttons. We could easily change this to map to a different controller if we chose, but for
+this tutorial we'll leave it alone.
+
+After we've set up the mapping for the app, we kick the navigator into gear. We first attempt to
+restore the view controller hierarchy from when we previously ran the app, and if that fails, we
+load three20.info.
 
 <div class="sectiontags" markdown="1">
 * AppDelegate.m
@@ -79,9 +84,6 @@ buttons.
     if (![navigator restoreViewControllers]) {
       [navigator openURL:@"http://three20.info" animated:NO];
     }
-
-Now that we've set up some basic mappings, we launch the app with the default URL, in this case
-three20.info.
 
 <div class="image" markdown=1>![three20.info](/gfx/tutorial/github/three20info.png 320x480)</div>
 
