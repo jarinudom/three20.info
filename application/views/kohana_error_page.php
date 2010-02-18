@@ -86,6 +86,13 @@
 <div id="content">
 <h1>Uh oh.</h1>
 <h2><?php echo $message ?></h2>
+
+<p>If the page you're looking for used to exist, then you may want to check out the new navigational
+links on the left. If you still don't see what you're looking for, then it's possible that the
+content was removed temporarily until a more complete version has been created. In the meantime,
+the API docs are constantly being updated, so <a href="http://api.three20.info/">check 'em out!</a>.
+</p>
+
 <?php if ( !IN_PRODUCTION AND ! empty($line) AND ! empty($file)): ?>
 <p><?php echo Kohana::lang('core.error_file_line', $file, $line) ?></p>
 <?php endif ?>
