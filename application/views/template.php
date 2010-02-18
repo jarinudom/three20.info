@@ -130,10 +130,10 @@ if (IN_PRODUCTION) {
   document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
   ');
 
-  $this->addJsFootFile('http://static.getclicky.com/js');
-  $this->addJsFootScript('clicky.init(155532);');
+  echo three20html::script('http://static.getclicky.com/js');
+  echo three20html::inlinescript('clicky.init(155532);');
 
-  $this->addJsFootScript('
+  echo three20html::inlinescript('
   try {
   var pageTracker = _gat._getTracker("'.ANALYTICS_KEY.'");
   pageTracker._setDomainName(".three20.info");
