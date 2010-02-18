@@ -79,8 +79,25 @@
     <li><a href="/timeline/roadmap">Roadmap</a></li>
   </ul>
 
-  <div class="header">Suggested Reading</div>
-  <a class="nohighlight" href="http://www.amazon.com/gp/product/1430224592?ie=UTF8&amp;tag=three20-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430224592"><img border="0" src="/gfx/amazon/41kABLZh1ZL._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=three20-20&amp;l=as2&amp;o=1&amp;a=1430224592" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  <div class="advertisement">
+  <!-- Beginning of Project Wonderful ad code: -->
+  <!-- Ad box ID: 46488 -->
+  <script type="text/javascript">
+  <!--
+  var pw_d=document;
+  pw_d.projectwonderful_adbox_id = "46488";
+  pw_d.projectwonderful_adbox_type = "4";
+  pw_d.projectwonderful_foreground_color = "";
+  pw_d.projectwonderful_background_color = "";
+  //-->
+  </script>
+  <script type="text/javascript" src="http://www.projectwonderful.com/ad_display.js"></script>
+  <noscript><map name="admap46488" id="admap46488"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&amp;c=0&amp;id=46488&amp;type=4" shape="rect" coords="0,0,125,125" title="" alt="" target="_blank" /></map>
+  <table cellpadding="0" border="0" cellspacing="0" width="125" bgcolor="#ffffff"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=46488&amp;type=4" width="125" height="125" usemap="#admap46488" border="0" alt="" /></td></tr><tr><td bgcolor="#ffffff" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=46488&amp;type=4" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0</a></center></td></tr></table>
+  </noscript>
+  <!-- End of Project Wonderful ad code. -->
+  </div>
+
 </div>
 
 <div id="content">
