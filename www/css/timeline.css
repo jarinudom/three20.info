@@ -1,0 +1,20 @@
+
+.progressbar {
+  height: 20px;
+  background-color: #333;
+  border: 5px solid #CCC;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 90%;
+  float: left;
+}
+
+.progressbar .completed {
+  background-color: #090;
+  height: 20px;
+}
+
+.progressnum {
+  padding-top: 8px;
+  height: 20px;
+}
