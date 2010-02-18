@@ -375,4 +375,4 @@ You should see something like:
         "public-repo-count" = 6;
     }
 
-[Continue this tutorial on page 3...](/tutorials/githubpage3)
+[Continue this tutorial on page 3...](/tutorials/github/page/3)

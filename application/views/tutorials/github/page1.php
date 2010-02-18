@@ -215,4 +215,4 @@ What gives?**
 >
 > To fix this, simply delete the app and rebuild. This will clear the navigation history.
 
-[Continue this tutorial on page 2...](/tutorials/githubpage2)
+[Continue this tutorial on page 2...](/tutorials/github/page/2)
