@@ -135,14 +135,7 @@ echo three20html::script(array(
 ), FALSE);
 echo three20html::script($js_foot_files, FALSE);
 
-if (!IN_PRODUCTION) {
-  echo three20html::inlinescript('var disqus_developer = 1;');
-}
-
 if (IN_PRODUCTION) {
-  if (!isset($hideDisqusThread) || !$hideDisqusThread) {
-    echo three20html::script('http://disqus.com/forums/Three20/embed.js', null, FALSE);
-  }
   echo three20html::inlinescript('
     var is_ssl = ("https:" == document.location.protocol);
     var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
