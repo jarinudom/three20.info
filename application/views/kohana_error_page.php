@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title><?php echo html::specialchars($title) ?></title>
+  <title>Error | three20.info</title>
 <?
   echo three20html::stylesheet(array(
     'css/reset',
@@ -14,7 +14,6 @@
     'css/shTheme.css',
     'css/jquery.autocomplete.css'
   ), null, FALSE);
-  echo three20html::stylesheet($css_files, null, FALSE);
   echo three20html::script(array(
     'js/shCore.js',
     'js/shBrushObjC.js',
@@ -26,8 +25,12 @@
   SyntaxHighlighter.defaults[\'auto-links\'] = false;
   SyntaxHighlighter.defaults.toolbar = false;
   SyntaxHighlighter.all();');
-  echo three20html::script($js_head_files, FALSE);
-  echo three20html::inlinescript($js_head_scripts);
+
+  if (!IN_PRODUCTION) { ?>
+  <style type="text/css">
+  <?php include Kohana::find_file('views', 'kohana_errors', FALSE, 'css') ?>
+  </style>
+  <? }
 ?>
 </head>
 <body>
@@ -81,7 +84,17 @@
 </div>
 
 <div id="content">
-<?php echo $content ?>
+<h1>Uh oh.</h1>
+<h2><?php echo $message ?></h2>
+<?php if ( !IN_PRODUCTION AND ! empty($line) AND ! empty($file)): ?>
+<p><?php echo Kohana::lang('core.error_file_line', $file, $line) ?></p>
+<?php endif ?>
+<?php if ( !IN_PRODUCTION AND ! empty($trace)): ?>
+<div id="framework_error" style="width:42em;margin:20px auto;">
+<h3><?php echo Kohana::lang('core.stack_trace') ?></h3>
+<?php echo $trace ?>
+</div>
+<?php endif ?>
 
 <? if (!isset($hideModificationDate) && isset($templateModifiedTime)) { ?>
 <div class="lastmodified">Last modified: <?= date('l \t\h\e jS \of F Y h:i:s A', $templateModifiedTime); ?></div>
@@ -166,6 +179,8 @@ if (IN_PRODUCTION) {
   } catch(err) {}');
 }
 ?>
+
+<? echo three20html::script($js_foot_files, FALSE); ?>
 
 </body>
 </html>
