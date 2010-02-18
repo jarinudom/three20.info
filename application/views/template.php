@@ -89,8 +89,8 @@
 <div id="footer">
   <div class="copyright">Copyright 2009-2010 All content licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a> unless otherwise noted.</div>
   <div class="attribution">
-    <a href="http://github.com/jverkoey/Three20.info">Source hosted on github</a> -
-    Made with the <a href="http://github.com/jverkoey/Keystone">Keystone</a> framework.
+    <a href="http://github.com/jverkoey/Three20.info">Three20.info source hosted on github</a> -
+    Made with the <a href="http://kohanaphp.com/">Kohana</a> framework.
     </div>
 </div>
 
