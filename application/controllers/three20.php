@@ -69,6 +69,8 @@ class Three20_Controller extends Template_Controller {
   protected function render_markdown_template($content) {
     require Kohana::find_file('vendor', 'Markdown');
     $content->title = current($this->template->title)."\n";
+    $this->template->templateModifiedTime = filemtime($content->kohana_filename);
+
     $this->template->content = $content->render(FALSE, 'Markdown');
 
     $this->template->title = implode(' | ', $this->template->title);

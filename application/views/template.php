@@ -22,7 +22,6 @@
     <ul>
       <li><a href="http://api.Three20.info/">API</a></li>
       <li><a href="/news">News</a></li>
-      <li><a href="/issues">Issues</a></li>
       <li><a href="/contribute">Contribute</a></li>
       <li><a href="/gallery">Gallery</a></li>
       <li><input type="text" id="globallookup" placeholder="Instant Class Lookup" /></li>
@@ -47,7 +46,7 @@
 
   <div class="header">Tutorials</div>
   <ul>
-    <li><a href="/tutorials/githubintro">Build a GitHub App</a></li>
+    <li><a href="/tutorials/github">Build a GitHub App</a></li>
   </ul>
 
   <div class="header">UI</div>
@@ -67,12 +66,11 @@
 <div id="content">
 <?php echo $content ?>
 
-<? if ((!isset($hideModificationDate) || !$hideModificationDate)
-       && isset($templateModifiedTime) && $templateModifiedTime) { ?>
+<? if (!isset($hideModificationDate) && isset($templateModifiedTime)) { ?>
 <div class="lastmodified">Last modified: <?= date('l \t\h\e jS \of F Y h:i:s A', $templateModifiedTime); ?></div>
 <? } ?>
 
-<? if (!isset($hideDisqusThread) || !$hideDisqusThread) { ?>
+<? if (!isset($hideDisqusThread)) { ?>
 <div id="disqus_thread"></div>
 <noscript><a href="http://disqus.com/forums/Three20/?url=ref">View the discussion thread.</a></noscript>
 <? } ?>

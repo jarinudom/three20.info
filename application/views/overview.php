@@ -1,5 +1,5 @@
 <?= $title ?>
-=========================
+=============
 
 Three20 is conceptually split into four parts. At the center of everything is the [Core](#Core).
 Surrounding it are [Network](#Network), [UI](#UI), and [Style](#Style).

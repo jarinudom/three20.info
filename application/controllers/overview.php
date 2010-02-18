@@ -21,4 +21,4 @@ class Overview_Controller extends Three20_Controller {
     $this->render_markdown_template($content);
   }
 
-} // End Welcome Controller
+}

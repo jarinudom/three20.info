@@ -123,3 +123,5 @@ $config['modules'] = array
 	// MODPATH.'payment',   // Online payments
 	// MODPATH.'unit_test', // Unit testing
 );
+
+$config['gfeeds_api_key'] = 'ABQIAAAATnDX7Vje0TwQ5gRCsLmjAxQRbFpSOHtbWa58qogZSA4J11lfxRRoAm-D0F6pXqMltNn-atsZxd7HMg';
