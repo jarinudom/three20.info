@@ -135,7 +135,7 @@ if (IN_PRODUCTION) {
 
   echo three20html::inlinescript('
   try {
-  var pageTracker = _gat._getTracker("'.ANALYTICS_KEY.'");
+  var pageTracker = _gat._getTracker("'.Kohana::config('core.google_analytics_key').'");
   pageTracker._setDomainName(".three20.info");
   pageTracker._trackPageview();
   } catch(err) {}');
