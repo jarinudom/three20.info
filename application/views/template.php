@@ -7,7 +7,7 @@
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
   <title><?php echo html::specialchars($title) ?></title>
 <?
-  echo three20html::stylesheet(array('css/reset', 'css/common'), null, FALSE);
+  echo three20html::stylesheet(array('css/reset'), null, FALSE);
   echo three20html::stylesheet($css_files, null, FALSE);
   echo three20html::script($js_head_files, FALSE);
   echo three20html::inlinescript($js_head_scripts);
