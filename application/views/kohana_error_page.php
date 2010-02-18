@@ -59,19 +59,24 @@
     <li><a href="/setup/templates">Create projects with it</a></li>
   </ul>
 
-  <div class="header">Core</div>
-  <ul>
-    <li><a href="/core/debugging">Xcode debug++</a></li>
-  </ul>
-
   <div class="header">Tutorials</div>
   <ul>
     <li><a href="/tutorials/github">Build a GitHub App</a></li>
   </ul>
 
+  <div class="header">Core</div>
+  <ul>
+    <li><a href="/core/debugging">Xcode debug++</a></li>
+  </ul>
+
   <div class="header">UI</div>
   <ul>
     <li><a href="/ui/navigation">URL-Based Navigation</a></li>
+  </ul>
+
+  <div class="header">Style</div>
+  <ul>
+    <li><a href="/style/overview">Overview</a></li>
   </ul>
 
   <div class="header">Three20 Timeline</div>
