@@ -1,0 +1,3 @@
+/Applications/Doxygen.app/Contents/Resources/doxygen doxygen.config
+mkdir -p /Users/jeffverkoeyen/Sites/three20.info/api/gfx
+cp -r doxygengfx/* /Users/jeffverkoeyen/Sites/three20.info/api/gfx/
