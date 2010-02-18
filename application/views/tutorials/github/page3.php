@@ -5,6 +5,9 @@ How to build a GitHub iPhone app with three20
   <?= $navLinks ?>
 </div>
 
+Please note: this tutorial is a work in progress
+------------------------------------------------
+
 By now your app should be making a request to the github api server, receiving the data, and parsing
 the xml into an NSDictionary. Let's turn that data into something visual.
 

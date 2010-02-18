@@ -5,6 +5,9 @@ How to build a GitHub iPhone app with three20
   <?= $navLinks ?>
 </div>
 
+Please note: this tutorial is a work in progress
+------------------------------------------------
+
 We're going to build a GitHub iPhone app using the public [GitHub api](http://develop.github.com/).
 The goal throughout these tutorials is to introduce you to the various aspects of three20 while
 building something with a clear final result and purpose.

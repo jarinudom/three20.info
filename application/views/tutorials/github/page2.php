@@ -5,6 +5,9 @@ How to build a GitHub iPhone app with three20
   <?= $navLinks ?>
 </div>
 
+Please note: this tutorial is a work in progress
+------------------------------------------------
+
 At this point you should have a User view controller that simply sits there with a spinner,
 perpetually loading. Let's figure out that loading part now.
 

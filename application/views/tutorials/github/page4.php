@@ -5,6 +5,9 @@ How to build a GitHub iPhone app with three20
   <?= $navLinks ?>
 </div>
 
+Please note: this tutorial is a work in progress
+------------------------------------------------
+
 
 <div class="sectiontags" markdown="1">
 * UserSearchViewController.h
