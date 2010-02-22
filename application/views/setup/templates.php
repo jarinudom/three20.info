@@ -22,9 +22,9 @@ where your projects will live. I generally use ~/Projects/.
 
 ."brush: bash"
     cd ~/Projects/
-    git clone git://github.com/facebook/Three20.git
+    git clone git://github.com/facebook/three20.git
 
-If you don't use git, you can also [download the source](http://github.com/facebook/Three20).
+If you don't use git, you can also [download the source](http://github.com/facebook/three20).
 </div>
 
 To create a new project using Three20, start Xcode and open the "New Project" dialog. You
@@ -39,8 +39,8 @@ For example, say you create a project titled "YourNewProject". Your projects dir
 like this:
 
 ."brush: bash"
-    ~/Projects/Three20/
+    ~/Projects/three20/
     ~/Projects/YourNewProject/
 
-This is because the Three20 template projects assume that Three20 is located at `../Three20`. You
+This is because the Three20 template projects assume that Three20 is located at `../three20`. You
 can, of course, change this if you don't want to/can't follow this structure.
