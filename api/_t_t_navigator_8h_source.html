@@ -211,16 +211,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00390"></a>00390 
 <a name="l00391"></a>00391 @optional
 <a name="l00392"></a>00392 
-<a name="l00396"></a>00396 - (BOOL)navigator:(<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator shouldOpenURL:(NSURL*)URL;
-<a name="l00397"></a>00397 
-<a name="l00403"></a>00403 - (<span class="keywordtype">void</span>)navigator:(<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator willOpenURL:(NSURL*)URL
-<a name="l00404"></a>00404         inViewController:(<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)controller;
-<a name="l00405"></a>00405 
-<a name="l00406"></a>00406 @end
+<a name="l00397"></a>00397 - (BOOL)navigator:(<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator shouldOpenURL:(NSURL*)URL;
+<a name="l00398"></a>00398 
+<a name="l00406"></a>00406 - (NSURL*)navigator:(<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator URLToOpen:(NSURL*)URL;
 <a name="l00407"></a>00407 
-<a name="l00409"></a>00409 <span class="comment">// global </span>
-<a name="l00410"></a>00410 
-<a name="l00414"></a>00414 <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* <a class="code" href="_t_t_navigator_8h.html#a8cc8641050afe451ac637233777a4569" title="Shortcut for calling [[TTNavigator navigator] openURL:].">TTOpenURL</a>(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL);
+<a name="l00413"></a>00413 - (<span class="keywordtype">void</span>)navigator:(<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator willOpenURL:(NSURL*)URL
+<a name="l00414"></a>00414         inViewController:(<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)controller;
+<a name="l00415"></a>00415 
+<a name="l00416"></a>00416 @end
+<a name="l00417"></a>00417 
+<a name="l00419"></a>00419 <span class="comment">// global</span>
+<a name="l00420"></a>00420 
+<a name="l00424"></a>00424 <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* <a class="code" href="_t_t_navigator_8h.html#a8cc8641050afe451ac637233777a4569" title="Shortcut for calling [[TTNavigator navigator] openURL:].">TTOpenURL</a>(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL);
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

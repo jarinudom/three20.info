@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#aa397a4ac420c20d19ff12e416ab8e658">navigator:shouldOpenURL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to prevent it.  <a href="#aa397a4ac420c20d19ff12e416ab8e658"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSURL *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a91faf5dcf531fb2132da8e0be3e85081">navigator:URLToOpen:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to return a different URL to open instead.  <a href="#a91faf5dcf531fb2132da8e0be3e85081"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a54778a039a9c1fc2d1242cd43dfa9c23">navigator:willOpenURL:inViewController:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL is about to be opened in a controller.  <a href="#a54778a039a9c1fc2d1242cd43dfa9c23"></a><br/></td></tr>
 </table>
@@ -101,6 +103,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="memdoc">
 
 <p>Asks if the URL should be opened and allows the delegate to prevent it. </p>
+<p>See -navigator:URLToOpen: for a superset of functionality </p>
+
+</div>
+</div>
+<a class="anchor" id="a91faf5dcf531fb2132da8e0be3e85081"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:URLToOpen:" ref="a91faf5dcf531fb2132da8e0be3e85081" args="(TTNavigator *navigator,[URLToOpen] NSURL *URL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSURL*) navigator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_navigator.html">TTNavigator</a> *)&nbsp;</td>
+          <td class="paramname"> <em>navigator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">URLToOpen:</td>
+          <td></td>
+          <td class="paramtype">(NSURL *)&nbsp;</td>
+          <td class="paramname"> <em>URL</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td><code> [optional]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Asks if the URL should be opened and allows the delegate to return a different URL to open instead. </p>
+<p>A return value of nil indicates the URL should not be opened.</p>
+<p>This is a superset of the functionality of -navigator:shouldOpenURL:. Returning YES from that method is equivalent to returning URL from this method. </p>
 
 </div>
 </div>

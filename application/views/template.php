@@ -54,6 +54,7 @@
     <li><a href="/overview">Three20 Overview</a></li>
     <li><a href="/setup/existing">Add it to your project</a></li>
     <li><a href="/setup/templates">Create projects with it</a></li>
+    <li><a href="/faq">FAQ</a></li>
   </ul>
 
   <div class="header">Tutorials</div>
