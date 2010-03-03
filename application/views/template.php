@@ -55,6 +55,7 @@
     <li><a href="/setup/existing">Add it to your project</a></li>
     <li><a href="/setup/templates">Create projects with it</a></li>
     <li><a href="/faq">FAQ</a></li>
+    <li><a href="http://scope.three20.info/">Three20 Scope</a></li>
   </ul>
 
   <div class="header">Tutorials</div>
