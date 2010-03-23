@@ -7,7 +7,7 @@
  */
 class Faq_Controller extends Three20_Controller {
 
-  const ALLOW_PRODUCTION = TRUE;
+  const ALLOW_PRODUCTION = FALSE;
 
   public function index() {
     if (!IN_PRODUCTION) {
