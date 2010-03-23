@@ -52,12 +52,12 @@ table. Let's create the first section.
         NSString* location = [_usermodel.properties objectForKey:@"location"];
         NSDate* memberSince = [_usermodel.properties objectForKey:@"created-at"];
 
-        if( !TTIsEmptyString(email) ) {
+        if( TTIsStringWithAnyText(email) ) {
           [itemRows addObject:[TTTableCaptionItem itemWithText:email
                                                   caption:@"Email"]];
         }
 
-        if( !TTIsEmptyString(blog) ) {
+        if( TTIsStringWithAnyText(blog) ) {
           [itemRows addObject:[TTTableCaptionItem
             itemWithText: [[blog
                           stringByReplacingOccurrencesOfString:@"http://"
@@ -68,12 +68,12 @@ table. Let's create the first section.
                      URL: blog]];
         }
 
-        if( !TTIsEmptyString(company) ) {
+        if( TTIsStringWithAnyText(company) ) {
           [itemRows addObject:[TTTableCaptionItem itemWithText:company
                                                   caption:@"Company"]];
         }
 
-        if( !TTIsEmptyString(location) ) {
+        if( TTIsStringWithAnyText(location) ) {
           [itemRows addObject:[TTTableCaptionItem itemWithText:location
                                                   caption:@"Location"]];
         }
