@@ -61,8 +61,8 @@ Next, within the .m file, add the following code.
     }
 
     - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more {
-      if( !self.isLoading && !TTIsEmptyString(_username) ) {
-        NSString* url = [@"http://github.com/api/v2/json/user/show/"
+      if( !self.isLoading && TTIsStringWithAnyText(_username) ) {
+        NSString* url = [@"http://github.com/api/v2/xml/user/show/"
           stringByAppendingString:_username];
 
         TTURLRequest* request = [TTURLRequest
