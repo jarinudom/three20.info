@@ -82,7 +82,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a2de981595612344900f210c0345bbd24">TT_MONTH</a>&nbsp;&nbsp;&nbsp;(30.5 * TT_DAY)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#ace36d269d7a57744e5c1dde13cafa032">TT_YEAR</a>&nbsp;&nbsp;&nbsp;(365 * TT_DAY)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a472fda8f0a560323cf9850cbe6656b66">TT_RELEASE_SAFELY</a>(__POINTER)&nbsp;&nbsp;&nbsp;{ [__POINTER release]; __POINTER = nil; }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#ae6478fb760a87e9ed2241336d9a4c178">TT_AUTORELEASE_SAFELY</a>(__POINTER)&nbsp;&nbsp;&nbsp;{ [__POINTER autorelease]; __POINTER = nil; }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#af230d615aadca6cd5b53e54335153be7">TT_INVALIDATE_TIMER</a>(__TIMER)&nbsp;&nbsp;&nbsp;{ [__TIMER invalidate]; __TIMER = nil; }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a0feb02e0c6900fbab4eb8d68322d928f">TT_RELEASE_CF_SAFELY</a>(__REF)&nbsp;&nbsp;&nbsp;{ if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</td></tr>
 </table>
@@ -100,24 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Borrowed from Apple's AvailabiltyInternal.h header. </p>
 <p>There's no reason why we shouldn't be able to use this macro, as it's a gcc-supported flag. Here's what we based it off of. __AVAILABILITY_INTERNAL_DEPRECATED __attribute__((deprecated)) </p>
-
-</div>
-</div>
-<a class="anchor" id="ae6478fb760a87e9ed2241336d9a4c178"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TT_AUTORELEASE_SAFELY" ref="ae6478fb760a87e9ed2241336d9a4c178" args="(__POINTER)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TT_AUTORELEASE_SAFELY</td>
-          <td>(</td>
-          <td class="paramtype">__POINTER&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;{ [__POINTER autorelease]; __POINTER = nil; }</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
 
 </div>
 </div>

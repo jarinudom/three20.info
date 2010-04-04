@@ -115,11 +115,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00063"></a>00063 <span class="comment">// Safe releases</span>
 <a name="l00064"></a>00064 
 <a name="l00065"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a472fda8f0a560323cf9850cbe6656b66">00065</a> <span class="preprocessor">#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }</span>
-<a name="l00066"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#ae6478fb760a87e9ed2241336d9a4c178">00066</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_AUTORELEASE_SAFELY(__POINTER) { [__POINTER autorelease]; __POINTER = nil; }</span>
-<a name="l00067"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#af230d615aadca6cd5b53e54335153be7">00067</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
-<a name="l00068"></a>00068 <span class="preprocessor"></span>
-<a name="l00069"></a>00069 <span class="comment">// Release a CoreFoundation object safely.</span>
-<a name="l00070"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a0feb02e0c6900fbab4eb8d68322d928f">00070</a> <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
+<a name="l00066"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#af230d615aadca6cd5b53e54335153be7">00066</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
+<a name="l00067"></a>00067 <span class="preprocessor"></span>
+<a name="l00068"></a>00068 <span class="comment">// Release a CoreFoundation object safely.</span>
+<a name="l00069"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a0feb02e0c6900fbab4eb8d68322d928f">00069</a> <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

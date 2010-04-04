@@ -64,6 +64,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTMessageController Class Reference</h1><!-- doxytag: class="TTMessageController" --><!-- doxytag: inherits="TTViewController,TTTextEditorDelegate-p" -->
+<p>A view controller for composing email like messages, which is visually similar to Apple's in-app mail composer.  
+<a href="#_details">More...</a></p>
+
 <p><code>#import &lt;<a class="el" href="_t_t_message_controller_8h_source.html">TTMessageController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TTMessageController:</div>
@@ -82,13 +85,21 @@ Inheritance diagram for TTMessageController:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a47cf65af782ef1f172bf3187295bbb01">initWithRecipients:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializes the class with an array of recipients.  <a href="#a47cf65af782ef1f172bf3187295bbb01"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#af1a2fb598f715126dae56b41d57cdd4a">addRecipient:forFieldAtIndex:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds the supplied recipient to the field at the index provided.  <a href="#af1a2fb598f715126dae56b41d57cdd4a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#ab7d2ca53fae85cc98f75b509879c2754">textForFieldAtIndex:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the text value of the field at the supplied index.  <a href="#ab7d2ca53fae85cc98f75b509879c2754"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#af2842bad2f6cc983845fd06b6aaaaa0d">setText:forFieldAtIndex:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the text value for the field at fieldIndex.  <a href="#af2842bad2f6cc983845fd06b6aaaaa0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a84cf08a943476bf4df1f15f93a972f49">fieldHasValueAtIndex:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if the field at the supplied index is not empty or has only whitespace.  <a href="#a84cf08a943476bf4df1f15f93a972f49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_u_i_view.html">UIView</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a9d61201cf2b42c9f21c3f4474c0a4083">viewForFieldAtIndex:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="class_u_i_view.html">UIView</a> instance representing the field at fieldIndex.  <a href="#a9d61201cf2b42c9f21c3f4474c0a4083"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a28d5a259e0d174feec29a11400094173">showActivityView:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Causes a view used to indicate message activity to be shown or dismissed depending on the value of show.  <a href="#a28d5a259e0d174feec29a11400094173"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a48fd3ef54fda0dfaeac75317b71e6d84">titleForSending</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the title for the activity view that is shown by showActivityView.  <a href="#a48fd3ef54fda0dfaeac75317b71e6d84"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a2dccad9fc77b13fffe1e5f4e1e867a79">send</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tells the delegate to send the message.  <a href="#a2dccad9fc77b13fffe1e5f4e1e867a79"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#aa164519b99a08d60155c75fe422f3489">cancel:</a></td></tr>
@@ -96,9 +107,11 @@ Inheritance diagram for TTMessageController:</div>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a930b60b957c1c6b8a70f5ba2c39e4cce">confirmCancellation</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Confirms with the user that it is ok to cancel.  <a href="#a930b60b957c1c6b8a70f5ba2c39e4cce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#ae493ee3a5016a6b30a30bb7c704aac4e">messageWillSend:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent before the delegate is informed that it should send the message.  <a href="#ae493ee3a5016a6b30a30bb7c704aac4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a761a9ceb7a704fbb5e6c902a3faf500c">messageWillShowRecipientPicker</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The user touched the recipient picker button.  <a href="#a761a9ceb7a704fbb5e6c902a3faf500c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#a3e9dcb9a2a11041b1694d0da3b135d71">messageDidSend</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent after the delegate has been informed that it should send the message.  <a href="#a3e9dcb9a2a11041b1694d0da3b135d71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#af47187c50e2e1b382841fa4be783c0ba">messageShouldCancel</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the message should cancel without confirming with the user.  <a href="#af47187c50e2e1b382841fa4be783c0ba"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
@@ -114,13 +127,24 @@ Inheritance diagram for TTMessageController:</div>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a4b9736bf30efb27fbfe74187bfde9e42">_isModified</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_message_controller_delegate-p.html">TTMessageControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed">delegate</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The delegate that will receive messages from the <a class="el" href="protocol_t_t_message_controller_delegate-p.html" title="A protocol for the object that implements the backend logic for the TTMessageController...">TTMessageControllerDelegate</a> protocol.  <a href="#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a577f1d8cad6e8591a4759f11d36aad2d">dataSource</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The datasource used to autocomplete TTMessageRecipientFields.  <a href="#a577f1d8cad6e8591a4759f11d36aad2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a81c2daf27f3f8f21cecf0a92fa45b1d3">fields</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used the the TTMessageController.">TTMessageField</a> instances representing the editable fields.  <a href="#a81c2daf27f3f8f21cecf0a92fa45b1d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a8414169377f297b9fcb41bbc9c0a058d">subject</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A convenience property for editing the text value of the <a class="el" href="interface_t_t_message_subject_field.html" title="A field for the subject of the message.">TTMessageSubjectField</a>.  <a href="#a8414169377f297b9fcb41bbc9c0a058d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a179539948de0b4377b0559e9ef2c57e6">body</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The body of the message.  <a href="#a179539948de0b4377b0559e9ef2c57e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a81e95b4725b4c6ad3bb9a534fa045660">showsRecipientPicker</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Controls whether a contact add button is shown in the views for <a class="el" href="interface_t_t_message_recipient_field.html" title="A field for holding recipients, typically found in an address book.">TTMessageRecipientField</a> instances.  <a href="#a81e95b4725b4c6ad3bb9a534fa045660"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#aa41f369642a1ce1afcfc381972d79d68">isModified</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if this message has been modified since it was originally shown.  <a href="#aa41f369642a1ce1afcfc381972d79d68"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>A view controller for composing email like messages, which is visually similar to Apple's in-app mail composer. </p>
+<p>This class was originally implemented before iPhone OS 3.0, which introduced the MFMailComposeViewController. It's original purpose was to fill that gap in the SDK. If you want to allow users to send an email via their existing Mail.app accounts, you should use MFMailComposeViewController.</p>
+<p>You may find this class useful if you need to present a visually similar view, but handle the delivery of the message yourself. This class is also useful when you want to customize the fields presented to the user. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="af1a2fb598f715126dae56b41d57cdd4a"></a><!-- doxytag: member="TTMessageController::addRecipient:forFieldAtIndex:" ref="af1a2fb598f715126dae56b41d57cdd4a" args="(id recipient,[forFieldAtIndex] NSUInteger fieldIndex)" -->
 <div class="memitem">
@@ -146,6 +170,10 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Adds the supplied recipient to the field at the index provided. </p>
+<p>That recipient will be rendered as a cell within that field's view. The cell's label will be determined by asking the datasource for a string label for the recipient object provided.</p>
+<p>This method is a no-op if the datasource fails to provide a label for the cell, or if the fieldIndex provided does not refer to a <a class="el" href="interface_t_t_picker_text_field.html">TTPickerTextField</a>. </p>
 
 </div>
 </div>
@@ -204,6 +232,9 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Returns true if the field at the supplied index is not empty or has only whitespace. </p>
+<p>Passing fields.count returns true if the body has any text, whitespace included. </p>
+
 </div>
 </div>
 <a class="anchor" id="a47cf65af782ef1f172bf3187295bbb01"></a><!-- doxytag: member="TTMessageController::initWithRecipients:" ref="a47cf65af782ef1f172bf3187295bbb01" args="(NSArray *recipients)" -->
@@ -222,6 +253,10 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Initializes the class with an array of recipients. </p>
+<p>These recipients will be pre-filled in the TTMessageRecipientField's view.</p>
+<p>If a non-empty recipients array is provided, <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a> expects the first field to be an instance of <a class="el" href="interface_t_t_message_recipient_field.html" title="A field for holding recipients, typically found in an address book.">TTMessageRecipientField</a>. You may pass nil if you do not wish to supply initial recipients. </p>
+
 </div>
 </div>
 <a class="anchor" id="a3e9dcb9a2a11041b1694d0da3b135d71"></a><!-- doxytag: member="TTMessageController::messageDidSend" ref="a3e9dcb9a2a11041b1694d0da3b135d71" args="()" -->
@@ -238,6 +273,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Sent after the delegate has been informed that it should send the message. </p>
+<p>Subclasses can override this method to implement custom logic. </p>
 
 </div>
 </div>
@@ -257,6 +295,7 @@ Inheritance diagram for TTMessageController:</div>
 <div class="memdoc">
 
 <p>Determines if the message should cancel without confirming with the user. </p>
+<p>The default implementation is to allow the user to cancel without confirmation if no required fields have been modified and they have not entered any subject or body text. </p>
 
 </div>
 </div>
@@ -276,6 +315,9 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Sent before the delegate is informed that it should send the message. </p>
+<p>Subclasses can override this method to implement custom logic. </p>
+
 </div>
 </div>
 <a class="anchor" id="a761a9ceb7a704fbb5e6c902a3faf500c"></a><!-- doxytag: member="TTMessageController::messageWillShowRecipientPicker" ref="a761a9ceb7a704fbb5e6c902a3faf500c" args="()" -->
@@ -294,6 +336,7 @@ Inheritance diagram for TTMessageController:</div>
 <div class="memdoc">
 
 <p>The user touched the recipient picker button. </p>
+<p>Subclasses can override this method to implement custom logic. </p>
 
 </div>
 </div>
@@ -341,6 +384,9 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Sets the text value for the field at fieldIndex. </p>
+<p>Passing fields.count sets the body text. </p>
+
 </div>
 </div>
 <a class="anchor" id="a28d5a259e0d174feec29a11400094173"></a><!-- doxytag: member="TTMessageController::showActivityView:" ref="a28d5a259e0d174feec29a11400094173" args="(BOOL show)" -->
@@ -358,6 +404,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Causes a view used to indicate message activity to be shown or dismissed depending on the value of show. </p>
+<p>This view obscures the editable field views. It is usually shown while the message is being sent. </p>
 
 </div>
 </div>
@@ -377,6 +426,10 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Returns the text value of the field at the supplied index. </p>
+<p>Passing fields.count returns the body contents.</p>
+<p>Whitespace has been trimmed from the returned value. </p>
+
 </div>
 </div>
 <a class="anchor" id="a48fd3ef54fda0dfaeac75317b71e6d84"></a><!-- doxytag: member="TTMessageController::titleForSending" ref="a48fd3ef54fda0dfaeac75317b71e6d84" args="()" -->
@@ -393,6 +446,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Returns the title for the activity view that is shown by showActivityView. </p>
+<p>By default, the title is "Sending...", but subclasses may override this method to show a different title. The default title has been localized. </p>
 
 </div>
 </div>
@@ -411,6 +467,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Returns the <a class="el" href="class_u_i_view.html">UIView</a> instance representing the field at fieldIndex. </p>
+<p>Passing fields.count returns the view representing the body contents. </p>
 
 </div>
 </div>
@@ -557,6 +616,9 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>The body of the message. </p>
+<p>The body is not required for the user to send a message. </p>
+
 </div>
 </div>
 <a class="anchor" id="a577f1d8cad6e8591a4759f11d36aad2d"></a><!-- doxytag: member="TTMessageController::dataSource" ref="a577f1d8cad6e8591a4759f11d36aad2d" args="" -->
@@ -569,6 +631,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>The datasource used to autocomplete TTMessageRecipientFields. </p>
+<p>This class is also responsible for determining how cells representing recipients are labeled. </p>
 
 </div>
 </div>
@@ -583,6 +648,8 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>The delegate that will receive messages from the <a class="el" href="protocol_t_t_message_controller_delegate-p.html" title="A protocol for the object that implements the backend logic for the TTMessageController...">TTMessageControllerDelegate</a> protocol. </p>
+
 </div>
 </div>
 <a class="anchor" id="a81c2daf27f3f8f21cecf0a92fa45b1d3"></a><!-- doxytag: member="TTMessageController::fields" ref="a81c2daf27f3f8f21cecf0a92fa45b1d3" args="" -->
@@ -595,6 +662,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used the the TTMessageController.">TTMessageField</a> instances representing the editable fields. </p>
+<p>These fields are rendered in order using appropriate views for each field type. </p>
 
 </div>
 </div>
@@ -609,6 +679,9 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Indicates if this message has been modified since it was originally shown. </p>
+<p>If the message has been modified, the user will be asked for confirmation before their cancel request is enacted. </p>
+
 </div>
 </div>
 <a class="anchor" id="a81e95b4725b4c6ad3bb9a534fa045660"></a><!-- doxytag: member="TTMessageController::showsRecipientPicker" ref="a81e95b4725b4c6ad3bb9a534fa045660" args="" -->
@@ -622,6 +695,8 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
+<p>Controls whether a contact add button is shown in the views for <a class="el" href="interface_t_t_message_recipient_field.html" title="A field for holding recipients, typically found in an address book.">TTMessageRecipientField</a> instances. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8414169377f297b9fcb41bbc9c0a058d"></a><!-- doxytag: member="TTMessageController::subject" ref="a8414169377f297b9fcb41bbc9c0a058d" args="" -->
@@ -634,6 +709,9 @@ Inheritance diagram for TTMessageController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>A convenience property for editing the text value of the <a class="el" href="interface_t_t_message_subject_field.html" title="A field for the subject of the message.">TTMessageSubjectField</a>. </p>
+<p>If no <a class="el" href="interface_t_t_message_subject_field.html" title="A field for the subject of the message.">TTMessageSubjectField</a> is found in the fields array, nil will be returned from the getter and the setter will be a no-op. </p>
 
 </div>
 </div>

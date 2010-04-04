@@ -64,15 +64,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>&lt;TTMessageControllerDelegate&gt; Protocol Reference</h1><!-- doxytag: class="TTMessageControllerDelegate-p" -->
+<p>A protocol for the object that implements the backend logic for the <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a>.  
+<a href="#_details">More...</a></p>
+
 <p><code>#import &lt;<a class="el" href="_t_t_message_controller_8h_source.html">TTMessageController.h</a>&gt;</code></p>
 
 <p><a href="protocol_t_t_message_controller_delegate-p-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_message_controller_delegate-p.html#a2829ad907cea2d4ecdb71961bdb2da66">composeController:didSendFields:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Received when the user touches the send button, indicating they wish to send their message.  <a href="#a2829ad907cea2d4ecdb71961bdb2da66"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_message_controller_delegate-p.html#a60bdf7191024e537e4eff3d18fc7f219">composeControllerWillCancel:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Received when the user has chosen to cancel creating their message.  <a href="#a60bdf7191024e537e4eff3d18fc7f219"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_message_controller_delegate-p.html#a25f3cd0ff06f702c2122178ce2838733">composeControllerShowRecipientPicker:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Received in response to the user touching a contact add button.  <a href="#a25f3cd0ff06f702c2122178ce2838733"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>A protocol for the object that implements the backend logic for the <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a>. </p>
+<p>This object is responsible for delivering the message that was composed in the view controller when the user chooses the send option. It receive a message when the user cancels the creation of a message or when they press the plus icon in a recipient field. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a2829ad907cea2d4ecdb71961bdb2da66"></a><!-- doxytag: member="TTMessageControllerDelegate&#45;p::composeController:didSendFields:" ref="a2829ad907cea2d4ecdb71961bdb2da66" args="(TTMessageController *controller,[didSendFields] NSArray *fields)" -->
 <div class="memitem">
@@ -99,6 +108,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="memdoc">
 
+<p>Received when the user touches the send button, indicating they wish to send their message. </p>
+<p>Implementations should send the message represented by the supplied fields. The fields array contains subclasses of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used the the TTMessageController.">TTMessageField</a>. Its last object is the body of the message, contained within a <a class="el" href="interface_t_t_message_text_field.html" title="A field for holding variable free form text.">TTMessageTextField</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="a25f3cd0ff06f702c2122178ce2838733"></a><!-- doxytag: member="TTMessageControllerDelegate&#45;p::composeControllerShowRecipientPicker:" ref="a25f3cd0ff06f702c2122178ce2838733" args="(TTMessageController *controller)" -->
@@ -117,6 +129,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="memdoc">
 
+<p>Received in response to the user touching a contact add button. </p>
+<p>This method should prepare and present a view for the user to choose a contact. Upon choosing a contact, that contact should be added to the field. </p>
+
 </div>
 </div>
 <a class="anchor" id="a60bdf7191024e537e4eff3d18fc7f219"></a><!-- doxytag: member="TTMessageControllerDelegate&#45;p::composeControllerWillCancel:" ref="a60bdf7191024e537e4eff3d18fc7f219" args="(TTMessageController *controller)" -->
@@ -134,6 +149,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
+
+<p>Received when the user has chosen to cancel creating their message. </p>
+<p>Upon returning, the <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a> will be dismissed. Implementations can use this callback to cleanup any resources. </p>
 
 </div>
 </div>

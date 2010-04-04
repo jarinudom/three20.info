@@ -64,6 +64,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTMessageField Class Reference</h1><!-- doxytag: class="TTMessageField" --><!-- doxytag: inherits="NSObject" -->
+<p>The base class for all fields used the the <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a>.  
+<a href="#_details">More...</a></p>
+
 <p><code>#import &lt;<a class="el" href="_t_t_message_controller_8h_source.html">TTMessageController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TTMessageField:</div>
@@ -88,8 +91,12 @@ Inheritance diagram for TTMessageField:</div>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_field.html#aa3d3af7631a19c2664ac90231794c839">_required</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_field.html#a494006ed1c012efd8082287c38212f4b">title</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The title of this field, which will be rendered along with the field's contents.  <a href="#a494006ed1c012efd8082287c38212f4b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_field.html#aa0f70cbfe47c719bb44790c8e138d254">required</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If true, the user must supply a value for this field before they will be able to send their message.  <a href="#aa0f70cbfe47c719bb44790c8e138d254"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>The base class for all fields used the the <a class="el" href="interface_t_t_message_controller.html" title="A view controller for composing email like messages, which is visually similar to...">TTMessageController</a>. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="aacceac8559f65e496569f92eb677adce"></a><!-- doxytag: member="TTMessageField::initWithTitle:required:" ref="aacceac8559f65e496569f92eb677adce" args="(NSString *title,[required] BOOL required)" -->
 <div class="memitem">
@@ -157,6 +164,8 @@ Inheritance diagram for TTMessageField:</div>
 </div>
 <div class="memdoc">
 
+<p>If true, the user must supply a value for this field before they will be able to send their message. </p>
+
 </div>
 </div>
 <a class="anchor" id="a494006ed1c012efd8082287c38212f4b"></a><!-- doxytag: member="TTMessageField::title" ref="a494006ed1c012efd8082287c38212f4b" args="" -->
@@ -169,6 +178,8 @@ Inheritance diagram for TTMessageField:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>The title of this field, which will be rendered along with the field's contents. </p>
 
 </div>
 </div>
