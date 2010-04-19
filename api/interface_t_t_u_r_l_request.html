@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -97,7 +96,7 @@ Inheritance diagram for TTURLRequest:</div>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request.html#afa14a806b7778ba1c00d1095b1412085">request</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request.html#aa3938ab0e683f451c7eb5955072668b1">requestWithURL:delegate:</a></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a6105246c3bd683aaf2e8da0aec1e626a">_URL</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a1b7c4b9b9b3cb8504c8548b50c6499cc">_urlPath</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#ac55e87f992ded016b6932ad47fe6e4eb">_httpMethod</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_data.html">NSData</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a5122f6c199e3b4f6a7f045a58c32bbb8">_httpBody</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a047fee18c39da7cada0baf1e761430a1">_parameters</a></td></tr>
@@ -119,8 +118,10 @@ Inheritance diagram for TTURLRequest:</div>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a871cb2be08ac21efa43364e56f519086">_filterPasswordLogging</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a31a5fe9a995cef5c862baeb0af6e2077">_delegates</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#ac72e72076bad1e5ff507870730632ce1">URL</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL to be loaded by the request.  <a href="#ac72e72076bad1e5ff507870730632ce1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a4ad107c41d501a5666e65ad357842a4a">urlPath</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL path to be loaded by the request.  <a href="#a4ad107c41d501a5666e65ad357842a4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *URL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#ac8412fff243d33553ac0c20800e604ed">__TTDEPRECATED_METHOD</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL path to be loaded by the request.  <a href="#ac8412fff243d33553ac0c20800e604ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#a5e349b56e2926d0ce4a8993312ed9b08">httpMethod</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_u_r_l_response-p.html">TTURLResponse</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request.html#ae5480dad46898eb6007913b6746e706c">response</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An object that handles the response data and may parse and validate it.  <a href="#ae5480dad46898eb6007913b6746e706c"></a><br/></td></tr>
@@ -622,12 +623,12 @@ Inheritance diagram for TTURLRequest:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6105246c3bd683aaf2e8da0aec1e626a"></a><!-- doxytag: member="TTURLRequest::_URL" ref="a6105246c3bd683aaf2e8da0aec1e626a" args="" -->
+<a class="anchor" id="a1b7c4b9b9b3cb8504c8548b50c6499cc"></a><!-- doxytag: member="TTURLRequest::_urlPath" ref="a1b7c4b9b9b3cb8504c8548b50c6499cc" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) <a class="el" href="interface_t_t_u_r_l_request.html#a6105246c3bd683aaf2e8da0aec1e626a">_URL</a><code> [protected]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) <a class="el" href="interface_t_t_u_r_l_request.html#a1b7c4b9b9b3cb8504c8548b50c6499cc">_urlPath</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -649,6 +650,22 @@ Inheritance diagram for TTURLRequest:</div>
 </div>
 </div>
 <hr/><h2>Property Documentation</h2>
+<a class="anchor" id="ac8412fff243d33553ac0c20800e604ed"></a><!-- doxytag: member="TTURLRequest::__TTDEPRECATED_METHOD" ref="ac8412fff243d33553ac0c20800e604ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>* URL) __TTDEPRECATED_METHOD<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The URL path to be loaded by the request. </p>
+<p>Deprecated due to name ambiguity. Use urlPath instead. Remove after May 6, 2010. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa0f7d2b7001143d1b9f1d3635449a4f1"></a><!-- doxytag: member="TTURLRequest::cacheExpirationAge" ref="aa0f7d2b7001143d1b9f1d3635449a4f1" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -932,18 +949,18 @@ Inheritance diagram for TTURLRequest:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac72e72076bad1e5ff507870730632ce1"></a><!-- doxytag: member="TTURLRequest::URL" ref="ac72e72076bad1e5ff507870730632ce1" args="" -->
+<a class="anchor" id="a4ad107c41d501a5666e65ad357842a4a"></a><!-- doxytag: member="TTURLRequest::urlPath" ref="a4ad107c41d501a5666e65ad357842a4a" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) URL<code> [read, write, copy]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) urlPath<code> [read, write, copy]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>The URL to be loaded by the request. </p>
+<p>The URL path to be loaded by the request. </p>
 
 </div>
 </div>

@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -80,6 +79,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a href="_t_t_global_u_i_8h_source.html">Go to the source code of this file.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#a8b13735a59a8e90445b253ead185cb21">TTLOGRECT</a>(rect)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#a9d4fa5f755265e1923e385f68bbdc614">TTLOGPOINT</a>(pt)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#adb3065e2fb02685c46bf96f6a76ca39a">TTLOGSIZE</a>(size)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#a01e1631d59896d2be995493857f6c69c">TTLOGEDGES</a>(edges)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#a169f4de1d5f740becf45b9911a4fcf63">TTLOGHSV</a>(_COLOR)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#ae8a9c07ddf4798aa50ac8d03d3eb892d">TTLOGVIEWS</a>(_VIEW)&nbsp;&nbsp;&nbsp;{ for (<a class="el" href="class_u_i_view.html">UIView</a>* view = _VIEW; view; view = view.superview) { TTDINFO(@&quot;%@&quot;, view); } }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_u_i_8h.html#a89eaba81eee3c71acfde85a0d2748313">TT_ROW_HEIGHT</a>&nbsp;&nbsp;&nbsp;<a class="el" href="_t_t_global_u_i_8m.html#a1865df5aea4c93970e5811259efbb09a">ttkDefaultRowHeight</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deprecated macros for common constants.  <a href="#a89eaba81eee3c71acfde85a0d2748313"></a><br/></td></tr>
@@ -428,6 +432,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td>&nbsp;&nbsp;&nbsp;[[<a class="el" href="interface_t_t_u_r_l_cache.html">TTURLCache</a> sharedCache] imageForURL:_URL]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01e1631d59896d2be995493857f6c69c"></a><!-- doxytag: member="TTGlobalUI.h::TTLOGEDGES" ref="a01e1631d59896d2be995493857f6c69c" args="(edges)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTLOGEDGES</td>
+          <td>(</td>
+          <td class="paramtype">edges&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="_t_t_debug_8h.html#a96a090844c7e8b6ce6f1611c3ff2d133">TTDINFO</a>(<span class="stringliteral">@&quot;%s left=%f, right=%f, top=%f, bottom=%f&quot;</span>, #edges, edges.left, edges.right, \
+  edges.top, edges.bottom)
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a169f4de1d5f740becf45b9911a4fcf63"></a><!-- doxytag: member="TTGlobalUI.h::TTLOGHSV" ref="a169f4de1d5f740becf45b9911a4fcf63" args="(_COLOR)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTLOGHSV</td>
+          <td>(</td>
+          <td class="paramtype">_COLOR&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d4fa5f755265e1923e385f68bbdc614"></a><!-- doxytag: member="TTGlobalUI.h::TTLOGPOINT" ref="a9d4fa5f755265e1923e385f68bbdc614" args="(pt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTLOGPOINT</td>
+          <td>(</td>
+          <td class="paramtype">pt&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b13735a59a8e90445b253ead185cb21"></a><!-- doxytag: member="TTGlobalUI.h::TTLOGRECT" ref="a8b13735a59a8e90445b253ead185cb21" args="(rect)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTLOGRECT</td>
+          <td>(</td>
+          <td class="paramtype">rect&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="_t_t_debug_8h.html#a96a090844c7e8b6ce6f1611c3ff2d133">TTDINFO</a>(<span class="stringliteral">@&quot;%s x=%f, y=%f, w=%f, h=%f&quot;</span>, #rect, rect.origin.x, rect.origin.y, \
+  rect.size.width, rect.size.height)
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="adb3065e2fb02685c46bf96f6a76ca39a"></a><!-- doxytag: member="TTGlobalUI.h::TTLOGSIZE" ref="adb3065e2fb02685c46bf96f6a76ca39a" args="(size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTLOGSIZE</td>
+          <td>(</td>
+          <td class="paramtype">size&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</td>
         </tr>
       </table>
 </div>

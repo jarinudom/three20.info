@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -76,16 +75,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_style_8h.html">Three20/TTStyle.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_style_delegate_8h.html">Three20/TTStyleDelegate.h</a>&quot;</span>
 <a name="l00018"></a>00018 
 <a name="l00019"></a><a class="code" href="interface_t_t_button.html">00019</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_button.html">TTButton</a> : UIControl &lt;<a class="code" href="protocol_t_t_style_delegate-p.html">TTStyleDelegate</a>&gt; {
-<a name="l00020"></a><a class="code" href="interface_t_t_button.html#a5ec03f2492358eb92f7e2135225361a7">00020</a>   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>* <a class="code" href="interface_t_t_button.html#a5ec03f2492358eb92f7e2135225361a7">_content</a>;
-<a name="l00021"></a><a class="code" href="interface_t_t_button.html#a36c32d288a92ad23d46c732882feff15">00021</a>   <a class="code" href="class_u_i_font.html" title="Additions.">UIFont</a>* <a class="code" href="interface_t_t_button.html#a36c32d288a92ad23d46c732882feff15">_font</a>;
-<a name="l00022"></a><a class="code" href="interface_t_t_button.html#a654ab4afc99809c77c1125c71eba7f07">00022</a>   BOOL <a class="code" href="interface_t_t_button.html#a654ab4afc99809c77c1125c71eba7f07">_isVertical</a>;
+<a name="l00020"></a><a class="code" href="interface_t_t_button.html#a5ec03f2492358eb92f7e2135225361a7">00020</a>   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*  <a class="code" href="interface_t_t_button.html#a5ec03f2492358eb92f7e2135225361a7">_content</a>;
+<a name="l00021"></a><a class="code" href="interface_t_t_button.html#a36c32d288a92ad23d46c732882feff15">00021</a>   <a class="code" href="class_u_i_font.html" title="Additions.">UIFont</a>*               <a class="code" href="interface_t_t_button.html#a36c32d288a92ad23d46c732882feff15">_font</a>;
+<a name="l00022"></a><a class="code" href="interface_t_t_button.html#a654ab4afc99809c77c1125c71eba7f07">00022</a>   BOOL                  <a class="code" href="interface_t_t_button.html#a654ab4afc99809c77c1125c71eba7f07">_isVertical</a>;
 <a name="l00023"></a>00023 }
 <a name="l00024"></a>00024 
-<a name="l00025"></a><a class="code" href="interface_t_t_button.html#ab7ebfd30adeb7766b08402d346d61003">00025</a> @property(nonatomic,retain) <a class="code" href="class_u_i_font.html" title="Additions.">UIFont</a>* font;
-<a name="l00026"></a><a class="code" href="interface_t_t_button.html#a2d5c8aaa4652326e06eb1ea9d85a8621">00026</a> @property(nonatomic) BOOL isVertical;
+<a name="l00025"></a><a class="code" href="interface_t_t_button.html#ab7ebfd30adeb7766b08402d346d61003">00025</a> @property (nonatomic, retain) <a class="code" href="class_u_i_font.html" title="Additions.">UIFont</a>* font;
+<a name="l00026"></a><a class="code" href="interface_t_t_button.html#a2d5c8aaa4652326e06eb1ea9d85a8621">00026</a> @property (nonatomic)         BOOL    isVertical;
 <a name="l00027"></a>00027 
 <a name="l00028"></a>00028 + (<a class="code" href="interface_t_t_button.html">TTButton</a>*)buttonWithStyle:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)selector;
 <a name="l00029"></a>00029 + (<a class="code" href="interface_t_t_button.html">TTButton</a>*)buttonWithStyle:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)selector title:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)title;

@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -78,47 +77,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00023"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a414bbd7ed86a5b60af86f9f2d8b94e9d">00023</a> <span class="preprocessor">#define __TTDEPRECATED_METHOD __attribute__((deprecated))</span>
 <a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00026"></a>00026 <span class="comment">// Logging</span>
+<a name="l00026"></a>00026 <span class="comment">// Errors</span>
 <a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a8b13735a59a8e90445b253ead185cb21">00028</a> <span class="preprocessor">#define TTLOGRECT(rect) \</span>
-<a name="l00029"></a>00029 <span class="preprocessor">  TTDINFO(</span><span class="stringliteral">@&quot;%s x=%f, y=%f, w=%f, h=%f&quot;</span>, #rect, rect.origin.x, rect.origin.y, \
-<a name="l00030"></a>00030     rect.size.width, rect.size.height)
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a9d4fa5f755265e1923e385f68bbdc614">00032</a> <span class="preprocessor">#define TTLOGPOINT(pt) \</span>
-<a name="l00033"></a>00033 <span class="preprocessor">  TTDINFO(</span><span class="stringliteral">@&quot;%s x=%f, y=%f&quot;</span>, #pt, pt.x, pt.y)
+<a name="l00028"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#afb5d1c9b6792cc7155d996afa1471180">00028</a> <span class="preprocessor">#define TT_ERROR_DOMAIN </span><span class="stringliteral">@&quot;three20.net&quot;</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#ad5ae8fe5ae8d4cfe3bd294e4a74a3227">00030</a> <span class="preprocessor">#define TT_EC_INVALID_IMAGE 101</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00033"></a>00033 <span class="comment">// Time</span>
 <a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#adb3065e2fb02685c46bf96f6a76ca39a">00035</a> <span class="preprocessor">#define TTLOGSIZE(size) \</span>
-<a name="l00036"></a>00036 <span class="preprocessor">  TTDINFO(</span><span class="stringliteral">@&quot;%s w=%f, h=%f&quot;</span>, #size, size.width, size.height)
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a01e1631d59896d2be995493857f6c69c">00038</a> <span class="preprocessor">#define TTLOGEDGES(edges) \</span>
-<a name="l00039"></a>00039 <span class="preprocessor">  TTDINFO(</span><span class="stringliteral">@&quot;%s left=%f, right=%f, top=%f, bottom=%f&quot;</span>, #edges, edges.left, edges.right, \
-<a name="l00040"></a>00040     edges.top, edges.bottom)
-<a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a169f4de1d5f740becf45b9911a4fcf63">00042</a> <span class="preprocessor">#define TTLOGHSV(_COLOR) \</span>
-<a name="l00043"></a>00043 <span class="preprocessor">  TTDINFO(</span><span class="stringliteral">@&quot;%s h=%f, s=%f, v=%f&quot;</span>, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)
+<a name="l00035"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a35bf27f511c6aea3d2a78575ddcfc0bf">00035</a> <span class="preprocessor">#define TT_MINUTE 60</span>
+<a name="l00036"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a5b351f73a307bc0865c7374854de7e5b">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_HOUR   (60 * TT_MINUTE)</span>
+<a name="l00037"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a7262d6681130fe578ec927461424b93e">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_DAY    (24 * TT_HOUR)</span>
+<a name="l00038"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#aaf18c20923b3b5361a386929efc2bfeb">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_WEEK   (7 * TT_DAY)</span>
+<a name="l00039"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a2de981595612344900f210c0345bbd24">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_MONTH  (30.5 * TT_DAY)</span>
+<a name="l00040"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#ace36d269d7a57744e5c1dde13cafa032">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_YEAR   (365 * TT_DAY)</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 <span class="comment">// Safe releases</span>
 <a name="l00044"></a>00044 
-<a name="l00046"></a>00046 <span class="comment">// Errors</span>
-<a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#afb5d1c9b6792cc7155d996afa1471180">00048</a> <span class="preprocessor">#define TT_ERROR_DOMAIN </span><span class="stringliteral">@&quot;three20.net&quot;</span>
-<a name="l00049"></a>00049 
-<a name="l00050"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#ad5ae8fe5ae8d4cfe3bd294e4a74a3227">00050</a> <span class="preprocessor">#define TT_EC_INVALID_IMAGE 101</span>
-<a name="l00051"></a>00051 <span class="preprocessor"></span>
-<a name="l00053"></a>00053 <span class="comment">// Time</span>
-<a name="l00054"></a>00054 
-<a name="l00055"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a35bf27f511c6aea3d2a78575ddcfc0bf">00055</a> <span class="preprocessor">#define TT_MINUTE 60</span>
-<a name="l00056"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a5b351f73a307bc0865c7374854de7e5b">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_HOUR   (60 * TT_MINUTE)</span>
-<a name="l00057"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a7262d6681130fe578ec927461424b93e">00057</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_DAY    (24 * TT_HOUR)</span>
-<a name="l00058"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#aaf18c20923b3b5361a386929efc2bfeb">00058</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_WEEK   (7 * TT_DAY)</span>
-<a name="l00059"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a2de981595612344900f210c0345bbd24">00059</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_MONTH  (30.5 * TT_DAY)</span>
-<a name="l00060"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#ace36d269d7a57744e5c1dde13cafa032">00060</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_YEAR   (365 * TT_DAY)</span>
-<a name="l00061"></a>00061 <span class="preprocessor"></span>
-<a name="l00063"></a>00063 <span class="comment">// Safe releases</span>
-<a name="l00064"></a>00064 
-<a name="l00065"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a472fda8f0a560323cf9850cbe6656b66">00065</a> <span class="preprocessor">#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }</span>
-<a name="l00066"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#af230d615aadca6cd5b53e54335153be7">00066</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
-<a name="l00067"></a>00067 <span class="preprocessor"></span>
-<a name="l00068"></a>00068 <span class="comment">// Release a CoreFoundation object safely.</span>
-<a name="l00069"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a0feb02e0c6900fbab4eb8d68322d928f">00069</a> <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
+<a name="l00045"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a472fda8f0a560323cf9850cbe6656b66">00045</a> <span class="preprocessor">#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }</span>
+<a name="l00046"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#af230d615aadca6cd5b53e54335153be7">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span>
+<a name="l00048"></a>00048 <span class="comment">// Release a CoreFoundation object safely.</span>
+<a name="l00049"></a><a class="code" href="_t_t_core_preprocessor_macros_8h.html#a0feb02e0c6900fbab4eb8d68322d928f">00049</a> <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

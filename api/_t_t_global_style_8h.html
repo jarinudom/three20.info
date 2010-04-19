@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -64,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <h1>Three20/TTGlobalStyle.h File Reference</h1><code>#import &lt;Foundation/Foundation.h&gt;</code><br/>
 <code>#import &lt;UIKit/UIKit.h&gt;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_position_8h_source.html">Three20/TTPosition.h</a>&quot;</code><br/>
 
 <p><a href="_t_t_global_style_8h_source.html">Go to the source code of this file.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -72,12 +72,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a4d20dbb0f67044f0ea2f5679787edf01">TTSTYLESTATE</a>(_SELECTOR, _STATE)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a64363d1ab486dc27bfe003df71955dd0">TTSTYLESHEET</a>&nbsp;&nbsp;&nbsp;((id)[<a class="el" href="interface_t_t_style_sheet.html">TTStyleSheet</a> globalStyleSheet])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a898553a3d10993e8ca7d12f2b23cfb77">TTSTYLEVAR</a>(_VARNAME)&nbsp;&nbsp;&nbsp;[TTSTYLESHEET _VARNAME]</td></tr>
-<tr><td colspan="2"><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a> { <a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710a91b1059488a7dabdd40450324bf570e1">TTPositionStatic</a>, 
-<a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710ac246d99c0f95c7addb2fc99890420cd1">TTPositionAbsolute</a>, 
-<a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710a5e4435ff910c98129ad83b74e71c1799">TTPositionFloatLeft</a>, 
-<a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710a9adc914fb866df7487b5e17bdabdad46">TTPositionFloatRight</a>
- }</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a781439ee732394fef574bf7310212026"></a><!-- doxytag: member="TTGlobalStyle.h::TTSTYLE" ref="a781439ee732394fef574bf7310212026" args="(_SELECTOR)" -->
@@ -151,32 +145,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Enumeration Type Documentation</h2>
-<a class="anchor" id="a04eb0e8c539cf3f8ba46684c6f6bf710"></a><!-- doxytag: member="TTGlobalStyle.h::TTPosition" ref="a04eb0e8c539cf3f8ba46684c6f6bf710" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_t_t_global_style_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a04eb0e8c539cf3f8ba46684c6f6bf710a91b1059488a7dabdd40450324bf570e1"></a><!-- doxytag: member="TTPositionStatic" ref="a04eb0e8c539cf3f8ba46684c6f6bf710a91b1059488a7dabdd40450324bf570e1" args="" -->TTPositionStatic</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a04eb0e8c539cf3f8ba46684c6f6bf710ac246d99c0f95c7addb2fc99890420cd1"></a><!-- doxytag: member="TTPositionAbsolute" ref="a04eb0e8c539cf3f8ba46684c6f6bf710ac246d99c0f95c7addb2fc99890420cd1" args="" -->TTPositionAbsolute</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a04eb0e8c539cf3f8ba46684c6f6bf710a5e4435ff910c98129ad83b74e71c1799"></a><!-- doxytag: member="TTPositionFloatLeft" ref="a04eb0e8c539cf3f8ba46684c6f6bf710a5e4435ff910c98129ad83b74e71c1799" args="" -->TTPositionFloatLeft</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a04eb0e8c539cf3f8ba46684c6f6bf710a9adc914fb866df7487b5e17bdabdad46"></a><!-- doxytag: member="TTPositionFloatRight" ref="a04eb0e8c539cf3f8ba46684c6f6bf710a9adc914fb866df7487b5e17bdabdad46" args="" -->TTPositionFloatRight</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
 
 </div>
 </div>

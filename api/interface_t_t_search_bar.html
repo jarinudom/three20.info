@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -86,14 +85,12 @@ Inheritance diagram for TTSearchBar:</div>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_search_text_field.html">TTSearchTextField</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#ae918e449e1fe61dcd4d1ce880297be51">_searchField</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_view.html">TTView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#af52afa1ebea06296600ff1e04e2b443e">_boxView</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_button.html">TTButton</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a76870f3a973fc19423f04990a694572f">_cancelButton</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a1c389e25c44073d1f4255140a1782ec9">_tintColor</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a6c52993b79bb1f2edb3b9769bcbeb7b0">_textFieldStyle</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_button.html">TTButton</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a76870f3a973fc19423f04990a694572f">_cancelButton</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a39d4003e527deff085f8b36f7443d3a2">_showsCancelButton</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a015ca66e74c1658c705f0bd670ffcade">_showsSearchIcon</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; UITextFieldDelegate &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#ab0ea409fc63517e532dc32036dfb1ba4">delegate</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#ac57257e9b29d763142f0ee23a8256e49">dataSource</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a850f10cbbbe937f24f3660b0ad3595cb">text</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a85d3836bbca9a8cb224857b3ebbae1af">placeholder</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_table_view.html">UITableView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a7e8efc452bffc51a73fca43adb634cdd">tableView</a></td></tr>
@@ -110,6 +107,8 @@ Inheritance diagram for TTSearchBar:</div>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a07f89dcc0ebfe3a9852a9ae32587856c">showsDoneButton</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#aca972ffce344940de867d3a8035d8c17">showsDarkScreen</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#a18bda88ca6ff5ce6c1e56b66133f9b57">showsSearchIcon</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#ac57257e9b29d763142f0ee23a8256e49">dataSource</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; UITextFieldDelegate &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_search_bar.html#ab0ea409fc63517e532dc32036dfb1ba4">delegate</a></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="aafe19d2323475f86bd30d06bfbf9f605"></a><!-- doxytag: member="TTSearchBar::search" ref="aafe19d2323475f86bd30d06bfbf9f605" args="()" -->

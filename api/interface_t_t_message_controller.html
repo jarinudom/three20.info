@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -115,8 +114,6 @@ Inheritance diagram for TTMessageController:</div>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.html#af47187c50e2e1b382841fa4be783c0ba">messageShouldCancel</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the message should cancel without confirming with the user.  <a href="#af47187c50e2e1b382841fa4be783c0ba"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_message_controller_delegate-p.html">TTMessageControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a47fca5147d52366682fdff075fefd5c8">_delegate</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a38dde907590f2a443743fd1d91011eb2">_dataSource</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a65c84e8022e3fa76b01cb6dac5b5d4fc">_fields</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a320f12bc5246a907ca3f1300266b0063">_fieldViews</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UIScrollView *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a163f017de11f96d7590f5f45efca822f">_scrollView</a></td></tr>
@@ -125,13 +122,15 @@ Inheritance diagram for TTMessageController:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#acda99d59fd8834730842c25c5624ddfb">_initialRecipients</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a64b60a2095071b5b013478965b81f64e">_showsRecipientPicker</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a4b9736bf30efb27fbfe74187bfde9e42">_isModified</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a38dde907590f2a443743fd1d91011eb2">_dataSource</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_message_controller_delegate-p.html">TTMessageControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a47fca5147d52366682fdff075fefd5c8">_delegate</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_message_controller_delegate-p.html">TTMessageControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed">delegate</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The delegate that will receive messages from the <a class="el" href="protocol_t_t_message_controller_delegate-p.html" title="A protocol for the object that implements the backend logic for the TTMessageController...">TTMessageControllerDelegate</a> protocol.  <a href="#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a577f1d8cad6e8591a4759f11d36aad2d">dataSource</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The datasource used to autocomplete TTMessageRecipientFields.  <a href="#a577f1d8cad6e8591a4759f11d36aad2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a81c2daf27f3f8f21cecf0a92fa45b1d3">fields</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used the the TTMessageController.">TTMessageField</a> instances representing the editable fields.  <a href="#a81c2daf27f3f8f21cecf0a92fa45b1d3"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used by the TTMessageController.">TTMessageField</a> instances representing the editable fields.  <a href="#a81c2daf27f3f8f21cecf0a92fa45b1d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a8414169377f297b9fcb41bbc9c0a058d">subject</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A convenience property for editing the text value of the <a class="el" href="interface_t_t_message_subject_field.html" title="A field for the subject of the message.">TTMessageSubjectField</a>.  <a href="#a8414169377f297b9fcb41bbc9c0a058d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.html#a179539948de0b4377b0559e9ef2c57e6">body</a></td></tr>
@@ -663,7 +662,7 @@ Inheritance diagram for TTMessageController:</div>
 </div>
 <div class="memdoc">
 
-<p>An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used the the TTMessageController.">TTMessageField</a> instances representing the editable fields. </p>
+<p>An array of <a class="el" href="interface_t_t_message_field.html" title="The base class for all fields used by the TTMessageController.">TTMessageField</a> instances representing the editable fields. </p>
 <p>These fields are rendered in order using appropriate views for each field type. </p>
 
 </div>

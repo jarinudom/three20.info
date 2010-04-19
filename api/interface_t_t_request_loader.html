@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -91,7 +90,7 @@ Inheritance diagram for TTRequestLoader:</div>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#aaabb091bee67560a446913907a10b3bc">dispatchAuthenticationChallenge:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#aca8cfb6761c2cea8a7eaea6856e71078">cancel</a></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a8981198699809564fe6fa26337c49fc0">_URL</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a9dc73dcc8253d316ed439b9ca835b02b">_urlPath</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a1fb37e3cf1f42c549e5c9f9a93d43037">_queue</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#afe54139bf5ac295a52bc96eb1bcbb4f2">_cacheKey</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_t_t_global_network_8h.html#a6424b10d4a9020b6d5088403aadcc097">TTURLRequestCachePolicy</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#ac1e2e153e0a7301f4398332805c42640">_cachePolicy</a></td></tr>
@@ -103,11 +102,13 @@ Inheritance diagram for TTRequestLoader:</div>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a1cc65bcca993cbe5e3c1f5657185cc9d">_retriesLeft</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a812d3c16cac62020a431ac4e46853041">requests</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#ab38551cc022c9defc214aeb614d403f4">URL</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#ae05ab957f8610bdf6d8dc6c55561cf18">urlPath</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#afc70c6b8ef860ee13fef091dae10ca41">cacheKey</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_t_t_global_network_8h.html#a6424b10d4a9020b6d5088403aadcc097">TTURLRequestCachePolicy</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a73a04e9934fd4e34b369c60c31578227">cachePolicy</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a91e393e0d058d3a789e3d782bbd02357">cacheExpirationAge</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a26e45bc2d7677cfbae03d6a20905f78a">isLoading</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *URL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#aec8806d4912142a8fef5a28e8be5c089">__TTDEPRECATED_METHOD</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deprecated due to name ambiguity.  <a href="#aec8806d4912142a8fef5a28e8be5c089"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a80e53e7e043439a4318efaaf0041923e"></a><!-- doxytag: member="TTRequestLoader::addRequest:" ref="a80e53e7e043439a4318efaaf0041923e" args="(TTURLRequest *request)" -->
@@ -443,12 +444,12 @@ Inheritance diagram for TTRequestLoader:</div>
 
 </div>
 </div>
-<a class="anchor" id="a8981198699809564fe6fa26337c49fc0"></a><!-- doxytag: member="TTRequestLoader::_URL" ref="a8981198699809564fe6fa26337c49fc0" args="" -->
+<a class="anchor" id="a9dc73dcc8253d316ed439b9ca835b02b"></a><!-- doxytag: member="TTRequestLoader::_urlPath" ref="a9dc73dcc8253d316ed439b9ca835b02b" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) <a class="el" href="interface_t_t_request_loader.html#a8981198699809564fe6fa26337c49fc0">_URL</a><code> [protected]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) <a class="el" href="interface_t_t_request_loader.html#a9dc73dcc8253d316ed439b9ca835b02b">_urlPath</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -457,6 +458,22 @@ Inheritance diagram for TTRequestLoader:</div>
 </div>
 </div>
 <hr/><h2>Property Documentation</h2>
+<a class="anchor" id="aec8806d4912142a8fef5a28e8be5c089"></a><!-- doxytag: member="TTRequestLoader::__TTDEPRECATED_METHOD" ref="aec8806d4912142a8fef5a28e8be5c089" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>* URL) __TTDEPRECATED_METHOD<code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Deprecated due to name ambiguity. </p>
+<p>Use urlPath instead. Remove after May 6, 2010. </p>
+
+</div>
+</div>
 <a class="anchor" id="a91e393e0d058d3a789e3d782bbd02357"></a><!-- doxytag: member="TTRequestLoader::cacheExpirationAge" ref="a91e393e0d058d3a789e3d782bbd02357" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -522,12 +539,12 @@ Inheritance diagram for TTRequestLoader:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab38551cc022c9defc214aeb614d403f4"></a><!-- doxytag: member="TTRequestLoader::URL" ref="ab38551cc022c9defc214aeb614d403f4" args="" -->
+<a class="anchor" id="ae05ab957f8610bdf6d8dc6c55561cf18"></a><!-- doxytag: member="TTRequestLoader::urlPath" ref="ae05ab957f8610bdf6d8dc6c55561cf18" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) URL<code> [read, assign]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) urlPath<code> [read, assign]</code></td>
         </tr>
       </table>
 </div>

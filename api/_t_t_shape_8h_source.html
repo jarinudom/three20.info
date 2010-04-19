@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -96,73 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00037"></a>00037 - (UIEdgeInsets)insetsForSize:(CGSize)size;
 <a name="l00038"></a>00038 
 <a name="l00039"></a>00039 <span class="keyword">@end</span>
-<a name="l00040"></a>00040 
-<a name="l00042"></a>00042 
-<a name="l00043"></a><a class="code" href="interface_t_t_rectangle_shape.html">00043</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_rectangle_shape.html">TTRectangleShape</a> : <a class="code" href="interface_t_t_shape.html">TTShape</a>
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 + (<a class="code" href="interface_t_t_rectangle_shape.html">TTRectangleShape</a>*)<a class="code" href="interface_t_t_rectangle_shape.html#af88f1f29fcc1b86d99879b33eabd9057">shape</a>;
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 <span class="keyword">@end</span>
-<a name="l00048"></a>00048 
-<a name="l00050"></a>00050 
-<a name="l00051"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html">00051</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_rounded_rectangle_shape.html">TTRoundedRectangleShape</a> : <a class="code" href="interface_t_t_shape.html">TTShape</a> {
-<a name="l00052"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#ab9f283e051db640b423130305b056d9e">00052</a>   CGFloat <a class="code" href="interface_t_t_rounded_rectangle_shape.html#ab9f283e051db640b423130305b056d9e">_topLeftRadius</a>;
-<a name="l00053"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#a7d68271daac170c2885381da57d96b9c">00053</a>   CGFloat <a class="code" href="interface_t_t_rounded_rectangle_shape.html#a7d68271daac170c2885381da57d96b9c">_topRightRadius</a>;
-<a name="l00054"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#a145382c540219f73f61dea9b5347a815">00054</a>   CGFloat <a class="code" href="interface_t_t_rounded_rectangle_shape.html#a145382c540219f73f61dea9b5347a815">_bottomRightRadius</a>;
-<a name="l00055"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#a9045482bbcb266a7229d732a3fb7ea04">00055</a>   CGFloat <a class="code" href="interface_t_t_rounded_rectangle_shape.html#a9045482bbcb266a7229d732a3fb7ea04">_bottomLeftRadius</a>;
-<a name="l00056"></a>00056 }
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#a7f8a6ba530e858bba21885e5526aa5ae">00058</a> @property(nonatomic) CGFloat topLeftRadius;
-<a name="l00059"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#aeb44697ce42770f8e0b00abb51db4677">00059</a> @property(nonatomic) CGFloat topRightRadius;
-<a name="l00060"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#a0a9cebeebe0b3b9a1498b1210b0dd607">00060</a> @property(nonatomic) CGFloat bottomRightRadius;
-<a name="l00061"></a><a class="code" href="interface_t_t_rounded_rectangle_shape.html#ad4dec746e4418dcad183d4dbdb68af75">00061</a> @property(nonatomic) CGFloat bottomLeftRadius;
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 + (<a class="code" href="interface_t_t_rounded_rectangle_shape.html">TTRoundedRectangleShape</a>*)shapeWithRadius:(CGFloat)radius;
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 + (<a class="code" href="interface_t_t_rounded_rectangle_shape.html">TTRoundedRectangleShape</a>*)shapeWithTopLeft:(CGFloat)topLeft topRight:(CGFloat)topRight
-<a name="l00066"></a>00066       bottomRight:(CGFloat)bottomRight bottomLeft:(CGFloat)bottomLeft;
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068 @end
-<a name="l00069"></a>00069 
-<a name="l00071"></a>00071 
-<a name="l00072"></a><a class="code" href="interface_t_t_rounded_right_arrow_shape.html">00072</a> @interface <a class="code" href="interface_t_t_rounded_right_arrow_shape.html">TTRoundedRightArrowShape</a> : <a class="code" href="interface_t_t_shape.html">TTShape</a> {
-<a name="l00073"></a><a class="code" href="interface_t_t_rounded_right_arrow_shape.html#af100789a4e5f7e3126d4195242f9aa9b">00073</a>   CGFloat _radius;
-<a name="l00074"></a>00074 }
-<a name="l00075"></a>00075 
-<a name="l00076"></a><a class="code" href="interface_t_t_rounded_right_arrow_shape.html#afac3474b55807cb18970ef882ef3f044">00076</a> @property(nonatomic) CGFloat radius;
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 + (<a class="code" href="interface_t_t_rounded_right_arrow_shape.html">TTRoundedRightArrowShape</a>*)shapeWithRadius:(CGFloat)radius;
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080 @end
-<a name="l00081"></a>00081 
-<a name="l00083"></a>00083 
-<a name="l00084"></a><a class="code" href="interface_t_t_rounded_left_arrow_shape.html">00084</a> @interface <a class="code" href="interface_t_t_rounded_left_arrow_shape.html">TTRoundedLeftArrowShape</a> : <a class="code" href="interface_t_t_shape.html">TTShape</a> {
-<a name="l00085"></a><a class="code" href="interface_t_t_rounded_left_arrow_shape.html#a9b7a85b3e1a831a1d36eb1f93bc2ab7e">00085</a>   CGFloat _radius;
-<a name="l00086"></a>00086 }
-<a name="l00087"></a>00087 
-<a name="l00088"></a><a class="code" href="interface_t_t_rounded_left_arrow_shape.html#a5fb63b40583a7871b696dcc350a82502">00088</a> @property(nonatomic) CGFloat radius;
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090 + (<a class="code" href="interface_t_t_rounded_left_arrow_shape.html">TTRoundedLeftArrowShape</a>*)shapeWithRadius:(CGFloat)radius;
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092 @end
-<a name="l00093"></a>00093 
-<a name="l00095"></a>00095 
-<a name="l00096"></a><a class="code" href="interface_t_t_speech_bubble_shape.html">00096</a> @interface <a class="code" href="interface_t_t_speech_bubble_shape.html">TTSpeechBubbleShape</a> : <a class="code" href="interface_t_t_shape.html">TTShape</a> {
-<a name="l00097"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a111f1ad7eea98d1a28dde6709403c355">00097</a>   CGFloat _radius;
-<a name="l00098"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a3fc7760bb2e06b7c39ee7646f65dd293">00098</a>   CGFloat _pointLocation;
-<a name="l00099"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a8e7e74038d09a02befa6b88c1f9182c0">00099</a>   CGFloat _pointAngle;
-<a name="l00100"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a36fcdc506102b1e94605936fcd389594">00100</a>   CGSize _pointSize;
-<a name="l00101"></a>00101 }
-<a name="l00102"></a>00102 
-<a name="l00103"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a53838f24ff7beb3273132eab8b07813c">00103</a> @property(nonatomic) CGFloat radius;
-<a name="l00104"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a990ccff77c6c6b483585696d82440721">00104</a> @property(nonatomic) CGFloat pointLocation;
-<a name="l00105"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a8b9125aea8986a0c659e50d794106730">00105</a> @property(nonatomic) CGFloat pointAngle;
-<a name="l00106"></a><a class="code" href="interface_t_t_speech_bubble_shape.html#a667dabf54ae5cd17cf77e9a3f59fe436">00106</a> @property(nonatomic) CGSize pointSize;
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108 + (<a class="code" href="interface_t_t_speech_bubble_shape.html">TTSpeechBubbleShape</a>*)shapeWithRadius:(CGFloat)radius pointLocation:(CGFloat)pointLocation
-<a name="l00109"></a>00109                         pointAngle:(CGFloat)pointAngle pointSize:(CGSize)pointSize;
-<a name="l00110"></a>00110 
-<a name="l00111"></a>00111 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

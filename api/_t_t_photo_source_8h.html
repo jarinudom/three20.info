@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -62,26 +61,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>Three20/TTPhotoSource.h File Reference</h1><code>#import &quot;<a class="el" href="_t_t_u_r_l_map_8h_source.html">Three20/TTURLMap.h</a>&quot;</code><br/>
+<h1>Three20/TTPhotoSource.h File Reference</h1><code>#import &quot;<a class="el" href="_t_t_u_r_l_object_8h_source.html">Three20/TTURLObject.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_model_8h_source.html">Three20/TTModel.h</a>&quot;</code><br/>
 
 <p><a href="_t_t_photo_source_8h_source.html">Go to the source code of this file.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">protocol &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_t_t_photo_source-p.html">&lt;TTPhotoSource&gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">protocol &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_t_t_photo-p.html">&lt;TTPhoto&gt;</a></td></tr>
 <tr><td colspan="2"><h2>Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_photo_source_8h.html#a5250865005475a3b8bdb939006e8abfe">TT_NULL_PHOTO_INDEX</a>&nbsp;&nbsp;&nbsp;NSIntegerMax</td></tr>
-<tr><td colspan="2"><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79">TTPhotoVersion</a> { <br/>
-&nbsp;&nbsp;<a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79a9b6e1fc562ae717525eff7c8124cdea2">TTPhotoVersionNone</a>, 
-<a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79a1120466477540118b1b4764b279b085d">TTPhotoVersionLarge</a>, 
-<a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79ad27b25d7f55757c930aef5fd43aaacd3">TTPhotoVersionMedium</a>, 
-<a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79a1dc11f641d7ae7126656b54b22c69bd1">TTPhotoVersionSmall</a>, 
-<br/>
-&nbsp;&nbsp;<a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79a539fd379bd1b4f98940aca6e29c589bc">TTPhotoVersionThumbnail</a>
-<br/>
- }</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a5250865005475a3b8bdb939006e8abfe"></a><!-- doxytag: member="TTPhotoSource.h::TT_NULL_PHOTO_INDEX" ref="a5250865005475a3b8bdb939006e8abfe" args="" -->
@@ -94,34 +82,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Enumeration Type Documentation</h2>
-<a class="anchor" id="ae49cd29303a28857b1ba078e49949c79"></a><!-- doxytag: member="TTPhotoSource.h::TTPhotoVersion" ref="ae49cd29303a28857b1ba078e49949c79" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_t_t_photo_source_8h.html#ae49cd29303a28857b1ba078e49949c79">TTPhotoVersion</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="ae49cd29303a28857b1ba078e49949c79a9b6e1fc562ae717525eff7c8124cdea2"></a><!-- doxytag: member="TTPhotoVersionNone" ref="ae49cd29303a28857b1ba078e49949c79a9b6e1fc562ae717525eff7c8124cdea2" args="" -->TTPhotoVersionNone</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ae49cd29303a28857b1ba078e49949c79a1120466477540118b1b4764b279b085d"></a><!-- doxytag: member="TTPhotoVersionLarge" ref="ae49cd29303a28857b1ba078e49949c79a1120466477540118b1b4764b279b085d" args="" -->TTPhotoVersionLarge</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ae49cd29303a28857b1ba078e49949c79ad27b25d7f55757c930aef5fd43aaacd3"></a><!-- doxytag: member="TTPhotoVersionMedium" ref="ae49cd29303a28857b1ba078e49949c79ad27b25d7f55757c930aef5fd43aaacd3" args="" -->TTPhotoVersionMedium</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ae49cd29303a28857b1ba078e49949c79a1dc11f641d7ae7126656b54b22c69bd1"></a><!-- doxytag: member="TTPhotoVersionSmall" ref="ae49cd29303a28857b1ba078e49949c79a1dc11f641d7ae7126656b54b22c69bd1" args="" -->TTPhotoVersionSmall</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ae49cd29303a28857b1ba078e49949c79a539fd379bd1b4f98940aca6e29c589bc"></a><!-- doxytag: member="TTPhotoVersionThumbnail" ref="ae49cd29303a28857b1ba078e49949c79a539fd379bd1b4f98940aca6e29c589bc" args="" -->TTPhotoVersionThumbnail</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
 
 </div>
 </div>

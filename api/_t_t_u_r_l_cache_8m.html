@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -63,34 +62,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTURLCache.m File Reference</h1><code>#import &quot;<a class="el" href="_t_t_u_r_l_cache_8h_source.html">Three20/TTURLCache.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_global_network_8h_source.html">Three20/TTGlobalNetwork.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_core_8h_source.html">Three20/TTGlobalCore.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_core_paths_8h_source.html">Three20/TTGlobalCorePaths.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_global_network_8h_source.html">Three20/TTGlobalNetwork.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_debug_flags_8h_source.html">Three20/TTDebugFlags.h</a>&quot;</code><br/>
 <code>#import &lt;CommonCrypto/CommonDigest.h&gt;</code><br/>
-<code>#import &lt;QuartzCore/QuartzCore.h&gt;</code><br/>
 <table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_cache_8m.html#a451947e9a39eec240336028a748bb350">TT_LARGE_IMAGE_SIZE</a>&nbsp;&nbsp;&nbsp;(600*400)</td></tr>
+<tr><td colspan="2"><h2>Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><b>TTURLCache()</b></td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_cache_8m.html#ac5c18fe74c55ef8c119ced4aff59fce1">kLargeImageSize</a> = 600 * 400</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_cache_8m.html#a0b45ad664c06181cac9be1cffcfc23d9">kDefaultCacheName</a> = @&quot;Three20&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_t_t_u_r_l_cache.html">TTURLCache</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_cache_8m.html#a9b3f1e4830e8c7f27d20fcb2890d5398">gSharedCache</a> = nil</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_cache_8m.html#a16b2555db08ddae9b06aff16e43d6037">gNamedCaches</a> = nil</td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a451947e9a39eec240336028a748bb350"></a><!-- doxytag: member="TTURLCache.m::TT_LARGE_IMAGE_SIZE" ref="a451947e9a39eec240336028a748bb350" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TT_LARGE_IMAGE_SIZE&nbsp;&nbsp;&nbsp;(600*400)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a16b2555db08ddae9b06aff16e43d6037"></a><!-- doxytag: member="TTURLCache.m::gNamedCaches" ref="a16b2555db08ddae9b06aff16e43d6037" args="" -->
 <div class="memitem">
@@ -124,6 +109,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_n_s_string.html">NSString</a>* <a class="el" href="_t_t_u_r_l_cache_8m.html#a0b45ad664c06181cac9be1cffcfc23d9">kDefaultCacheName</a> = @&quot;Three20&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5c18fe74c55ef8c119ced4aff59fce1"></a><!-- doxytag: member="TTURLCache.m::kLargeImageSize" ref="ac5c18fe74c55ef8c119ced4aff59fce1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_u_r_l_cache_8m.html#ac5c18fe74c55ef8c119ced4aff59fce1">kLargeImageSize</a> = 600 * 400<code> [static]</code></td>
         </tr>
       </table>
 </div>

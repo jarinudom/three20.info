@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -91,19 +90,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#ab61e39a652e580722083bc34033ef162">00029</a>   <span class="keywordtype">SEL</span>                   <a class="code" href="interface_t_t_u_r_l_pattern.html#ab61e39a652e580722083bc34033ef162">_selector</a>;
 <a name="l00030"></a>00030 }
 <a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a2ac75d06c2cc6bec15d4064e51fbf0e4">00032</a> @property(nonatomic,copy)     <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL;
-<a name="l00033"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a3b4347f0497c00ec39e07d21ef3c2075">00033</a> @property(nonatomic,readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* scheme;
-<a name="l00034"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#ac8faebb59d29e2ea512213edae01e054">00034</a> @property(nonatomic,readonly) NSInteger specificity;
-<a name="l00035"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a52737296350c66c67bdd136623d35fd1">00035</a> @property(nonatomic,readonly) Class     classForInvocation;
-<a name="l00036"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#acc45aed4a4120330e38d6a3bb72f47fc">00036</a> @property(nonatomic)          <span class="keywordtype">SEL</span>       selector;
+<a name="l00032"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a2ac75d06c2cc6bec15d4064e51fbf0e4">00032</a> @property (nonatomic, copy)     <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL;
+<a name="l00033"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a3b4347f0497c00ec39e07d21ef3c2075">00033</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* scheme;
+<a name="l00034"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#ac8faebb59d29e2ea512213edae01e054">00034</a> @property (nonatomic, readonly) NSInteger specificity;
+<a name="l00035"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#a52737296350c66c67bdd136623d35fd1">00035</a> @property (nonatomic, readonly) Class     classForInvocation;
+<a name="l00036"></a><a class="code" href="interface_t_t_u_r_l_pattern.html#acc45aed4a4120330e38d6a3bb72f47fc">00036</a> @property (nonatomic)           <span class="keywordtype">SEL</span>       selector;
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038 - (<span class="keywordtype">void</span>)setSelectorIfPossible:(<span class="keywordtype">SEL</span>)selector;
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040 - (<span class="keywordtype">void</span>)compileURL;
 <a name="l00041"></a>00041 
-<a name="l00045"></a>00045 - (<span class="keywordtype">void</span>)setSelectorWithNames:(<a class="code" href="class_n_s_array.html" title="Additions.">NSArray</a>*)names;
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 @end
+<a name="l00042"></a>00042 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

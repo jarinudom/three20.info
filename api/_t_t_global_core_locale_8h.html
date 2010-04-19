@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -70,11 +69,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">NSLocale *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_locale_8h.html#a28c2237871af5c9e4680f3b767f81699">TTCurrentLocale</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the current system locale chosen by the user.  <a href="#a28c2237871af5c9e4680f3b767f81699"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_locale_8h.html#a3a3c40fe1b0f0e9aa6c4faa1c01069c6">TTLocalizedString</a> (<a class="el" href="class_n_s_string.html">NSString</a> *key, <a class="el" href="class_n_s_string.html">NSString</a> *comment)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a localized string from the Three20 bundle.  <a href="#a3a3c40fe1b0f0e9aa6c4faa1c01069c6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_locale_8h.html#ac3e08a7e0e83da724cf7a338cf49ce88">TTDescriptionForError</a> (NSError *error)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a localized description for NSURLErrorDomain errors.  <a href="#ac3e08a7e0e83da724cf7a338cf49ce88"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_locale_8h.html#a0898dd6a860216d8ba30c8ac808cb272">TTFormatInteger</a> (NSInteger num)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the given number formatted as XX,XXX,XXX.XX.  <a href="#a0898dd6a860216d8ba30c8ac808cb272"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a28c2237871af5c9e4680f3b767f81699"></a><!-- doxytag: member="TTGlobalCoreLocale.h::TTCurrentLocale" ref="a28c2237871af5c9e4680f3b767f81699" args="()" -->
@@ -112,13 +108,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns a localized description for NSURLErrorDomain errors. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A localized description for NSURLErrorDomain errors.</dd></dl>
 <p>Error codes handled:</p>
 <ul>
 <li>NSURLErrorTimedOut</li>
 <li>NSURLErrorNotConnectedToInternet</li>
-<li>All other NSURLErrorDomain errors </li>
+<li>All other NSURLErrorDomain errors fall through to "Connection Error". </li>
 </ul>
 
 </div>
@@ -138,8 +133,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns the given number formatted as XX,XXX,XXX.XX. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The given number formatted as XX,XXX,XXX.XX</dd></dl>
+<p>TODO(jverkoey 04/19/2010): This should likely be locale-aware. </p>
 
 </div>
 </div>
@@ -167,8 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns a localized string from the Three20 bundle. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A localized string from the Three20 bundle. </dd></dl>
 
 </div>
 </div>

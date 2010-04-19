@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -73,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#aa7429a4815521a3a988f572e61054151">rootObject</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Only valid after [parser parse] has been called.  <a href="#aa7429a4815521a3a988f572e61054151"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#aa2ffa5a06a6b5f25cc4301777544c128">treatDuplicateKeysAsArrayItems</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">When a duplicate key is encountered, the key's value is turned into an array and both the original item and the new duplicate item are added to the array.  <a href="#aa2ffa5a06a6b5f25cc4301777544c128"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Private Attributes</h2></td></tr>
@@ -82,6 +82,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>An implementation of the NSXMLParser object that turns XML into NSObjects. </p>
+<p>Sample projects: TTTwitter</p>
+<p>Uses a simple stack-based traversal of the XML document to recursively create the objects at each level. Upon successful completion, rootObject will be an <a class="el" href="class_n_s_dictionary.html">NSDictionary</a> object.</p>
+<p>To traverse the resulting <a class="el" href="class_n_s_object.html" title="Additions.">NSObject</a> hierarchy, use the <a class="el" href="class_n_s_dictionary.html">NSDictionary</a> additions provided at the end of this file to access the XML entity name, type, and object. For example:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;issues type="array"&gt; &lt;issue&gt; &lt;number type="integer"&gt;3&lt;/number&gt; &lt;/issue&gt; &lt;issue&gt; &lt;number type="integer"&gt;10&lt;/number&gt; &lt;/issue&gt; &lt;/issues&gt;</p>
+<p>Logic to parse the above XML as an NSData* object:</p>
+<p>TTXMLParser* parser = [[<a class="el" href="interface_t_t_x_m_l_parser.html" title="An implementation of the NSXMLParser object that turns XML into NSObjects.">TTXMLParser</a> alloc] initWithData:xmlData]; [parser parse];</p>
+<p>parser.rootObject will become the following <a class="el" href="class_n_s_object.html" title="Additions.">NSObject</a>:</p>
+<p>rootObject =&gt; NSDictionary* (root) &lt;key&gt; </p>
+<ul>
+<li>___Entity_Name___: "issues"</li>
+<li>___Entity_Type___: "array"</li>
+<li>___Entity_Value___: <a class="el" href="class_n_s_array.html" title="Additions.">NSArray</a> of NSDictionaries, accessed with [rootObject objectForXMLNode]</li>
+</ul>
+<p>[rootObject objectForXMLNode] =&gt; NSArray* of NSDictionaries Each item of the <a class="el" href="class_n_s_array.html" title="Additions.">NSArray</a> is an NSDictionary*: foreach item in array:</p>
+<ul>
+<li>___Entity_Name___: "issue"</li>
+<li>___Entity_Type___: kCommonXMLType_Unknown</li>
+<li>___Entity_Value___: NSDictionary* etc...</li>
+</ul>
+<p>Implementation note: This class is designed as a simple means of parsing XML documents. It has not been optimized for speed or memory usage, and has only been tested with documents less than one MB (megabyte) in size. </p>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a2be9eaf9a19f0c8acc0596d1ae726e78"></a><!-- doxytag: member="TTXMLParser::_objectStack" ref="a2be9eaf9a19f0c8acc0596d1ae726e78" args="" -->
 <div class="memitem">
@@ -133,6 +153,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
+
+<p>Only valid after [parser parse] has been called. </p>
+<p>Will return an NSDictionary* after successful parsing. </p>
 
 </div>
 </div>

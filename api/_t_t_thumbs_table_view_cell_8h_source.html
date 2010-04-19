@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -78,33 +77,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_table_view_cell_8h.html">Three20/TTTableViewCell.h</a>&quot;</span>
 <a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="keyword">@protocol </span>TTPhoto, TTThumbsTableViewCellDelegate;
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_thumb_view.html">TTThumbView</a>;
-<a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html">00022</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_thumbs_table_view_cell.html">TTThumbsTableViewCell</a> : <a class="code" href="interface_t_t_table_view_cell.html" title="The base class for table cells which are single-object based.">TTTableViewCell</a> {
-<a name="l00023"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a95a22613275e61c3369dd6161d38ca9a">00023</a>   id&lt;TTThumbsTableViewCellDelegate&gt; <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a95a22613275e61c3369dd6161d38ca9a">_delegate</a>;
-<a name="l00024"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#aeeaf6be13476b1f4d4a80e79280f0c44">00024</a>   id&lt;TTPhoto&gt; <a class="code" href="interface_t_t_thumbs_table_view_cell.html#aeeaf6be13476b1f4d4a80e79280f0c44">_photo</a>;
-<a name="l00025"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a2d32c26b326adf8de74b8c409aa1ffac">00025</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a2d32c26b326adf8de74b8c409aa1ffac">_thumbViews</a>;
-<a name="l00026"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a57fbaff60212c04a3625dcd21d17ec35">00026</a>   CGFloat <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a57fbaff60212c04a3625dcd21d17ec35">_thumbSize</a>;
-<a name="l00027"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a80cb69b77971db43a7fea41f5ed00cc1">00027</a>   CGPoint <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a80cb69b77971db43a7fea41f5ed00cc1">_thumbOrigin</a>;
-<a name="l00028"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#afb7ca040dd294860182447b9ee06134b">00028</a>   NSInteger <a class="code" href="interface_t_t_thumbs_table_view_cell.html#afb7ca040dd294860182447b9ee06134b">_columnCount</a>;
-<a name="l00029"></a>00029 }
-<a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a1eabd45d222d28cedd97cdd41cd3f435">00031</a> @property(nonatomic,retain) id&lt;TTPhoto&gt; photo;
-<a name="l00032"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#ac04ffca797cedcb2f219643189b4e33f">00032</a> @property(nonatomic,assign) <span class="keywordtype">id</span>&lt;TTThumbsTableViewCellDelegate&gt; delegate;
-<a name="l00033"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a8d2b7677296a7ce4188725d2c933d963">00033</a> @property(nonatomic) CGFloat thumbSize;
-<a name="l00034"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a24c083ce414e28508b7e394a0a85addb">00034</a> @property(nonatomic) CGPoint thumbOrigin;
-<a name="l00035"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#ae3369e1cd535a379b0a2301f861fcd07">00035</a> @property(nonatomic) NSInteger columnCount;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 - (<span class="keywordtype">void</span>)suspendLoading:(BOOL)suspended;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 @end
-<a name="l00040"></a>00040 
-<a name="l00041"></a><a class="code" href="protocol_t_t_thumbs_table_view_cell_delegate-p.html">00041</a> @protocol TTThumbsTableViewCellDelegate
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 - (<span class="keywordtype">void</span>)thumbsTableViewCell:(<a class="code" href="interface_t_t_thumbs_table_view_cell.html">TTThumbsTableViewCell</a>*)cell didSelectPhoto:(<span class="keywordtype">id</span>&lt;TTPhoto&gt;)photo;
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 @end
+<a name="l00019"></a>00019 <span class="keyword">@protocol </span>TTPhoto;
+<a name="l00020"></a>00020 <span class="keyword">@protocol </span>TTThumbsTableViewCellDelegate;
+<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_thumb_view.html">TTThumbView</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html">00023</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_thumbs_table_view_cell.html">TTThumbsTableViewCell</a> : <a class="code" href="interface_t_t_table_view_cell.html" title="The base class for table cells which are single-object based.">TTTableViewCell</a> {
+<a name="l00024"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#aeeaf6be13476b1f4d4a80e79280f0c44">00024</a>   id&lt;TTPhoto&gt;     <a class="code" href="interface_t_t_thumbs_table_view_cell.html#aeeaf6be13476b1f4d4a80e79280f0c44">_photo</a>;
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a2d32c26b326adf8de74b8c409aa1ffac">00026</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a2d32c26b326adf8de74b8c409aa1ffac">_thumbViews</a>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a57fbaff60212c04a3625dcd21d17ec35">00028</a>   CGFloat         <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a57fbaff60212c04a3625dcd21d17ec35">_thumbSize</a>;
+<a name="l00029"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a80cb69b77971db43a7fea41f5ed00cc1">00029</a>   CGPoint         <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a80cb69b77971db43a7fea41f5ed00cc1">_thumbOrigin</a>;
+<a name="l00030"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#afb7ca040dd294860182447b9ee06134b">00030</a>   NSInteger       <a class="code" href="interface_t_t_thumbs_table_view_cell.html#afb7ca040dd294860182447b9ee06134b">_columnCount</a>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a95a22613275e61c3369dd6161d38ca9a">00032</a>   id&lt;TTThumbsTableViewCellDelegate&gt; <a class="code" href="interface_t_t_thumbs_table_view_cell.html#a95a22613275e61c3369dd6161d38ca9a">_delegate</a>;
+<a name="l00033"></a>00033 }
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a1eabd45d222d28cedd97cdd41cd3f435">00035</a> @property (nonatomic, retain) id&lt;TTPhoto&gt; photo;
+<a name="l00036"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a8d2b7677296a7ce4188725d2c933d963">00036</a> @property (nonatomic)         CGFloat     thumbSize;
+<a name="l00037"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#a24c083ce414e28508b7e394a0a85addb">00037</a> @property (nonatomic)         CGPoint     thumbOrigin;
+<a name="l00038"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#ae3369e1cd535a379b0a2301f861fcd07">00038</a> @property (nonatomic)         NSInteger   columnCount;
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="interface_t_t_thumbs_table_view_cell.html#ac04ffca797cedcb2f219643189b4e33f">00040</a> @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;TTThumbsTableViewCellDelegate&gt; delegate;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 - (<span class="keywordtype">void</span>)suspendLoading:(BOOL)suspended;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -63,22 +62,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTURLRequestQueue.m File Reference</h1><code>#import &quot;<a class="el" href="_t_t_u_r_l_request_queue_8h_source.html">Three20/TTURLRequestQueue.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_global_core_8h_source.html">Three20/TTGlobalCore.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_global_core_paths_8h_source.html">Three20/TTGlobalCorePaths.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_debug_flags_8h_source.html">Three20/TTDebugFlags.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_u_r_l_request_8h_source.html">Three20/TTURLRequest.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_u_r_l_request_delegate_8h_source.html">Three20/TTURLRequestDelegate.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_user_info_8h_source.html">Three20/TTUserInfo.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_u_r_l_response_8h_source.html">Three20/TTURLResponse.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_u_r_l_cache_8h_source.html">Three20/TTURLCache.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_request_loader_8h_source.html">Three20/TTRequestLoader.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_global_core_8h_source.html">Three20/TTGlobalCore.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_global_core_paths_8h_source.html">Three20/TTGlobalCorePaths.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_debug_flags_8h_source.html">Three20/TTDebugFlags.h</a>&quot;</code><br/>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#afb13ca44b1a2bc1cbebea3c1ffe8bfd9">kFlushDelay</a> = 0.3</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#ada35744f72287bf0c7452574b06f1d22">kTimeout</a> = 300.0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#afa97f1d0ee3c7003752d00182b899333">kMaxConcurrentLoads</a> = 5</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#ab1421eebe9ec720b2ee71c875ed1828f">kDefaultMaxContentLength</a> = 150000</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#af154a55dd8389522056f6268d196dbae">kSafariUserAgent</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_u_r_l_request_queue_8m.html#a3e2ccc32c459c10b0c5277fc5314c4bd">gMainQueue</a> = nil</td></tr>
 </table>
 <hr/><h2>Variable Documentation</h2>
@@ -132,21 +130,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="af154a55dd8389522056f6268d196dbae"></a><!-- doxytag: member="TTURLRequestQueue.m::kSafariUserAgent" ref="af154a55dd8389522056f6268d196dbae" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_n_s_string.html">NSString</a>* <a class="el" href="_t_t_u_r_l_request_queue_8m.html#af154a55dd8389522056f6268d196dbae">kSafariUserAgent</a><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Initial value:</b><div class="fragment"><pre class="fragment"> <span class="stringliteral">@&quot;Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OS X;\</span>
-<span class="stringliteral"> en-us) AppleWebKit/525.181 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20&quot;</span>
-</pre></div>
 </div>
 </div>
 <a class="anchor" id="ada35744f72287bf0c7452574b06f1d22"></a><!-- doxytag: member="TTURLRequestQueue.m::kTimeout" ref="ada35744f72287bf0c7452574b06f1d22" args="" -->

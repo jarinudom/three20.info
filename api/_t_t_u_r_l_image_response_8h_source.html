@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -76,15 +75,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_u_r_l_response_8h.html">Three20/TTURLResponse.h</a>&quot;</span>
-<a name="l00018"></a>00018 
-<a name="l00026"></a><a class="code" href="interface_t_t_u_r_l_image_response.html">00026</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_u_r_l_image_response.html" title="An implementation of the TTURLResponse protocal for UIImage objects.">TTURLImageResponse</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> &lt;<a class="code" href="protocol_t_t_u_r_l_response-p.html" title="A response protocol for TTURLRequest.">TTURLResponse</a>&gt; {
-<a name="l00027"></a><a class="code" href="interface_t_t_u_r_l_image_response.html#af7e1bb3e72cc82b4b56422e11f7945ca">00027</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* <a class="code" href="interface_t_t_u_r_l_image_response.html#af7e1bb3e72cc82b4b56422e11f7945ca">_image</a>;
-<a name="l00028"></a>00028 }
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="interface_t_t_u_r_l_image_response.html#a8d643a35f164ec644132f44c63294de6">00030</a> @property(nonatomic,readonly) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* image;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 @end
+<a name="l00017"></a>00017 <span class="comment">// Network</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_u_r_l_response_8h.html">Three20/TTURLResponse.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00027"></a><a class="code" href="interface_t_t_u_r_l_image_response.html">00027</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_u_r_l_image_response.html" title="An implementation of the TTURLResponse protocal for UIImage objects.">TTURLImageResponse</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> &lt;<a class="code" href="protocol_t_t_u_r_l_response-p.html" title="A response protocol for TTURLRequest.">TTURLResponse</a>&gt; {
+<a name="l00028"></a><a class="code" href="interface_t_t_u_r_l_image_response.html#af7e1bb3e72cc82b4b56422e11f7945ca">00028</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* <a class="code" href="interface_t_t_u_r_l_image_response.html#af7e1bb3e72cc82b4b56422e11f7945ca">_image</a>;
+<a name="l00029"></a>00029 }
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="interface_t_t_u_r_l_image_response.html#a8d643a35f164ec644132f44c63294de6">00031</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* image;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -68,11 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2>Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a414bbd7ed86a5b60af86f9f2d8b94e9d">__TTDEPRECATED_METHOD</a>&nbsp;&nbsp;&nbsp;__attribute__((deprecated))</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Borrowed from Apple's AvailabiltyInternal.h header.  <a href="#a414bbd7ed86a5b60af86f9f2d8b94e9d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a8b13735a59a8e90445b253ead185cb21">TTLOGRECT</a>(rect)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a9d4fa5f755265e1923e385f68bbdc614">TTLOGPOINT</a>(pt)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#adb3065e2fb02685c46bf96f6a76ca39a">TTLOGSIZE</a>(size)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a01e1631d59896d2be995493857f6c69c">TTLOGEDGES</a>(edges)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a169f4de1d5f740becf45b9911a4fcf63">TTLOGHSV</a>(_COLOR)&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#afb5d1c9b6792cc7155d996afa1471180">TT_ERROR_DOMAIN</a>&nbsp;&nbsp;&nbsp;@&quot;three20.net&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#ad5ae8fe5ae8d4cfe3bd294e4a74a3227">TT_EC_INVALID_IMAGE</a>&nbsp;&nbsp;&nbsp;101</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_core_preprocessor_macros_8h.html#a35bf27f511c6aea3d2a78575ddcfc0bf">TT_MINUTE</a>&nbsp;&nbsp;&nbsp;60</td></tr>
@@ -253,100 +247,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <table class="memname">
         <tr>
           <td class="memname">#define TT_YEAR&nbsp;&nbsp;&nbsp;(365 * TT_DAY)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a01e1631d59896d2be995493857f6c69c"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TTLOGEDGES" ref="a01e1631d59896d2be995493857f6c69c" args="(edges)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TTLOGEDGES</td>
-          <td>(</td>
-          <td class="paramtype">edges&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="_t_t_debug_8h.html#a96a090844c7e8b6ce6f1611c3ff2d133">TTDINFO</a>(<span class="stringliteral">@&quot;%s left=%f, right=%f, top=%f, bottom=%f&quot;</span>, #edges, edges.left, edges.right, \
-    edges.top, edges.bottom)
-</pre></div>
-</div>
-</div>
-<a class="anchor" id="a169f4de1d5f740becf45b9911a4fcf63"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TTLOGHSV" ref="a169f4de1d5f740becf45b9911a4fcf63" args="(_COLOR)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TTLOGHSV</td>
-          <td>(</td>
-          <td class="paramtype">_COLOR&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9d4fa5f755265e1923e385f68bbdc614"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TTLOGPOINT" ref="a9d4fa5f755265e1923e385f68bbdc614" args="(pt)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TTLOGPOINT</td>
-          <td>(</td>
-          <td class="paramtype">pt&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8b13735a59a8e90445b253ead185cb21"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TTLOGRECT" ref="a8b13735a59a8e90445b253ead185cb21" args="(rect)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TTLOGRECT</td>
-          <td>(</td>
-          <td class="paramtype">rect&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="_t_t_debug_8h.html#a96a090844c7e8b6ce6f1611c3ff2d133">TTDINFO</a>(<span class="stringliteral">@&quot;%s x=%f, y=%f, w=%f, h=%f&quot;</span>, #rect, rect.origin.x, rect.origin.y, \
-    rect.size.width, rect.size.height)
-</pre></div>
-</div>
-</div>
-<a class="anchor" id="adb3065e2fb02685c46bf96f6a76ca39a"></a><!-- doxytag: member="TTCorePreprocessorMacros.h::TTLOGSIZE" ref="adb3065e2fb02685c46bf96f6a76ca39a" args="(size)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TTLOGSIZE</td>
-          <td>(</td>
-          <td class="paramtype">size&nbsp;</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</td>
         </tr>
       </table>
 </div>

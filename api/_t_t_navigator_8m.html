@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -63,6 +62,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTNavigator.m File Reference</h1><code>#import &quot;<a class="el" href="_t_t_navigator_8h_source.html">Three20/TTNavigator.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_navigator_window_8h_source.html">Three20/TTNavigatorWindow.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_navigator_delegate_8h_source.html">Three20/TTNavigatorDelegate.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_u_i_8h_source.html">Three20/TTGlobalUI.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_u_i_navigator_8h_source.html">Three20/TTGlobalUINavigator.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_debug_flags_8h_source.html">Three20/TTDebugFlags.h</a>&quot;</code><br/>
@@ -73,11 +74,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#import &quot;<a class="el" href="_t_t_search_display_controller_8h_source.html">Three20/TTSearchDisplayController.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_table_view_controller_8h_source.html">Three20/TTTableViewController.h</a>&quot;</code><br/>
 <table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_navigator_window.html">TTNavigatorWindow</a></td></tr>
 <tr><td colspan="2"><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view_controller.html">UIViewController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_navigator_8m.html#a8cc8641050afe451ac637233777a4569">TTOpenURL</a> (<a class="el" href="class_n_s_string.html">NSString</a> *URL)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Shortcut for calling [[<a class="el" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> navigator] openURL:].  <a href="#a8cc8641050afe451ac637233777a4569"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_navigator_8m.html#a2e7e991afa4b203949ec15ba1bbefc9a">kNavigatorHistoryKey</a> = @&quot;TTNavigatorHistory&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_navigator_8m.html#a076e542f4e872d3f8d0664924ea0c0ae">kNavigatorHistoryTimeKey</a> = @&quot;TTNavigatorHistoryTime&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_navigator_8m.html#a20d539f6fd2bd731f33bc367d67ac6cf">kNavigatorHistoryImportantKey</a> = @&quot;TTNavigatorHistoryImportant&quot;</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a8cc8641050afe451ac637233777a4569"></a><!-- doxytag: member="TTNavigator.m::TTOpenURL" ref="a8cc8641050afe451ac637233777a4569" args="(NSString *URL)" -->
@@ -97,6 +100,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="memdoc">
 
 <p>Shortcut for calling [[<a class="el" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> navigator] openURL:]. </p>
+
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="a20d539f6fd2bd731f33bc367d67ac6cf"></a><!-- doxytag: member="TTNavigator.m::kNavigatorHistoryImportantKey" ref="a20d539f6fd2bd731f33bc367d67ac6cf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_s_string.html">NSString</a>* <a class="el" href="_t_t_navigator_8m.html#a20d539f6fd2bd731f33bc367d67ac6cf">kNavigatorHistoryImportantKey</a> = @&quot;TTNavigatorHistoryImportant&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e7e991afa4b203949ec15ba1bbefc9a"></a><!-- doxytag: member="TTNavigator.m::kNavigatorHistoryKey" ref="a2e7e991afa4b203949ec15ba1bbefc9a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_s_string.html">NSString</a>* <a class="el" href="_t_t_navigator_8m.html#a2e7e991afa4b203949ec15ba1bbefc9a">kNavigatorHistoryKey</a> = @&quot;TTNavigatorHistory&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a076e542f4e872d3f8d0664924ea0c0ae"></a><!-- doxytag: member="TTNavigator.m::kNavigatorHistoryTimeKey" ref="a076e542f4e872d3f8d0664924ea0c0ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_s_string.html">NSString</a>* <a class="el" href="_t_t_navigator_8m.html#a076e542f4e872d3f8d0664924ea0c0ae">kNavigatorHistoryTimeKey</a> = @&quot;TTNavigatorHistoryTime&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

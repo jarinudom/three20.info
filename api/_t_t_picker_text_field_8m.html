@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -63,7 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTPickerTextField.m File Reference</h1><code>#import &quot;<a class="el" href="_t_t_picker_text_field_8h_source.html">Three20/TTPickerTextField.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_global_core_8h_source.html">Three20/TTGlobalCore.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_t_t_picker_text_field_delegate_8h_source.html">Three20/TTPickerTextFieldDelegate.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_u_i_8h_source.html">Three20/TTGlobalUI.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_global_u_i_navigator_8h_source.html">Three20/TTGlobalUINavigator.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_t_t_table_view_data_source_8h_source.html">Three20/TTTableViewDataSource.h</a>&quot;</code><br/>
@@ -72,20 +71,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#aebf642ccdbc0b3468dc9bb301a1438e4">kEmpty</a> = @&quot; &quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#ac2aa0ef8b35f4e490b5e25d9816abb0e">kSelected</a> = @&quot;`&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a96d71ab393bd52bb68e2ac86ce8835fa">kCellPaddingY</a> = 3</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#adb475353f7256094fbe8919492f7a0af">kPaddingX</a> = 8</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a83de5f7389dc2df05d860418414a1b33">kSpacingY</a> = 6</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a781a91685369974b38cdfb9685b78bfc">kPaddingRatio</a> = 1.75</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#aa718516d95e471987bdac8c8ebc57e5c">kClearButtonSize</a> = 38</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a2f7ec6c3834f8bcd4c1dcdcc963690ec">kMinCursorWidth</a> = 50</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a4761ec9993bb84a3b68cfcb92b46c940">kCellPaddingY</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a76d1be8fcae1080d512a618f443ef021">kPaddingX</a> = 8</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#ac6a4db6e3743c5e0540374364848a9d6">kSpacingY</a> = 6</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a024f545295c67eee6d7ed71eb3cc9255">kPaddingRatio</a> = 1.75</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#ad4b18ea17cb9d902578ce580684e500a">kClearButtonSize</a> = 38</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_picker_text_field_8m.html#a54e42ebb59c6d62e86b6b6e17b34f97a">kMinCursorWidth</a> = 50</td></tr>
 </table>
 <hr/><h2>Variable Documentation</h2>
-<a class="anchor" id="a96d71ab393bd52bb68e2ac86ce8835fa"></a><!-- doxytag: member="TTPickerTextField.m::kCellPaddingY" ref="a96d71ab393bd52bb68e2ac86ce8835fa" args="" -->
+<a class="anchor" id="a4761ec9993bb84a3b68cfcb92b46c940"></a><!-- doxytag: member="TTPickerTextField.m::kCellPaddingY" ref="a4761ec9993bb84a3b68cfcb92b46c940" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a96d71ab393bd52bb68e2ac86ce8835fa">kCellPaddingY</a> = 3<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a4761ec9993bb84a3b68cfcb92b46c940">kCellPaddingY</a> = 3<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -93,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="aa718516d95e471987bdac8c8ebc57e5c"></a><!-- doxytag: member="TTPickerTextField.m::kClearButtonSize" ref="aa718516d95e471987bdac8c8ebc57e5c" args="" -->
+<a class="anchor" id="ad4b18ea17cb9d902578ce580684e500a"></a><!-- doxytag: member="TTPickerTextField.m::kClearButtonSize" ref="ad4b18ea17cb9d902578ce580684e500a" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#aa718516d95e471987bdac8c8ebc57e5c">kClearButtonSize</a> = 38<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#ad4b18ea17cb9d902578ce580684e500a">kClearButtonSize</a> = 38<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -119,12 +118,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a2f7ec6c3834f8bcd4c1dcdcc963690ec"></a><!-- doxytag: member="TTPickerTextField.m::kMinCursorWidth" ref="a2f7ec6c3834f8bcd4c1dcdcc963690ec" args="" -->
+<a class="anchor" id="a54e42ebb59c6d62e86b6b6e17b34f97a"></a><!-- doxytag: member="TTPickerTextField.m::kMinCursorWidth" ref="a54e42ebb59c6d62e86b6b6e17b34f97a" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a2f7ec6c3834f8bcd4c1dcdcc963690ec">kMinCursorWidth</a> = 50<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a54e42ebb59c6d62e86b6b6e17b34f97a">kMinCursorWidth</a> = 50<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -132,12 +131,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a781a91685369974b38cdfb9685b78bfc"></a><!-- doxytag: member="TTPickerTextField.m::kPaddingRatio" ref="a781a91685369974b38cdfb9685b78bfc" args="" -->
+<a class="anchor" id="a024f545295c67eee6d7ed71eb3cc9255"></a><!-- doxytag: member="TTPickerTextField.m::kPaddingRatio" ref="a024f545295c67eee6d7ed71eb3cc9255" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a781a91685369974b38cdfb9685b78bfc">kPaddingRatio</a> = 1.75<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a024f545295c67eee6d7ed71eb3cc9255">kPaddingRatio</a> = 1.75<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -145,12 +144,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="adb475353f7256094fbe8919492f7a0af"></a><!-- doxytag: member="TTPickerTextField.m::kPaddingX" ref="adb475353f7256094fbe8919492f7a0af" args="" -->
+<a class="anchor" id="a76d1be8fcae1080d512a618f443ef021"></a><!-- doxytag: member="TTPickerTextField.m::kPaddingX" ref="a76d1be8fcae1080d512a618f443ef021" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_text_editor_8m.html#adb475353f7256094fbe8919492f7a0af">kPaddingX</a> = 8<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_text_editor_8m.html#a76d1be8fcae1080d512a618f443ef021">kPaddingX</a> = 8<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -171,12 +170,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a83de5f7389dc2df05d860418414a1b33"></a><!-- doxytag: member="TTPickerTextField.m::kSpacingY" ref="a83de5f7389dc2df05d860418414a1b33" args="" -->
+<a class="anchor" id="ac6a4db6e3743c5e0540374364848a9d6"></a><!-- doxytag: member="TTPickerTextField.m::kSpacingY" ref="ac6a4db6e3743c5e0540374364848a9d6" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#a83de5f7389dc2df05d860418414a1b33">kSpacingY</a> = 6<code> [static]</code></td>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_picker_text_field_8m.html#ac6a4db6e3743c5e0540374364848a9d6">kSpacingY</a> = 6<code> [static]</code></td>
         </tr>
       </table>
 </div>

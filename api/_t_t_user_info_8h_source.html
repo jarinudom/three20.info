@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -78,32 +77,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_core_preprocessor_macros_8h.html">Three20/TTCorePreprocessorMacros.h</a>&quot;</span>
-<a name="l00020"></a>00020 
-<a name="l00030"></a><a class="code" href="interface_t_t_user_info.html">00030</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_user_info.html" title="A helper class for storing user info to help identify a request.">TTUserInfo</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00031"></a><a class="code" href="interface_t_t_user_info.html#a39d7122f71bda54e247f9cbf752c6571">00031</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="interface_t_t_user_info.html#a39d7122f71bda54e247f9cbf752c6571">_topic</a>;
-<a name="l00032"></a><a class="code" href="interface_t_t_user_info.html#a59bdcc6632e066e61d34399ccc03af15">00032</a>   <span class="keywordtype">id</span>        <a class="code" href="interface_t_t_user_info.html#a59bdcc6632e066e61d34399ccc03af15">_strongRef</a>;
-<a name="l00033"></a><a class="code" href="interface_t_t_user_info.html#ad03ff86bc490cf49bc354c6bdae1bc78">00033</a>   <span class="keywordtype">id</span>        <a class="code" href="interface_t_t_user_info.html#ad03ff86bc490cf49bc354c6bdae1bc78">_weakRef</a>;
-<a name="l00034"></a>00034 }
-<a name="l00035"></a>00035 
-<a name="l00036"></a><a class="code" href="interface_t_t_user_info.html#ac558d8bdedeec9c8f27b50eefa0d764c">00036</a> @property(nonatomic,retain) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* topic;
-<a name="l00037"></a><a class="code" href="interface_t_t_user_info.html#a9c70410c7701777e272afb8d07cce871">00037</a> @property(nonatomic,retain) <span class="keywordtype">id</span>        strongRef;
-<a name="l00038"></a><a class="code" href="interface_t_t_user_info.html#a04d930abcbb4939c1d07a126eec0f02b">00038</a> @property(nonatomic,assign) <span class="keywordtype">id</span>        weakRef;
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 + (<span class="keywordtype">id</span>)topic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strongRef:(<span class="keywordtype">id</span>)strongRef weakRef:(<span class="keywordtype">id</span>)weakRef;
-<a name="l00041"></a>00041 + (<span class="keywordtype">id</span>)topic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic;
-<a name="l00042"></a>00042 + (<span class="keywordtype">id</span>)weakRef:(<span class="keywordtype">id</span>)weakRef;
+<a name="l00028"></a><a class="code" href="interface_t_t_user_info.html">00028</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_user_info.html" title="A helper class for storing user info to help identify a request.">TTUserInfo</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
+<a name="l00029"></a><a class="code" href="interface_t_t_user_info.html#a39d7122f71bda54e247f9cbf752c6571">00029</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="interface_t_t_user_info.html#a39d7122f71bda54e247f9cbf752c6571">_topic</a>;
+<a name="l00030"></a><a class="code" href="interface_t_t_user_info.html#a59bdcc6632e066e61d34399ccc03af15">00030</a>   <span class="keywordtype">id</span>        <a class="code" href="interface_t_t_user_info.html#a59bdcc6632e066e61d34399ccc03af15">_strongRef</a>;
+<a name="l00031"></a><a class="code" href="interface_t_t_user_info.html#ad03ff86bc490cf49bc354c6bdae1bc78">00031</a>   <span class="keywordtype">id</span>        <a class="code" href="interface_t_t_user_info.html#ad03ff86bc490cf49bc354c6bdae1bc78">_weakRef</a>;
+<a name="l00032"></a>00032 }
+<a name="l00033"></a>00033 
+<a name="l00034"></a><a class="code" href="interface_t_t_user_info.html#ac558d8bdedeec9c8f27b50eefa0d764c">00034</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* topic;
+<a name="l00035"></a><a class="code" href="interface_t_t_user_info.html#a9c70410c7701777e272afb8d07cce871">00035</a> @property (nonatomic, retain) <span class="keywordtype">id</span>        strongRef;
+<a name="l00036"></a><a class="code" href="interface_t_t_user_info.html#a04d930abcbb4939c1d07a126eec0f02b">00036</a> @property (nonatomic, assign) <span class="keywordtype">id</span>        weakRef;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 + (<span class="keywordtype">id</span>)topic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strongRef:(<span class="keywordtype">id</span>)strongRef weakRef:(<span class="keywordtype">id</span>)weakRef;
+<a name="l00039"></a>00039 + (<span class="keywordtype">id</span>)topic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic;
+<a name="l00040"></a>00040 + (<span class="keywordtype">id</span>)weakRef:(<span class="keywordtype">id</span>)weakRef;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 - (<span class="keywordtype">id</span>)initWithTopic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strongRef:(<span class="keywordtype">id</span>)strongRef weakRef:(<span class="keywordtype">id</span>)weakRef;
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044 - (<span class="keywordtype">id</span>)initWithTopic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strongRef:(<span class="keywordtype">id</span>)strongRef weakRef:(<span class="keywordtype">id</span>)weakRef;
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 
-<a name="l00051"></a>00051 + (<span class="keywordtype">id</span>)topic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strong:(<span class="keywordtype">id</span>)strong weak:(<span class="keywordtype">id</span>)weak <a class="code" href="_t_t_core_preprocessor_macros_8h.html#a414bbd7ed86a5b60af86f9f2d8b94e9d" title="Borrowed from Apple&amp;#39;s AvailabiltyInternal.h header.">__TTDEPRECATED_METHOD</a>;
-<a name="l00052"></a>00052 
-<a name="l00057"></a>00057 + (<span class="keywordtype">id</span>)weak:(<span class="keywordtype">id</span>)weak __TTDEPRECATED_METHOD;
-<a name="l00058"></a>00058 
-<a name="l00063"></a>00063 - (<span class="keywordtype">id</span>)initWithTopic:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)topic strong:(<span class="keywordtype">id</span>)strong weak:(<span class="keywordtype">id</span>)weak __TTDEPRECATED_METHOD;
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 @end
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

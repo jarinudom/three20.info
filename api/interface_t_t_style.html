@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -105,6 +104,8 @@ Inheritance diagram for TTStyle:</div>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_style.html#a652f9ece113ba6b6ea1cd5f161438598">addStyle:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_style.html#add84af70ed0d751fc6979b1712f2d9f4">firstStyleOfClass:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_style.html#a9530c3267da5069a4ed5646d1d5bf4eb">styleForPart:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(CGGradientRef)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_style.html#a48211ce404f1251585e757a90242a31d">newGradientWithColors:locations:count:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(CGGradientRef)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_style.html#a35a26638a4faa56b3061a91509f02d22">newGradientWithColors:count:</a></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_style.html#aa313c161147cde23524a441149e41290">_next</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
@@ -230,6 +231,66 @@ Inheritance diagram for TTStyle:</div>
           <td class="paramname"> <em>next</em></td>
           <td>&nbsp;</td>
           <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a35a26638a4faa56b3061a91509f02d22"></a><!-- doxytag: member="TTStyle::newGradientWithColors:count:" ref="a35a26638a4faa56b3061a91509f02d22" args="(UIColor **colors,[count] int count)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGGradientRef) newGradientWithColors: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_u_i_color.html">UIColor</a> **)&nbsp;</td>
+          <td class="paramname"> <em>colors</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">count:</td>
+          <td></td>
+          <td class="paramtype">(int)&nbsp;</td>
+          <td class="paramname"> <em>count</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48211ce404f1251585e757a90242a31d"></a><!-- doxytag: member="TTStyle::newGradientWithColors:locations:count:" ref="a48211ce404f1251585e757a90242a31d" args="(UIColor **colors,[locations] CGFloat *locations,[count] int count)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGGradientRef) newGradientWithColors: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_u_i_color.html">UIColor</a> **)&nbsp;</td>
+          <td class="paramname"> <em>colors</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">locations:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat *)&nbsp;</td>
+          <td class="paramname"> <em>locations</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">count:</td>
+          <td></td>
+          <td class="paramtype">(int)&nbsp;</td>
+          <td class="paramname"> <em>count</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>

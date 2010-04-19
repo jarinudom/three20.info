@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -80,76 +79,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00018"></a>00018 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
 <a name="l00019"></a>00019 
 <a name="l00020"></a>00020 <span class="keyword">@protocol </span>TTLauncherViewDelegate;
-<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_page_control.html" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a>, <a class="code" href="interface_t_t_launcher_button.html">TTLauncherButton</a>, <a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>;
-<a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="interface_t_t_launcher_view.html">00023</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a> : <a class="code" href="class_u_i_view.html">UIView</a> &lt;UIScrollViewDelegate&gt; {
-<a name="l00024"></a><a class="code" href="interface_t_t_launcher_view.html#aa9f0f022fd55c6a648bba485960fa91c">00024</a>   id&lt;TTLauncherViewDelegate&gt; <a class="code" href="interface_t_t_launcher_view.html#aa9f0f022fd55c6a648bba485960fa91c">_delegate</a>;
-<a name="l00025"></a><a class="code" href="interface_t_t_launcher_view.html#a04e4c0a2bf1b44694aee8b704a48328f">00025</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_launcher_view.html#a04e4c0a2bf1b44694aee8b704a48328f">_pages</a>;
-<a name="l00026"></a><a class="code" href="interface_t_t_launcher_view.html#ac6b878a6a0c8fc268ab2973fdceaa5b3">00026</a>   NSInteger <a class="code" href="interface_t_t_launcher_view.html#ac6b878a6a0c8fc268ab2973fdceaa5b3">_columnCount</a>;
-<a name="l00027"></a><a class="code" href="interface_t_t_launcher_view.html#ac0ab6dd4af114188b3b970ff1133ca13">00027</a>   NSInteger <a class="code" href="interface_t_t_launcher_view.html#ac0ab6dd4af114188b3b970ff1133ca13">_rowCount</a>;
-<a name="l00028"></a><a class="code" href="interface_t_t_launcher_view.html#ade73ddc437fcc8499502acb9fae4a98e">00028</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="interface_t_t_launcher_view.html#ade73ddc437fcc8499502acb9fae4a98e">_prompt</a>;
-<a name="l00029"></a><a class="code" href="interface_t_t_launcher_view.html#a54f240b6842f6372811cbd34cffac7e1">00029</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_launcher_view.html#a54f240b6842f6372811cbd34cffac7e1">_buttons</a>;
-<a name="l00030"></a><a class="code" href="interface_t_t_launcher_view.html#a8078a233eb2fbc85c62165bcd7f44643">00030</a>   UIScrollView* <a class="code" href="interface_t_t_launcher_view.html#a8078a233eb2fbc85c62165bcd7f44643">_scrollView</a>;
-<a name="l00031"></a><a class="code" href="interface_t_t_launcher_view.html#a26df773b21c28a3071a2a9ec82fa5b6b">00031</a>   <a class="code" href="interface_t_t_page_control.html" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a>* <a class="code" href="interface_t_t_launcher_view.html#a26df773b21c28a3071a2a9ec82fa5b6b">_pager</a>;
-<a name="l00032"></a><a class="code" href="interface_t_t_launcher_view.html#a09f5e2e575438be7348e7c5d8d47818a">00032</a>   NSTimer* <a class="code" href="interface_t_t_launcher_view.html#a09f5e2e575438be7348e7c5d8d47818a">_editHoldTimer</a>;
-<a name="l00033"></a><a class="code" href="interface_t_t_launcher_view.html#af636df380d3f126222df2f9446aa0bf0">00033</a>   NSTimer* <a class="code" href="interface_t_t_launcher_view.html#af636df380d3f126222df2f9446aa0bf0">_springLoadTimer</a>;
-<a name="l00034"></a><a class="code" href="interface_t_t_launcher_view.html#a24db0a962ee8f2b7b709e829b2bc84c1">00034</a>   TTLauncherButton* <a class="code" href="interface_t_t_launcher_view.html#a24db0a962ee8f2b7b709e829b2bc84c1">_dragButton</a>;
-<a name="l00035"></a><a class="code" href="interface_t_t_launcher_view.html#a9b9d241e8d1d46b2b6fdfb2701e57652">00035</a>   <a class="code" href="class_u_i_touch.html">UITouch</a>* <a class="code" href="interface_t_t_launcher_view.html#a9b9d241e8d1d46b2b6fdfb2701e57652">_dragTouch</a>;
-<a name="l00036"></a><a class="code" href="interface_t_t_launcher_view.html#a9268d9dd1c898b938f98236aa283fea9">00036</a>   NSInteger <a class="code" href="interface_t_t_launcher_view.html#a9268d9dd1c898b938f98236aa283fea9">_positionOrigin</a>;
-<a name="l00037"></a><a class="code" href="interface_t_t_launcher_view.html#afd7737dce592544e6d13442a0e1dcbfb">00037</a>   CGPoint <a class="code" href="interface_t_t_launcher_view.html#afd7737dce592544e6d13442a0e1dcbfb">_dragOrigin</a>;
-<a name="l00038"></a><a class="code" href="interface_t_t_launcher_view.html#a682e9b202bcee98ca91d88ef80140786">00038</a>   CGPoint <a class="code" href="interface_t_t_launcher_view.html#a682e9b202bcee98ca91d88ef80140786">_touchOrigin</a>;
-<a name="l00039"></a><a class="code" href="interface_t_t_launcher_view.html#a14672f46dc838db8e5247ed6895f8425">00039</a>   BOOL <a class="code" href="interface_t_t_launcher_view.html#a14672f46dc838db8e5247ed6895f8425">_editing</a>;
-<a name="l00040"></a><a class="code" href="interface_t_t_launcher_view.html#a9433e3e694b933545ddc81e2e52bd0ab">00040</a>   BOOL <a class="code" href="interface_t_t_launcher_view.html#a9433e3e694b933545ddc81e2e52bd0ab">_springing</a>;
-<a name="l00041"></a>00041 }
-<a name="l00042"></a>00042 
-<a name="l00046"></a><a class="code" href="interface_t_t_launcher_view.html#ac1484a31e79c939df2061f91a4a0d1c0">00046</a> @property(nonatomic,assign) id&lt;TTLauncherViewDelegate&gt; delegate;
-<a name="l00047"></a>00047 
-<a name="l00051"></a><a class="code" href="interface_t_t_launcher_view.html#ad272b501c7666d314f00fd958834afe4">00051</a> @property(nonatomic,copy) <a class="code" href="class_n_s_array.html" title="Additions.">NSArray</a>* pages;
+<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_page_control.html" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a>;
+<a name="l00022"></a>00022 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_button.html">TTLauncherButton</a>;
+<a name="l00023"></a>00023 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>;
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="interface_t_t_launcher_view.html">00025</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a> : <a class="code" href="class_u_i_view.html">UIView</a> &lt;UIScrollViewDelegate&gt; {
+<a name="l00026"></a><a class="code" href="interface_t_t_launcher_view.html#a04e4c0a2bf1b44694aee8b704a48328f">00026</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_launcher_view.html#a04e4c0a2bf1b44694aee8b704a48328f">_pages</a>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="interface_t_t_launcher_view.html#ac6b878a6a0c8fc268ab2973fdceaa5b3">00028</a>   NSInteger       <a class="code" href="interface_t_t_launcher_view.html#ac6b878a6a0c8fc268ab2973fdceaa5b3">_columnCount</a>;
+<a name="l00029"></a><a class="code" href="interface_t_t_launcher_view.html#ac0ab6dd4af114188b3b970ff1133ca13">00029</a>   NSInteger       <a class="code" href="interface_t_t_launcher_view.html#ac0ab6dd4af114188b3b970ff1133ca13">_rowCount</a>;
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="interface_t_t_launcher_view.html#ade73ddc437fcc8499502acb9fae4a98e">00031</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*       <a class="code" href="interface_t_t_launcher_view.html#ade73ddc437fcc8499502acb9fae4a98e">_prompt</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="interface_t_t_launcher_view.html#a54f240b6842f6372811cbd34cffac7e1">00033</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>* <a class="code" href="interface_t_t_launcher_view.html#a54f240b6842f6372811cbd34cffac7e1">_buttons</a>;
+<a name="l00034"></a><a class="code" href="interface_t_t_launcher_view.html#a8078a233eb2fbc85c62165bcd7f44643">00034</a>   UIScrollView*   <a class="code" href="interface_t_t_launcher_view.html#a8078a233eb2fbc85c62165bcd7f44643">_scrollView</a>;
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="interface_t_t_launcher_view.html#a26df773b21c28a3071a2a9ec82fa5b6b">00036</a>   <a class="code" href="interface_t_t_page_control.html" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a>*   <a class="code" href="interface_t_t_launcher_view.html#a26df773b21c28a3071a2a9ec82fa5b6b">_pager</a>;
+<a name="l00037"></a>00037 
+<a name="l00038"></a><a class="code" href="interface_t_t_launcher_view.html#a09f5e2e575438be7348e7c5d8d47818a">00038</a>   NSTimer*        <a class="code" href="interface_t_t_launcher_view.html#a09f5e2e575438be7348e7c5d8d47818a">_editHoldTimer</a>;
+<a name="l00039"></a><a class="code" href="interface_t_t_launcher_view.html#af636df380d3f126222df2f9446aa0bf0">00039</a>   NSTimer*        <a class="code" href="interface_t_t_launcher_view.html#af636df380d3f126222df2f9446aa0bf0">_springLoadTimer</a>;
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="interface_t_t_launcher_view.html#a24db0a962ee8f2b7b709e829b2bc84c1">00041</a>   <a class="code" href="interface_t_t_launcher_button.html">TTLauncherButton</a>* <a class="code" href="interface_t_t_launcher_view.html#a24db0a962ee8f2b7b709e829b2bc84c1">_dragButton</a>;
+<a name="l00042"></a><a class="code" href="interface_t_t_launcher_view.html#a9b9d241e8d1d46b2b6fdfb2701e57652">00042</a>   <a class="code" href="class_u_i_touch.html">UITouch</a>*          <a class="code" href="interface_t_t_launcher_view.html#a9b9d241e8d1d46b2b6fdfb2701e57652">_dragTouch</a>;
+<a name="l00043"></a><a class="code" href="interface_t_t_launcher_view.html#a9268d9dd1c898b938f98236aa283fea9">00043</a>   NSInteger         <a class="code" href="interface_t_t_launcher_view.html#a9268d9dd1c898b938f98236aa283fea9">_positionOrigin</a>;
+<a name="l00044"></a><a class="code" href="interface_t_t_launcher_view.html#afd7737dce592544e6d13442a0e1dcbfb">00044</a>   CGPoint           <a class="code" href="interface_t_t_launcher_view.html#afd7737dce592544e6d13442a0e1dcbfb">_dragOrigin</a>;
+<a name="l00045"></a><a class="code" href="interface_t_t_launcher_view.html#a682e9b202bcee98ca91d88ef80140786">00045</a>   CGPoint           <a class="code" href="interface_t_t_launcher_view.html#a682e9b202bcee98ca91d88ef80140786">_touchOrigin</a>;
+<a name="l00046"></a>00046 
+<a name="l00047"></a><a class="code" href="interface_t_t_launcher_view.html#a14672f46dc838db8e5247ed6895f8425">00047</a>   BOOL <a class="code" href="interface_t_t_launcher_view.html#a14672f46dc838db8e5247ed6895f8425">_editing</a>;
+<a name="l00048"></a><a class="code" href="interface_t_t_launcher_view.html#a9433e3e694b933545ddc81e2e52bd0ab">00048</a>   BOOL <a class="code" href="interface_t_t_launcher_view.html#a9433e3e694b933545ddc81e2e52bd0ab">_springing</a>;
+<a name="l00049"></a>00049 
+<a name="l00050"></a><a class="code" href="interface_t_t_launcher_view.html#aa9f0f022fd55c6a648bba485960fa91c">00050</a>   id&lt;TTLauncherViewDelegate&gt; <a class="code" href="interface_t_t_launcher_view.html#aa9f0f022fd55c6a648bba485960fa91c">_delegate</a>;
+<a name="l00051"></a>00051 }
 <a name="l00052"></a>00052 
-<a name="l00056"></a><a class="code" href="interface_t_t_launcher_view.html#aff4916500fa5de98835b074811ec0fed">00056</a> @property(nonatomic) NSInteger columnCount;
-<a name="l00057"></a>00057 
-<a name="l00061"></a><a class="code" href="interface_t_t_launcher_view.html#ac1ea78d42cf91fb82a5857a76becf5a7">00061</a> @property(nonatomic,readonly) NSInteger rowCount;
+<a name="l00053"></a><a class="code" href="interface_t_t_launcher_view.html#ac1484a31e79c939df2061f91a4a0d1c0">00053</a> @property (nonatomic, assign) id&lt;TTLauncherViewDelegate&gt; delegate;
+<a name="l00054"></a>00054 
+<a name="l00055"></a><a class="code" href="interface_t_t_launcher_view.html#ad272b501c7666d314f00fd958834afe4">00055</a> @property (nonatomic, copy) <a class="code" href="class_n_s_array.html" title="Additions.">NSArray</a>* pages;
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="interface_t_t_launcher_view.html#aff4916500fa5de98835b074811ec0fed">00057</a> @property (nonatomic) NSInteger columnCount;
+<a name="l00058"></a>00058 
+<a name="l00059"></a><a class="code" href="interface_t_t_launcher_view.html#ac1ea78d42cf91fb82a5857a76becf5a7">00059</a> @property (nonatomic, readonly) NSInteger rowCount;
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="interface_t_t_launcher_view.html#a9e47f07f4bb53c04c747169331974504">00061</a> @property (nonatomic) NSInteger currentPageIndex;
 <a name="l00062"></a>00062 
-<a name="l00066"></a><a class="code" href="interface_t_t_launcher_view.html#a9e47f07f4bb53c04c747169331974504">00066</a> @property(nonatomic) NSInteger currentPageIndex;
-<a name="l00067"></a>00067 
-<a name="l00071"></a><a class="code" href="interface_t_t_launcher_view.html#aab8b6642cf42f86c5d70061eb3cd7f97">00071</a> @property(nonatomic,copy) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* prompt;
+<a name="l00063"></a><a class="code" href="interface_t_t_launcher_view.html#aab8b6642cf42f86c5d70061eb3cd7f97">00063</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* prompt;
+<a name="l00064"></a>00064 
+<a name="l00065"></a><a class="code" href="interface_t_t_launcher_view.html#a61693fbd072397450d91f1ed518918e7">00065</a> @property (nonatomic, readonly) BOOL editing;
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 - (<span class="keywordtype">void</span>)addItem:(<a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>*)item animated:(BOOL)animated;
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 - (<span class="keywordtype">void</span>)removeItem:(<a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>*)item animated:(BOOL)animated;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 - (<a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>*)itemWithURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
 <a name="l00072"></a>00072 
-<a name="l00076"></a><a class="code" href="interface_t_t_launcher_view.html#a61693fbd072397450d91f1ed518918e7">00076</a> @property(nonatomic,readonly) BOOL editing;
-<a name="l00077"></a>00077 
-<a name="l00081"></a>00081 - (<span class="keywordtype">void</span>)addItem:(TTLauncherItem*)item animated:(BOOL)animated;
-<a name="l00082"></a>00082 
-<a name="l00086"></a>00086 - (<span class="keywordtype">void</span>)removeItem:(TTLauncherItem*)item animated:(BOOL)animated;
-<a name="l00087"></a>00087 
-<a name="l00091"></a>00091 - (TTLauncherItem*)itemWithURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
-<a name="l00092"></a>00092 
-<a name="l00096"></a>00096 - (NSIndexPath*)indexPathOfItem:(TTLauncherItem*)item;
-<a name="l00097"></a>00097 
-<a name="l00101"></a>00101 - (<span class="keywordtype">void</span>)scrollToItem:(TTLauncherItem*)item animated:(BOOL)animated;
-<a name="l00102"></a>00102 
-<a name="l00106"></a>00106 - (<span class="keywordtype">void</span>)beginEditing;
-<a name="l00107"></a>00107 
-<a name="l00111"></a>00111 - (<span class="keywordtype">void</span>)endEditing;
-<a name="l00112"></a>00112 
-<a name="l00113"></a>00113 @end
-<a name="l00114"></a>00114 
-<a name="l00116"></a>00116 
-<a name="l00117"></a><a class="code" href="protocol_t_t_launcher_view_delegate-p.html">00117</a> @protocol TTLauncherViewDelegate &lt;<a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a>&gt;
-<a name="l00118"></a>00118 
-<a name="l00119"></a>00119 @optional
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121 - (<span class="keywordtype">void</span>)launcherView:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher didAddItem:(TTLauncherItem*)item;
-<a name="l00122"></a>00122 
-<a name="l00123"></a>00123 - (<span class="keywordtype">void</span>)launcherView:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher didRemoveItem:(TTLauncherItem*)item;
-<a name="l00124"></a>00124 
-<a name="l00125"></a>00125 - (<span class="keywordtype">void</span>)launcherView:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher didMoveItem:(TTLauncherItem*)item;
-<a name="l00126"></a>00126 
-<a name="l00127"></a>00127 - (<span class="keywordtype">void</span>)launcherView:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher didSelectItem:(TTLauncherItem*)item;
-<a name="l00128"></a>00128 
-<a name="l00129"></a>00129 - (<span class="keywordtype">void</span>)launcherViewDidBeginEditing:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher;
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131 - (<span class="keywordtype">void</span>)launcherViewDidEndEditing:(<a class="code" href="interface_t_t_launcher_view.html">TTLauncherView</a>*)launcher;
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133 @end
+<a name="l00073"></a>00073 - (NSIndexPath*)indexPathOfItem:(<a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>*)item;
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 - (<span class="keywordtype">void</span>)scrollToItem:(<a class="code" href="interface_t_t_launcher_item.html">TTLauncherItem</a>*)item animated:(BOOL)animated;
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 - (<span class="keywordtype">void</span>)beginEditing;
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 - (<span class="keywordtype">void</span>)endEditing;
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

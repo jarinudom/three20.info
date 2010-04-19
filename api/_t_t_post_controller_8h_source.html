@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -79,60 +78,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_popup_view_controller_8h.html">Three20/TTPopupViewController.h</a>&quot;</span>
 <a name="l00018"></a>00018 
 <a name="l00019"></a>00019 <span class="keyword">@protocol </span>TTPostControllerDelegate;
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_activity_label.html">TTActivityLabel</a>, <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>;
-<a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="interface_t_t_post_controller.html">00022</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_post_controller.html">TTPostController</a> : <a class="code" href="interface_t_t_popup_view_controller.html" title="A view controller which, when displayed modally, inserts its view over the parent...">TTPopupViewController</a> &lt;UITextViewDelegate&gt; {
-<a name="l00023"></a><a class="code" href="interface_t_t_post_controller.html#af88886d5acd3cb5966db7b7c02a492c0">00023</a>   id&lt;TTPostControllerDelegate&gt; <a class="code" href="interface_t_t_post_controller.html#af88886d5acd3cb5966db7b7c02a492c0">_delegate</a>;
-<a name="l00024"></a><a class="code" href="interface_t_t_post_controller.html#a05b064fd2df2f2090d94ed0ac06dc190">00024</a>   <span class="keywordtype">id</span> <a class="code" href="interface_t_t_post_controller.html#a05b064fd2df2f2090d94ed0ac06dc190">_result</a>;
-<a name="l00025"></a><a class="code" href="interface_t_t_post_controller.html#a2b54ef9017b679ff4649f608567cb189">00025</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="interface_t_t_post_controller.html#a2b54ef9017b679ff4649f608567cb189">_defaultText</a>;
-<a name="l00026"></a><a class="code" href="interface_t_t_post_controller.html#a7ee10f6913b24a9c92c9af2031138f53">00026</a>   CGRect <a class="code" href="interface_t_t_post_controller.html#a7ee10f6913b24a9c92c9af2031138f53">_originRect</a>;
-<a name="l00027"></a><a class="code" href="interface_t_t_post_controller.html#ae4fd36f214b4c00d3635821c7d039454">00027</a>   <a class="code" href="class_u_i_view.html">UIView</a>* <a class="code" href="interface_t_t_post_controller.html#ae4fd36f214b4c00d3635821c7d039454">_originView</a>;
-<a name="l00028"></a><a class="code" href="interface_t_t_post_controller.html#a9e8c31a186f63a2e5f5d4a2519bf2ee9">00028</a>   <a class="code" href="class_u_i_view.html">UIView</a>* <a class="code" href="interface_t_t_post_controller.html#a9e8c31a186f63a2e5f5d4a2519bf2ee9">_innerView</a>;
-<a name="l00029"></a><a class="code" href="interface_t_t_post_controller.html#ad93550336ef5b9a0d9b5808a3963c19a">00029</a>   UINavigationBar* <a class="code" href="interface_t_t_post_controller.html#ad93550336ef5b9a0d9b5808a3963c19a">_navigationBar</a>;
-<a name="l00030"></a><a class="code" href="interface_t_t_post_controller.html#ad01fab5b0ec9532d2eb81776e09039af">00030</a>   TTView* <a class="code" href="interface_t_t_post_controller.html#ad01fab5b0ec9532d2eb81776e09039af">_screenView</a>;
-<a name="l00031"></a><a class="code" href="interface_t_t_post_controller.html#ae8f928b117b1174995542e5ba39e4aec">00031</a>   UITextView* <a class="code" href="interface_t_t_post_controller.html#ae8f928b117b1174995542e5ba39e4aec">_textView</a>;
-<a name="l00032"></a><a class="code" href="interface_t_t_post_controller.html#a1f6a3c43b61b58ab973ab72d2ef7866e">00032</a>   <a class="code" href="interface_t_t_activity_label.html">TTActivityLabel</a>* <a class="code" href="interface_t_t_post_controller.html#a1f6a3c43b61b58ab973ab72d2ef7866e">_activityView</a>;
-<a name="l00033"></a><a class="code" href="interface_t_t_post_controller.html#a36cc126bef7c7d9d23d10a5c8864e991">00033</a>   BOOL <a class="code" href="interface_t_t_post_controller.html#a36cc126bef7c7d9d23d10a5c8864e991">_originalStatusBarHidden</a>;
-<a name="l00034"></a><a class="code" href="interface_t_t_post_controller.html#a2ca56cfa790693ecfd8fcf16a04fad7b">00034</a>   UIStatusBarStyle <a class="code" href="interface_t_t_post_controller.html#a2ca56cfa790693ecfd8fcf16a04fad7b">_originalStatusBarStyle</a>;
-<a name="l00035"></a>00035 }
-<a name="l00036"></a>00036 
-<a name="l00037"></a><a class="code" href="interface_t_t_post_controller.html#a2c77d74fb87ea448c25fbc387e92318b">00037</a> @property(nonatomic,assign) id&lt;TTPostControllerDelegate&gt; delegate;
-<a name="l00038"></a><a class="code" href="interface_t_t_post_controller.html#a4a01e645c0aec6aeb13e5d695b017416">00038</a> @property(nonatomic,retain) <span class="keywordtype">id</span> result;
-<a name="l00039"></a><a class="code" href="interface_t_t_post_controller.html#a465389f2344a033be0ebed6521175b18">00039</a> @property(nonatomic,readonly) UITextView* textView;
-<a name="l00040"></a><a class="code" href="interface_t_t_post_controller.html#a872a53c2fea862440faddf8e17066e1b">00040</a> @property(nonatomic,readonly) UINavigationBar* navigatorBar;
-<a name="l00041"></a><a class="code" href="interface_t_t_post_controller.html#a644c6805e2118cb912870d5f708243e8">00041</a> @property(nonatomic,retain) <a class="code" href="class_u_i_view.html">UIView</a>* originView;
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_activity_label.html">TTActivityLabel</a>;
+<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="interface_t_t_post_controller.html">00023</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_post_controller.html">TTPostController</a> : <a class="code" href="interface_t_t_popup_view_controller.html" title="A view controller which, when displayed modally, inserts its view over the parent...">TTPopupViewController</a> &lt;UITextViewDelegate&gt; {
+<a name="l00024"></a>00024 <span class="keyword">@protected</span>
+<a name="l00025"></a><a class="code" href="interface_t_t_post_controller.html#a05b064fd2df2f2090d94ed0ac06dc190">00025</a>   <span class="keywordtype">id</span>                <a class="code" href="interface_t_t_post_controller.html#a05b064fd2df2f2090d94ed0ac06dc190">_result</a>;
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="interface_t_t_post_controller.html#a2b54ef9017b679ff4649f608567cb189">00027</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*         <a class="code" href="interface_t_t_post_controller.html#a2b54ef9017b679ff4649f608567cb189">_defaultText</a>;
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="interface_t_t_post_controller.html#a7ee10f6913b24a9c92c9af2031138f53">00029</a>   CGRect            <a class="code" href="interface_t_t_post_controller.html#a7ee10f6913b24a9c92c9af2031138f53">_originRect</a>;
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="interface_t_t_post_controller.html#ae4fd36f214b4c00d3635821c7d039454">00031</a>   <a class="code" href="class_u_i_view.html">UIView</a>*           <a class="code" href="interface_t_t_post_controller.html#ae4fd36f214b4c00d3635821c7d039454">_originView</a>;
+<a name="l00032"></a><a class="code" href="interface_t_t_post_controller.html#a9e8c31a186f63a2e5f5d4a2519bf2ee9">00032</a>   <a class="code" href="class_u_i_view.html">UIView</a>*           <a class="code" href="interface_t_t_post_controller.html#a9e8c31a186f63a2e5f5d4a2519bf2ee9">_innerView</a>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a><a class="code" href="interface_t_t_post_controller.html#ad93550336ef5b9a0d9b5808a3963c19a">00034</a>   UINavigationBar*  <a class="code" href="interface_t_t_post_controller.html#ad93550336ef5b9a0d9b5808a3963c19a">_navigationBar</a>;
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="interface_t_t_post_controller.html#ad01fab5b0ec9532d2eb81776e09039af">00036</a>   <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>*           <a class="code" href="interface_t_t_post_controller.html#ad01fab5b0ec9532d2eb81776e09039af">_screenView</a>;
+<a name="l00037"></a><a class="code" href="interface_t_t_post_controller.html#ae8f928b117b1174995542e5ba39e4aec">00037</a>   UITextView*       <a class="code" href="interface_t_t_post_controller.html#ae8f928b117b1174995542e5ba39e4aec">_textView</a>;
+<a name="l00038"></a><a class="code" href="interface_t_t_post_controller.html#a1f6a3c43b61b58ab973ab72d2ef7866e">00038</a>   <a class="code" href="interface_t_t_activity_label.html">TTActivityLabel</a>*  <a class="code" href="interface_t_t_post_controller.html#a1f6a3c43b61b58ab973ab72d2ef7866e">_activityView</a>;
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="interface_t_t_post_controller.html#a36cc126bef7c7d9d23d10a5c8864e991">00040</a>   BOOL              <a class="code" href="interface_t_t_post_controller.html#a36cc126bef7c7d9d23d10a5c8864e991">_originalStatusBarHidden</a>;
+<a name="l00041"></a><a class="code" href="interface_t_t_post_controller.html#a2ca56cfa790693ecfd8fcf16a04fad7b">00041</a>   UIStatusBarStyle  <a class="code" href="interface_t_t_post_controller.html#a2ca56cfa790693ecfd8fcf16a04fad7b">_originalStatusBarStyle</a>;
 <a name="l00042"></a>00042 
-<a name="l00046"></a>00046 - (<span class="keywordtype">void</span>)post;
-<a name="l00047"></a>00047 
-<a name="l00051"></a>00051 - (<span class="keywordtype">void</span>)cancel;
+<a name="l00043"></a><a class="code" href="interface_t_t_post_controller.html#af88886d5acd3cb5966db7b7c02a492c0">00043</a>   id&lt;TTPostControllerDelegate&gt; <a class="code" href="interface_t_t_post_controller.html#af88886d5acd3cb5966db7b7c02a492c0">_delegate</a>;
+<a name="l00044"></a>00044 }
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="interface_t_t_post_controller.html#a4a01e645c0aec6aeb13e5d695b017416">00046</a> @property (nonatomic, retain)   id                result;
+<a name="l00047"></a><a class="code" href="interface_t_t_post_controller.html#a465389f2344a033be0ebed6521175b18">00047</a> @property (nonatomic, readonly) UITextView*       textView;
+<a name="l00048"></a><a class="code" href="interface_t_t_post_controller.html#a872a53c2fea862440faddf8e17066e1b">00048</a> @property (nonatomic, readonly) UINavigationBar*  navigatorBar;
+<a name="l00049"></a><a class="code" href="interface_t_t_post_controller.html#a644c6805e2118cb912870d5f708243e8">00049</a> @property (nonatomic, retain)   <a class="code" href="class_u_i_view.html">UIView</a>*           originView;
+<a name="l00050"></a>00050 
+<a name="l00051"></a><a class="code" href="interface_t_t_post_controller.html#a2c77d74fb87ea448c25fbc387e92318b">00051</a> @property (nonatomic, assign)   <span class="keywordtype">id</span>&lt;TTPostControllerDelegate&gt; delegate;
 <a name="l00052"></a>00052 
-<a name="l00056"></a>00056 - (<span class="keywordtype">void</span>)dismissWithResult:(<span class="keywordtype">id</span>)result animated:(BOOL)animated;
+<a name="l00056"></a>00056 - (<span class="keywordtype">void</span>)post;
 <a name="l00057"></a>00057 
-<a name="l00061"></a>00061 - (<span class="keywordtype">void</span>)failWithError:(NSError*)error;
+<a name="l00061"></a>00061 - (<span class="keywordtype">void</span>)cancel;
 <a name="l00062"></a>00062 
-<a name="l00071"></a>00071 - (BOOL)willPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text;
+<a name="l00066"></a>00066 - (<span class="keywordtype">void</span>)dismissWithResult:(<span class="keywordtype">id</span>)result animated:(BOOL)animated;
+<a name="l00067"></a>00067 
+<a name="l00071"></a>00071 - (<span class="keywordtype">void</span>)failWithError:(NSError*)error;
 <a name="l00072"></a>00072 
-<a name="l00076"></a>00076 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForActivity;
-<a name="l00077"></a>00077 
-<a name="l00081"></a>00081 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForError:(NSError*)error;
+<a name="l00081"></a>00081 - (BOOL)willPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text;
 <a name="l00082"></a>00082 
-<a name="l00083"></a>00083 @end
+<a name="l00083"></a>00083 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForActivity;
 <a name="l00084"></a>00084 
+<a name="l00085"></a>00085 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForError:(NSError*)error;
 <a name="l00086"></a>00086 
-<a name="l00087"></a><a class="code" href="protocol_t_t_post_controller_delegate-p.html">00087</a> @protocol TTPostControllerDelegate &lt;<a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a>&gt;
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089 @optional
-<a name="l00090"></a>00090 
-<a name="l00096"></a>00096 - (BOOL)postController:(<a class="code" href="interface_t_t_post_controller.html">TTPostController</a>*)postController willPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text;
-<a name="l00097"></a>00097 
-<a name="l00103"></a>00103 - (CGRect)postController:(<a class="code" href="interface_t_t_post_controller.html">TTPostController</a>*)postController willAnimateTowards:(CGRect)rect;
-<a name="l00104"></a>00104 
-<a name="l00108"></a>00108 - (<span class="keywordtype">void</span>)postController:(<a class="code" href="interface_t_t_post_controller.html">TTPostController</a>*)postController didPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text
-<a name="l00109"></a>00109         withResult:(<span class="keywordtype">id</span>)result;
-<a name="l00110"></a>00110 
-<a name="l00114"></a>00114 - (<span class="keywordtype">void</span>)postControllerDidCancel:(<a class="code" href="interface_t_t_post_controller.html">TTPostController</a>*)postController;
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116 @end
+<a name="l00087"></a>00087 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

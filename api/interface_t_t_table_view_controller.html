@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -112,14 +111,15 @@ Inheritance diagram for TTTableViewController:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view.html">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a6732039a6d36ab9b92231d5191cb4d64">_loadingView</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view.html">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a693e500d595a6a2d9b038cbfe268f4cf">_errorView</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view.html">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a13753ab4015c65ab7b1bae015b99c1aa">_emptyView</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#afde4345f33d69d7c700206b022b0e691">_bannerTimer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view.html">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a92d0342074fb50438297a7225a0504ac">_menuView</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UITableViewCell *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a4b096c6d466a9ad88b6500398520c688">_menuCell</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a3832653c4449d23222e68cdfa62198d0">_dataSource</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; UITableViewDelegate &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a03e319fd0f060b7c5fc235c09374664e">_tableDelegate</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#afde4345f33d69d7c700206b022b0e691">_bannerTimer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UITableViewStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#ae00662b33fc372e0f5688e32b1c42fab">_tableViewStyle</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UIInterfaceOrientation&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#af55fc546daf1e9bf180b13466f621889">_lastInterfaceOrientation</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a71d39b25b2ef46e07743d4529085c50a">_variableHeightRows</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#ac7a069b4d57f06b29621612f07a5641c">_showTableShadows</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_table_view_data_source.html">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a3832653c4449d23222e68cdfa62198d0">_dataSource</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&lt; UITableViewDelegate &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a03e319fd0f060b7c5fc235c09374664e">_tableDelegate</a></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_table_view.html">UITableView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#abfd22eeb7e01539eabf44bdba2ebb645">tableView</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_view.html">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a2c0c397163b1b4241e870d0bf997ee98">tableBannerView</a></td></tr>
@@ -136,6 +136,8 @@ Inheritance diagram for TTTableViewController:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style of the table view.  <a href="#ad1f016f908279a337da8fe69bdac9816"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a835ee43621a28a17cce38e2914ba9d98">variableHeightRows</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if the table should support non-fixed row heights.  <a href="#a835ee43621a28a17cce38e2914ba9d98"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_table_view_controller.html#a5a615ab4a6f2faf8a51eabcaf5664afd">showTableShadows</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">When enabled, draws gutter shadows above the first table item and below the last table item.  <a href="#a5a615ab4a6f2faf8a51eabcaf5664afd"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a52626a5ea529445ca0edf79f1c3d9dbb"></a><!-- doxytag: member="TTTableViewController::createDelegate" ref="a52626a5ea529445ca0edf79f1c3d9dbb" args="()" -->
@@ -493,6 +495,19 @@ Inheritance diagram for TTTableViewController:</div>
 
 </div>
 </div>
+<a class="anchor" id="ac7a069b4d57f06b29621612f07a5641c"></a><!-- doxytag: member="TTTableViewController::_showTableShadows" ref="ac7a069b4d57f06b29621612f07a5641c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_t_t_table_view_controller.html#ac7a069b4d57f06b29621612f07a5641c">_showTableShadows</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac5313235b13e491fa7202c0922e8a0e0"></a><!-- doxytag: member="TTTableViewController::_tableBannerView" ref="ac5313235b13e491fa7202c0922e8a0e0" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -637,6 +652,22 @@ Inheritance diagram for TTTableViewController:</div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a615ab4a6f2faf8a51eabcaf5664afd"></a><!-- doxytag: member="TTTableViewController::showTableShadows" ref="a5a615ab4a6f2faf8a51eabcaf5664afd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) showTableShadows<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>When enabled, draws gutter shadows above the first table item and below the last table item. </p>
+<p>Known issues: When there aren't enough cell items to fill the screen, the table view draws empty cells for the remaining space. This causes the bottom shadow to appear out of place. </p>
 
 </div>
 </div>

@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -98,16 +97,16 @@ Inheritance diagram for TTActionSheetController:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a destructive button with the given title and <a class="el" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> URL.  <a href="#ab2fd635d3bca0cbaebc8f33f7bdcd35b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_action_sheet_controller.html#a939d96815750720d26afe825bf2e8b52">buttonURLAtIndex:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieve the button URL at the given index.  <a href="#a939d96815750720d26afe825bf2e8b52"></a><br/></td></tr>
-<tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id<br class="typebreak"/>
-&lt; <a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#ae67a7944cc3916ff956766d0ee166fd5">delegate</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIActionSheet *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#ab999e95e273f9318914a5455ff2ecf8e">actionSheet</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#adfef083842698af7c6fde00b9c17eb62">userInfo</a></td></tr>
-<tr><td colspan="2"><h2>Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id<br class="typebreak"/>
-&lt; <a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#aa8457d02f1ff7e18ed62a0380ede69b2">_delegate</a></td></tr>
+<tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#ac69b5b543773bd9aeab3e8ee7f20c594">_userInfo</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#a615179d71f1aedd61875996c8042a8ee">_URLs</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id<br class="typebreak"/>
+&lt; <a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#aa8457d02f1ff7e18ed62a0380ede69b2">_delegate</a></td></tr>
+<tr><td colspan="2"><h2>Properties</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UIActionSheet *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#ab999e95e273f9318914a5455ff2ecf8e">actionSheet</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#adfef083842698af7c6fde00b9c17eb62">userInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">id<br class="typebreak"/>
+&lt; <a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_action_sheet_controller.html#ae67a7944cc3916ff956766d0ee166fd5">delegate</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A view controller that displays an action sheet. </p>
@@ -322,7 +321,7 @@ Inheritance diagram for TTActionSheetController:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (id&lt;<a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a>&gt;) <a class="el" href="interface_t_t_action_sheet_controller.html#aa8457d02f1ff7e18ed62a0380ede69b2">_delegate</a><code> [private]</code></td>
+          <td class="memname">- (id&lt;<a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.html">TTActionSheetControllerDelegate</a>&gt;) <a class="el" href="interface_t_t_action_sheet_controller.html#aa8457d02f1ff7e18ed62a0380ede69b2">_delegate</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -335,7 +334,7 @@ Inheritance diagram for TTActionSheetController:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_action_sheet_controller.html#a615179d71f1aedd61875996c8042a8ee">_URLs</a><code> [private]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_action_sheet_controller.html#a615179d71f1aedd61875996c8042a8ee">_URLs</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -348,7 +347,7 @@ Inheritance diagram for TTActionSheetController:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (id) <a class="el" href="interface_t_t_action_sheet_controller.html#ac69b5b543773bd9aeab3e8ee7f20c594">_userInfo</a><code> [private]</code></td>
+          <td class="memname">- (id) <a class="el" href="interface_t_t_action_sheet_controller.html#ac69b5b543773bd9aeab3e8ee7f20c594">_userInfo</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>

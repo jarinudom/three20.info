@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -120,9 +119,9 @@ Inheritance diagram for TTViewController:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_table_view_controller.html">TTTableViewController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.html#aee5cb350b30e5feefffd3f118df21f86">searchViewController</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A view controller used to display the contents of the search display controller.  <a href="#aee5cb350b30e5feefffd3f118df21f86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.html#a3fad106e9b72dad803a0e3c3a36b071c">hasViewAppeared</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view has appeared at least once.  <a href="#a3fad106e9b72dad803a0e3c3a36b071c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view has appeared at least once and hasn't been removed due to a memory warning.  <a href="#a3fad106e9b72dad803a0e3c3a36b071c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.html#a0f9eb32fa175f7eb735cdb44a9fe5a61">isViewAppearing</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view is currently visible.  <a href="#a0f9eb32fa175f7eb735cdb44a9fe5a61"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view is about to appear and has not appeared yet.  <a href="#a0f9eb32fa175f7eb735cdb44a9fe5a61"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.html#acc0ff2c5d115eb977aaac419cb64f62b">autoresizesForKeyboard</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the view will be resized automatically to fit the keyboard.  <a href="#acc0ff2c5d115eb977aaac419cb64f62b"></a><br/></td></tr>
 </table>
@@ -377,7 +376,7 @@ Inheritance diagram for TTViewController:</div>
 </div>
 <div class="memdoc">
 
-<p>The view has appeared at least once. </p>
+<p>The view has appeared at least once and hasn't been removed due to a memory warning. </p>
 
 </div>
 </div>
@@ -392,7 +391,7 @@ Inheritance diagram for TTViewController:</div>
 </div>
 <div class="memdoc">
 
-<p>The view is currently visible. </p>
+<p>The view is about to appear and has not appeared yet. </p>
 
 </div>
 </div>
@@ -408,6 +407,7 @@ Inheritance diagram for TTViewController:</div>
 <div class="memdoc">
 
 <p>The style of the navigation bar when this view controller is pushed onto a navigation controller. </p>
+<p>UIBarStyleDefault </p>
 
 </div>
 </div>
@@ -423,6 +423,7 @@ Inheritance diagram for TTViewController:</div>
 <div class="memdoc">
 
 <p>The color of the navigation bar when this view controller is pushed onto a navigation controller. </p>
+<p><a class="el" href="_t_t_global_style_8h.html#a898553a3d10993e8ca7d12f2b23cfb77">TTSTYLEVAR(navigationBarTintColor)</a> </p>
 
 </div>
 </div>
@@ -454,6 +455,7 @@ Inheritance diagram for TTViewController:</div>
 <div class="memdoc">
 
 <p>The style of the status bar when this view controller is appearing. </p>
+<p>UIStatusBarStyleDefault </p>
 
 </div>
 </div>

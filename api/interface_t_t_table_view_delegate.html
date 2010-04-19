@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -98,7 +97,8 @@ Inheritance diagram for TTTableViewDelegate:</div>
 <p>A default table view delegate implementation. </p>
 <p>This implementation takes care of measuring rows for you, opening URLs when the user selects a cell, and suspending image loading to increase performance while the user is scrolling the table. <a class="el" href="interface_t_t_table_view_controller.html">TTTableViewController</a> automatically assigns an instance of this delegate class to your table, but you can override the createDelegate method there to provide a delegate implementation of your own.</p>
 <p>If you would like to change the background color of the section headers, specify the tableHeaderTintColor property in your global style sheet.</p>
-<p>This is also where the table view menu is hidden if the user starts scrolling. </p>
+<p>This is also where the table view menu is hidden if the user starts scrolling.</p>
+<p>TODO(jverkoey 04/13/2010): Rename this object because it's not a protocol, and therefor shouldn't be affixed the "Delegate" title. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a17983701324731b067007415806a1ec9"></a><!-- doxytag: member="TTTableViewDelegate::initWithController:" ref="a17983701324731b067007415806a1ec9" args="(TTTableViewController *controller)" -->
 <div class="memitem">

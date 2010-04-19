@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -63,17 +62,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTGlobalCorePaths.m File Reference</h1><code>#import &quot;<a class="el" href="_t_t_global_core_paths_8h_source.html">Three20/TTGlobalCorePaths.h</a>&quot;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_global_core_8h_source.html">Three20/TTGlobalCore.h</a>&quot;</code><br/>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_paths_8m.html#a3f1db75698eb6b941983bce41d1b2196">TTIsBundleURL</a> (<a class="el" href="class_n_s_string.html">NSString</a> *URL)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns TRUE if the URL begins with "bundle://".  <a href="#a3f1db75698eb6b941983bce41d1b2196"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_paths_8m.html#af49609bcfa22b9daf17ed6008ee25eba">TTIsDocumentsURL</a> (<a class="el" href="class_n_s_string.html">NSString</a> *URL)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns TRUE if the URL begins with "documents://".  <a href="#af49609bcfa22b9daf17ed6008ee25eba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_paths_8m.html#a12ea026e456ac5e3388c1dca3666d594">TTPathForBundleResource</a> (<a class="el" href="class_n_s_string.html">NSString</a> *relativePath)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the main bundle path concatenated with the given relative path.  <a href="#a12ea026e456ac5e3388c1dca3666d594"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_core_paths_8m.html#aa3c1c408401e3a16019ae1ea6d00be2b">TTPathForDocumentsResource</a> (<a class="el" href="class_n_s_string.html">NSString</a> *relativePath)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the documents path concatenated with the given relative path.  <a href="#aa3c1c408401e3a16019ae1ea6d00be2b"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a3f1db75698eb6b941983bce41d1b2196"></a><!-- doxytag: member="TTGlobalCorePaths.m::TTIsBundleURL" ref="a3f1db75698eb6b941983bce41d1b2196" args="(NSString *URL)" -->
@@ -91,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns TRUE if the URL begins with "bundle://". </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>YES if the URL begins with "bundle://" </dd></dl>
 
 </div>
 </div>
@@ -111,8 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns TRUE if the URL begins with "documents://". </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>YES if the URL begins with "documents://" </dd></dl>
 
 </div>
 </div>
@@ -131,8 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns the main bundle path concatenated with the given relative path. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The main bundle path concatenated with the given relative path. </dd></dl>
 
 </div>
 </div>
@@ -151,8 +142,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
-
-<p>Returns the documents path concatenated with the given relative path. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The documents path concatenated with the given relative path. </dd></dl>
 
 </div>
 </div>

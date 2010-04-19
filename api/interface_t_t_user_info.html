@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -83,13 +82,10 @@ Inheritance diagram for TTUserInfo:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_user_info.html#a57537e346f4852b2d2829c2982db3d55">initWithTopic:strongRef:weakRef:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_user_info.html#a1b6891f6b7973c89c62d4e21c7a79425">initWithTopic:strong:weak:</a></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_user_info.html#a232952c6e6362d7a9bf9c00d7ab6f237">topic:strongRef:weakRef:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_user_info.html#a7a17db49690870205dd3d994060c469c">topic:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_user_info.html#a751229a003b3d2c5f57231a53a676dc1">weakRef:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_user_info.html#a565e025017fcfeeb3f724ac9d750b485">topic:strong:weak:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_user_info.html#a9b464b0d5d687487858a4d9aba3cbbd0">weak:</a></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_user_info.html#a39d7122f71bda54e247f9cbf752c6571">_topic</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_user_info.html#a59bdcc6632e066e61d34399ccc03af15">_strongRef</a></td></tr>
@@ -103,40 +99,6 @@ Inheritance diagram for TTUserInfo:</div>
 <p>A helper class for storing user info to help identify a request. </p>
 <p>This class lets you store both a strong reference and a weak reference for the duration of the request. The weak reference is special because <a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> will examine it when you call cancelRequestsWithDelegate to see if the weak object is the delegate in question. For this reason, this object is a safe way to store an object that may be destroyed before the request completes if you call cancelRequestsWithDelegate in the object's destructor. </p>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1b6891f6b7973c89c62d4e21c7a79425"></a><!-- doxytag: member="TTUserInfo::initWithTopic:strong:weak:" ref="a1b6891f6b7973c89c62d4e21c7a79425" args="(NSString *topic,[strong] id strong,[weak] id __TTDEPRECATED_METHOD)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) initWithTopic: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a>*)&nbsp;</td>
-          <td class="paramname"> <em>topic</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">strong:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>strong</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">weak:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>__TTDEPRECATED_METHOD</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Due to refactoring bugs in Xcode with properties named "weak". Remove by March 17, 2010. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a57537e346f4852b2d2829c2982db3d55"></a><!-- doxytag: member="TTUserInfo::initWithTopic:strongRef:weakRef:" ref="a57537e346f4852b2d2829c2982db3d55" args="(NSString *topic,[strongRef] id strongRef,[weakRef] id weakRef)" -->
 <div class="memitem">
 <div class="memproto">
@@ -188,40 +150,6 @@ Inheritance diagram for TTUserInfo:</div>
 
 </div>
 </div>
-<a class="anchor" id="a565e025017fcfeeb3f724ac9d750b485"></a><!-- doxytag: member="TTUserInfo::topic:strong:weak:" ref="a565e025017fcfeeb3f724ac9d750b485" args="(NSString *topic,[strong] id strong,[weak] id __TTDEPRECATED_METHOD)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (id) topic: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a>*)&nbsp;</td>
-          <td class="paramname"> <em>topic</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">strong:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>strong</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">weak:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>__TTDEPRECATED_METHOD</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Due to refactoring bugs in Xcode with properties named "weak". Remove by March 17, 2010. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a232952c6e6362d7a9bf9c00d7ab6f237"></a><!-- doxytag: member="TTUserInfo::topic:strongRef:weakRef:" ref="a232952c6e6362d7a9bf9c00d7ab6f237" args="(NSString *topic,[strongRef] id strongRef,[weakRef] id weakRef)" -->
 <div class="memitem">
 <div class="memproto">
@@ -252,25 +180,6 @@ Inheritance diagram for TTUserInfo:</div>
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9b464b0d5d687487858a4d9aba3cbbd0"></a><!-- doxytag: member="TTUserInfo::weak:" ref="a9b464b0d5d687487858a4d9aba3cbbd0" args="(id __TTDEPRECATED_METHOD)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (id) weak: </td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>__TTDEPRECATED_METHOD</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Due to refactoring bugs in Xcode with properties named "weak". Remove by March 17, 2010. </dd></dl>
 
 </div>
 </div>

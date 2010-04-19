@@ -35,7 +35,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -77,65 +76,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_view_8h.html">Three20/TTView.h</a>&quot;</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_u_r_l_request_8h.html">Three20/TTURLRequest.h</a>&quot;</span>
-<a name="l00019"></a>00019 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_u_r_l_request_delegate_8h.html">Three20/TTURLRequestDelegate.h</a>&quot;</span>
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_core_preprocessor_macros_8h.html">Three20/TTCorePreprocessorMacros.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_u_r_l_request_delegate_8h.html">Three20/TTURLRequestDelegate.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>;
+<a name="l00021"></a>00021 <span class="keyword">@protocol </span>TTImageViewDelegate;
 <a name="l00022"></a>00022 
-<a name="l00023"></a>00023 <span class="keyword">@protocol </span>TTImageViewDelegate;
-<a name="l00024"></a>00024 
-<a name="l00028"></a><a class="code" href="interface_t_t_image_view.html">00028</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a> : <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a> &lt;<a class="code" href="protocol_t_t_u_r_l_request_delegate-p.html">TTURLRequestDelegate</a>&gt; {
-<a name="l00029"></a><a class="code" href="interface_t_t_image_view.html#ac744ef7f1c0bf049a4618b90aaf7e13d">00029</a>   <a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>* <a class="code" href="interface_t_t_image_view.html#ac744ef7f1c0bf049a4618b90aaf7e13d">_request</a>;
-<a name="l00030"></a><a class="code" href="interface_t_t_image_view.html#a64da0c5bcff90405cc5f16f03bd572a8">00030</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*     <a class="code" href="interface_t_t_image_view.html#a64da0c5bcff90405cc5f16f03bd572a8">_urlPath</a>;
-<a name="l00031"></a><a class="code" href="interface_t_t_image_view.html#aafadb349734c3755fced0347c71894d7">00031</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*      <a class="code" href="interface_t_t_image_view.html#aafadb349734c3755fced0347c71894d7">_image</a>;
-<a name="l00032"></a><a class="code" href="interface_t_t_image_view.html#a53f9cef668fe33fcd16be0e242423042">00032</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*      <a class="code" href="interface_t_t_image_view.html#a53f9cef668fe33fcd16be0e242423042">_defaultImage</a>;
-<a name="l00033"></a><a class="code" href="interface_t_t_image_view.html#a80c2ae080235ba57364ab0359f9fdf6f">00033</a>   BOOL          <a class="code" href="interface_t_t_image_view.html#a80c2ae080235ba57364ab0359f9fdf6f">_autoresizesToImage</a>;
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="interface_t_t_image_view.html#adeafb6b49768ffc616e511e2eecd1509">00035</a>   id&lt;TTImageViewDelegate&gt; <a class="code" href="interface_t_t_image_view.html#adeafb6b49768ffc616e511e2eecd1509">_delegate</a>;
-<a name="l00036"></a>00036 }
-<a name="l00037"></a>00037 
-<a name="l00045"></a><a class="code" href="interface_t_t_image_view.html#a87d6b8adeb900f5faf4681c0a5656175">00045</a> @property(nonatomic,copy)     <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL <a class="code" href="_t_t_core_preprocessor_macros_8h.html#a414bbd7ed86a5b60af86f9f2d8b94e9d" title="Borrowed from Apple&amp;#39;s AvailabiltyInternal.h header.">__TTDEPRECATED_METHOD</a>;
-<a name="l00046"></a>00046 
-<a name="l00051"></a><a class="code" href="interface_t_t_image_view.html#a037c253134647eeb0dec16dc5bd8f7f6">00051</a> @property(nonatomic,copy)     <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* urlPath;
+<a name="l00026"></a><a class="code" href="interface_t_t_image_view.html">00026</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a> : <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a> &lt;<a class="code" href="protocol_t_t_u_r_l_request_delegate-p.html">TTURLRequestDelegate</a>&gt; {
+<a name="l00027"></a><a class="code" href="interface_t_t_image_view.html#ac744ef7f1c0bf049a4618b90aaf7e13d">00027</a>   <a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>* <a class="code" href="interface_t_t_image_view.html#ac744ef7f1c0bf049a4618b90aaf7e13d">_request</a>;
+<a name="l00028"></a><a class="code" href="interface_t_t_image_view.html#a64da0c5bcff90405cc5f16f03bd572a8">00028</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*     <a class="code" href="interface_t_t_image_view.html#a64da0c5bcff90405cc5f16f03bd572a8">_urlPath</a>;
+<a name="l00029"></a><a class="code" href="interface_t_t_image_view.html#aafadb349734c3755fced0347c71894d7">00029</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*      <a class="code" href="interface_t_t_image_view.html#aafadb349734c3755fced0347c71894d7">_image</a>;
+<a name="l00030"></a><a class="code" href="interface_t_t_image_view.html#a53f9cef668fe33fcd16be0e242423042">00030</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*      <a class="code" href="interface_t_t_image_view.html#a53f9cef668fe33fcd16be0e242423042">_defaultImage</a>;
+<a name="l00031"></a><a class="code" href="interface_t_t_image_view.html#a80c2ae080235ba57364ab0359f9fdf6f">00031</a>   BOOL          <a class="code" href="interface_t_t_image_view.html#a80c2ae080235ba57364ab0359f9fdf6f">_autoresizesToImage</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="interface_t_t_image_view.html#adeafb6b49768ffc616e511e2eecd1509">00033</a>   id&lt;TTImageViewDelegate&gt; <a class="code" href="interface_t_t_image_view.html#adeafb6b49768ffc616e511e2eecd1509">_delegate</a>;
+<a name="l00034"></a>00034 }
+<a name="l00035"></a>00035 
+<a name="l00040"></a><a class="code" href="interface_t_t_image_view.html#a037c253134647eeb0dec16dc5bd8f7f6">00040</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* urlPath;
+<a name="l00041"></a>00041 
+<a name="l00046"></a><a class="code" href="interface_t_t_image_view.html#ac0806da2d2e376974fe0af0242e8635a">00046</a> @property (nonatomic, retain) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* defaultImage;
+<a name="l00047"></a>00047 
+<a name="l00051"></a><a class="code" href="interface_t_t_image_view.html#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">00051</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>* image;
 <a name="l00052"></a>00052 
-<a name="l00057"></a><a class="code" href="interface_t_t_image_view.html#ac0806da2d2e376974fe0af0242e8635a">00057</a> @property(nonatomic,retain)   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  defaultImage;
-<a name="l00058"></a>00058 
-<a name="l00062"></a><a class="code" href="interface_t_t_image_view.html#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">00062</a> @property(nonatomic,readonly) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  image;
-<a name="l00063"></a>00063 
-<a name="l00070"></a><a class="code" href="interface_t_t_image_view.html#a550deee45ef3cf4f72eba737f38d0924">00070</a> @property(nonatomic)          BOOL      autoresizesToImage;
-<a name="l00071"></a>00071 
-<a name="l00075"></a><a class="code" href="interface_t_t_image_view.html#a665f800cac80e9b94521e68adf7f06e8">00075</a> @property(nonatomic,readonly) BOOL      isLoading;
-<a name="l00076"></a>00076 
-<a name="l00080"></a><a class="code" href="interface_t_t_image_view.html#a771abb9049776ede10ec6db7a667e9fc">00080</a> @property(nonatomic,readonly) BOOL      isLoaded;
-<a name="l00081"></a>00081 
-<a name="l00085"></a><a class="code" href="interface_t_t_image_view.html#a28a5a7c4401e82b11b9266ae4fb4c414">00085</a> @property(nonatomic,assign)   <span class="keywordtype">id</span>&lt;TTImageViewDelegate&gt; delegate;
+<a name="l00059"></a><a class="code" href="interface_t_t_image_view.html#a550deee45ef3cf4f72eba737f38d0924">00059</a> @property (nonatomic) BOOL autoresizesToImage;
+<a name="l00060"></a>00060 
+<a name="l00064"></a><a class="code" href="interface_t_t_image_view.html#a665f800cac80e9b94521e68adf7f06e8">00064</a> @property (nonatomic, readonly) BOOL isLoading;
+<a name="l00065"></a>00065 
+<a name="l00069"></a><a class="code" href="interface_t_t_image_view.html#a771abb9049776ede10ec6db7a667e9fc">00069</a> @property (nonatomic, readonly) BOOL isLoaded;
+<a name="l00070"></a>00070 
+<a name="l00074"></a><a class="code" href="interface_t_t_image_view.html#a28a5a7c4401e82b11b9266ae4fb4c414">00074</a> @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;TTImageViewDelegate&gt; delegate;
+<a name="l00075"></a>00075 
+<a name="l00079"></a>00079 - (<span class="keywordtype">void</span>)unsetImage;
+<a name="l00080"></a>00080 
+<a name="l00085"></a>00085 - (<span class="keywordtype">void</span>)reload;
 <a name="l00086"></a>00086 
-<a name="l00090"></a>00090 - (<span class="keywordtype">void</span>)unsetImage;
+<a name="l00090"></a>00090 - (<span class="keywordtype">void</span>)stopLoading;
 <a name="l00091"></a>00091 
-<a name="l00096"></a>00096 - (<span class="keywordtype">void</span>)reload;
-<a name="l00097"></a>00097 
-<a name="l00101"></a>00101 - (<span class="keywordtype">void</span>)stopLoading;
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103 
-<a name="l00110"></a>00110 - (<span class="keywordtype">void</span>)imageViewDidStartLoad;
-<a name="l00111"></a>00111 
-<a name="l00118"></a>00118 - (<span class="keywordtype">void</span>)imageViewDidLoadImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image;
-<a name="l00119"></a>00119 
-<a name="l00126"></a>00126 - (<span class="keywordtype">void</span>)imageViewDidFailLoadWithError:(NSError*)error;
-<a name="l00127"></a>00127 
-<a name="l00128"></a>00128 @end
-<a name="l00129"></a>00129 
-<a name="l00130"></a>00130 
-<a name="l00132"></a><a class="code" href="protocol_t_t_image_view_delegate-p.html">00132</a> @protocol TTImageViewDelegate &lt;<a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a>&gt;
-<a name="l00133"></a>00133 @optional
-<a name="l00134"></a>00134 
-<a name="l00138"></a>00138 - (<span class="keywordtype">void</span>)imageViewDidStartLoad:(<a class="code" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a>*)imageView;
-<a name="l00139"></a>00139 
-<a name="l00143"></a>00143 - (<span class="keywordtype">void</span>)imageView:(<a class="code" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a>*)imageView didLoadImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image;
-<a name="l00144"></a>00144 
-<a name="l00149"></a>00149 - (<span class="keywordtype">void</span>)imageView:(<a class="code" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a>*)imageView didFailLoadWithError:(NSError*)error;
-<a name="l00150"></a>00150 
-<a name="l00151"></a>00151 @end
+<a name="l00098"></a>00098 - (<span class="keywordtype">void</span>)imageViewDidStartLoad;
+<a name="l00099"></a>00099 
+<a name="l00106"></a>00106 - (<span class="keywordtype">void</span>)imageViewDidLoadImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image;
+<a name="l00107"></a>00107 
+<a name="l00114"></a>00114 - (<span class="keywordtype">void</span>)imageViewDidFailLoadWithError:(NSError*)error;
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
