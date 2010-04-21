@@ -76,9 +76,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#aa2ffa5a06a6b5f25cc4301777544c128">treatDuplicateKeysAsArrayItems</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">When a duplicate key is encountered, the key's value is turned into an array and both the original item and the new duplicate item are added to the array.  <a href="#aa2ffa5a06a6b5f25cc4301777544c128"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#a4ee35a0f2382c529b139ea74363356f4">_rootObject</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#a1e6dc16f00a637cfbd40b0acf2a53954">_treatDuplicateKeysAsArrayItems</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_x_m_l_parser.html#a2be9eaf9a19f0c8acc0596d1ae726e78">_objectStack</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ee35a0f2382c529b139ea74363356f4"></a><!-- doxytag: member="TTXMLParser::_rootObject" ref="a4ee35a0f2382c529b139ea74363356f4" args="" -->
+id&nbsp;</td><td class="memItemRight" valign="bottom"><b>_rootObject</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6dc16f00a637cfbd40b0acf2a53954"></a><!-- doxytag: member="TTXMLParser::_treatDuplicateKeysAsArrayItems" ref="a1e6dc16f00a637cfbd40b0acf2a53954" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_treatDuplicateKeysAsArrayItems</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2be9eaf9a19f0c8acc0596d1ae726e78"></a><!-- doxytag: member="TTXMLParser::_objectStack" ref="a2be9eaf9a19f0c8acc0596d1ae726e78" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_objectStack</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>An implementation of the NSXMLParser object that turns XML into NSObjects. </p>
@@ -102,46 +105,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>___Entity_Value___: NSDictionary* etc...</li>
 </ul>
 <p>Implementation note: This class is designed as a simple means of parsing XML documents. It has not been optimized for speed or memory usage, and has only been tested with documents less than one MB (megabyte) in size. </p>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a2be9eaf9a19f0c8acc0596d1ae726e78"></a><!-- doxytag: member="TTXMLParser::_objectStack" ref="a2be9eaf9a19f0c8acc0596d1ae726e78" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_x_m_l_parser.html#a2be9eaf9a19f0c8acc0596d1ae726e78">_objectStack</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4ee35a0f2382c529b139ea74363356f4"></a><!-- doxytag: member="TTXMLParser::_rootObject" ref="a4ee35a0f2382c529b139ea74363356f4" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) <a class="el" href="interface_t_t_x_m_l_parser.html#a4ee35a0f2382c529b139ea74363356f4">_rootObject</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1e6dc16f00a637cfbd40b0acf2a53954"></a><!-- doxytag: member="TTXMLParser::_treatDuplicateKeysAsArrayItems" ref="a1e6dc16f00a637cfbd40b0acf2a53954" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) <a class="el" href="interface_t_t_x_m_l_parser.html#a1e6dc16f00a637cfbd40b0acf2a53954">_treatDuplicateKeysAsArrayItems</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Property Documentation</h2>
 <a class="anchor" id="aa7429a4815521a3a988f572e61054151"></a><!-- doxytag: member="TTXMLParser::rootObject" ref="aa7429a4815521a3a988f572e61054151" args="" -->
 <div class="memitem">
@@ -185,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

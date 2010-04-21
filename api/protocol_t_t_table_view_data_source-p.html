@@ -62,9 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>&lt;TTTableViewDataSource&gt; Protocol Reference</h1><!-- doxytag: class="TTTableViewDataSource-p" --><!-- doxytag: inherits="TTModel-p" -->
-<p><code>#import &lt;<a class="el" href="_t_t_table_view_data_source_8h_source.html">TTTableViewDataSource.h</a>&gt;</code></p>
-<div class="dynheader">
+<h1>&lt;TTTableViewDataSource&gt; Protocol Reference</h1><!-- doxytag: class="TTTableViewDataSource-p" --><!-- doxytag: inherits="TTModel-p" --><div class="dynheader">
 Inheritance diagram for &lt;TTTableViewDataSource&gt;:</div>
 <div class="dynsection">
  <div class="center">
@@ -83,386 +81,49 @@ Inheritance diagram for &lt;TTTableViewDataSource&gt;:</div>
 <p><a href="protocol_t_t_table_view_data_source-p-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#aba12e1d7bef111d6f5956b2fd6759faf">tableView:objectForRowAtIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(Class)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#ac11f86bf7d0d42d5e20b0f89004a4c56">tableView:cellClassForObject:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#ac0ee4024f85437dedf7f256e5e00a3ee">tableView:labelForObject:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#aa5179df0a147ee5170dfa7d5e0b6a996">tableView:indexPathForObject:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#af066c5f1bf3b623b0bc15d625a3dfefd">tableView:cell:willAppearAtIndexPath:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba12e1d7bef111d6f5956b2fd6759faf"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:objectForRowAtIndexPath:" ref="aba12e1d7bef111d6f5956b2fd6759faf" args="(UITableView *tableView,[objectForRowAtIndexPath] NSIndexPath *indexPath)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:objectForRowAtIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac11f86bf7d0d42d5e20b0f89004a4c56"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:cellClassForObject:" ref="ac11f86bf7d0d42d5e20b0f89004a4c56" args="(UITableView *tableView,[cellClassForObject] id object)" -->
+(Class)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:cellClassForObject:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0ee4024f85437dedf7f256e5e00a3ee"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:labelForObject:" ref="ac0ee4024f85437dedf7f256e5e00a3ee" args="(UITableView *tableView,[labelForObject] id object)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:labelForObject:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5179df0a147ee5170dfa7d5e0b6a996"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:indexPathForObject:" ref="aa5179df0a147ee5170dfa7d5e0b6a996" args="(UITableView *tableView,[indexPathForObject] id object)" -->
+(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:indexPathForObject:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af066c5f1bf3b623b0bc15d625a3dfefd"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:cell:willAppearAtIndexPath:" ref="af066c5f1bf3b623b0bc15d625a3dfefd" args="(UITableView *tableView,[cell] UITableViewCell *cell,[willAppearAtIndexPath] NSIndexPath *indexPath)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:cell:willAppearAtIndexPath:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a96aa481ecfee16bc78f32bc1ba3128d7">tableViewDidLoadModel:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the data source that its model loaded.  <a href="#a96aa481ecfee16bc78f32bc1ba3128d7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a432044702db503f758eb6fb93cebd032">titleForLoading:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a8d0d695ba46be9c20f58eb4fc3424fb9">imageForEmpty</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a5f54b11f92cd485ac5dc4c81c26c978a">titleForEmpty</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a712c72db930b723c5bad64cc87b38644">subtitleForEmpty</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#ab69cea7f2e4c174bd134b82782a523f2">imageForError:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#ae950d5e9343de3514b99f7dfcc9c8bca">titleForError:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#ad1326ecafd1eeb59e49ba9257b6b2ff8">subtitleForError:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a7a1979c7af6da8c2dc943d3e816a47bc">tableView:willUpdateObject:atIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a981fc1cae11416c6497002ae4ef903af">tableView:willInsertObject:atIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a663315fc2c2d144f773d57a16bb001c9">tableView:willRemoveObject:atIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.html#a963c2771674e2dca920685e34fc20cce">search:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a432044702db503f758eb6fb93cebd032"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForLoading:" ref="a432044702db503f758eb6fb93cebd032" args="(BOOL reloading)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForLoading:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d0d695ba46be9c20f58eb4fc3424fb9"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::imageForEmpty" ref="a8d0d695ba46be9c20f58eb4fc3424fb9" args="()" -->
+(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForEmpty</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f54b11f92cd485ac5dc4c81c26c978a"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForEmpty" ref="a5f54b11f92cd485ac5dc4c81c26c978a" args="()" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForEmpty</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a712c72db930b723c5bad64cc87b38644"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::subtitleForEmpty" ref="a712c72db930b723c5bad64cc87b38644" args="()" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>subtitleForEmpty</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab69cea7f2e4c174bd134b82782a523f2"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::imageForError:" ref="ab69cea7f2e4c174bd134b82782a523f2" args="(NSError *error)" -->
+(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForError:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae950d5e9343de3514b99f7dfcc9c8bca"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForError:" ref="ae950d5e9343de3514b99f7dfcc9c8bca" args="(NSError *error)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForError:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1326ecafd1eeb59e49ba9257b6b2ff8"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::subtitleForError:" ref="ad1326ecafd1eeb59e49ba9257b6b2ff8" args="(NSError *error)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>subtitleForError:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1979c7af6da8c2dc943d3e816a47bc"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willUpdateObject:atIndexPath:" ref="a7a1979c7af6da8c2dc943d3e816a47bc" args="(UITableView *tableView,[willUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willUpdateObject:atIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a981fc1cae11416c6497002ae4ef903af"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willInsertObject:atIndexPath:" ref="a981fc1cae11416c6497002ae4ef903af" args="(UITableView *tableView,[willInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willInsertObject:atIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663315fc2c2d144f773d57a16bb001c9"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willRemoveObject:atIndexPath:" ref="a663315fc2c2d144f773d57a16bb001c9" args="(UITableView *tableView,[willRemoveObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willRemoveObject:atIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a963c2771674e2dca920685e34fc20cce"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::search:" ref="a963c2771674e2dca920685e34fc20cce" args="(NSString *text)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>search:</b></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_array.html">NSArray</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_t_t_table_view_data_source-p.html#a554b7a403f36a62957d3e7d10b89453e">lettersForSectionsWithSearch:summary:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a554b7a403f36a62957d3e7d10b89453e"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::lettersForSectionsWithSearch:summary:" ref="a554b7a403f36a62957d3e7d10b89453e" args="(BOOL search,[summary] BOOL summary)" -->
+(<a class="el" href="class_n_s_array.html">NSArray</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>lettersForSectionsWithSearch:summary:</b></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_t_t_table_view_data_source-p.html#aeb1d63fdb51ebb1608817e3d43a64ab6">model</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Optional method to return a model object to delegate the <a class="el" href="interface_t_t_model.html" title="A default implementation of TTModel does nothing other than appear to be loaded.">TTModel</a> protocol to.  <a href="#aeb1d63fdb51ebb1608817e3d43a64ab6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb1d63fdb51ebb1608817e3d43a64ab6"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::model" ref="aeb1d63fdb51ebb1608817e3d43a64ab6" args="" -->
+id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_t_t_table_view_data_source-p.html#aeb1d63fdb51ebb1608817e3d43a64ab6">model</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Optional method to return a model object to delegate the <a class="el" href="interface_t_t_model.html" title="A default implementation of TTModel does nothing other than appear to be loaded.">TTModel</a> protocol to. <br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8d0d695ba46be9c20f58eb4fc3424fb9"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::imageForEmpty" ref="a8d0d695ba46be9c20f58eb4fc3424fb9" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_u_i_image.html">UIImage</a>*) imageForEmpty </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab69cea7f2e4c174bd134b82782a523f2"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::imageForError:" ref="ab69cea7f2e4c174bd134b82782a523f2" args="(NSError *error)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_u_i_image.html">UIImage</a>*) imageForError: </td>
-          <td></td>
-          <td class="paramtype">(NSError *)&nbsp;</td>
-          <td class="paramname"> <em>error</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a554b7a403f36a62957d3e7d10b89453e"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::lettersForSectionsWithSearch:summary:" ref="a554b7a403f36a62957d3e7d10b89453e" args="(BOOL search,[summary] BOOL summary)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (<a class="el" href="class_n_s_array.html">NSArray</a>*) lettersForSectionsWithSearch: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>search</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">summary:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>summary</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a963c2771674e2dca920685e34fc20cce"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::search:" ref="a963c2771674e2dca920685e34fc20cce" args="(NSString *text)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) search: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td>
-          <td class="paramname"> <em>text</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a712c72db930b723c5bad64cc87b38644"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::subtitleForEmpty" ref="a712c72db930b723c5bad64cc87b38644" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) subtitleForEmpty </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad1326ecafd1eeb59e49ba9257b6b2ff8"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::subtitleForError:" ref="ad1326ecafd1eeb59e49ba9257b6b2ff8" args="(NSError *error)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) subtitleForError: </td>
-          <td></td>
-          <td class="paramtype">(NSError *)&nbsp;</td>
-          <td class="paramname"> <em>error</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af066c5f1bf3b623b0bc15d625a3dfefd"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:cell:willAppearAtIndexPath:" ref="af066c5f1bf3b623b0bc15d625a3dfefd" args="(UITableView *tableView,[cell] UITableViewCell *cell,[willAppearAtIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">cell:</td>
-          <td></td>
-          <td class="paramtype">(UITableViewCell *)&nbsp;</td>
-          <td class="paramname"> <em>cell</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">willAppearAtIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac11f86bf7d0d42d5e20b0f89004a4c56"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:cellClassForObject:" ref="ac11f86bf7d0d42d5e20b0f89004a4c56" args="(UITableView *tableView,[cellClassForObject] id object)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (Class) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">cellClassForObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa5179df0a147ee5170dfa7d5e0b6a996"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:indexPathForObject:" ref="aa5179df0a147ee5170dfa7d5e0b6a996" args="(UITableView *tableView,[indexPathForObject] id object)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSIndexPath*) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">indexPathForObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac0ee4024f85437dedf7f256e5e00a3ee"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:labelForObject:" ref="ac0ee4024f85437dedf7f256e5e00a3ee" args="(UITableView *tableView,[labelForObject] id object)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">labelForObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba12e1d7bef111d6f5956b2fd6759faf"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:objectForRowAtIndexPath:" ref="aba12e1d7bef111d6f5956b2fd6759faf" args="(UITableView *tableView,[objectForRowAtIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">objectForRowAtIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a981fc1cae11416c6497002ae4ef903af"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willInsertObject:atIndexPath:" ref="a981fc1cae11416c6497002ae4ef903af" args="(UITableView *tableView,[willInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSIndexPath*) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">willInsertObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a663315fc2c2d144f773d57a16bb001c9"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willRemoveObject:atIndexPath:" ref="a663315fc2c2d144f773d57a16bb001c9" args="(UITableView *tableView,[willRemoveObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSIndexPath*) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">willRemoveObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7a1979c7af6da8c2dc943d3e816a47bc"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableView:willUpdateObject:atIndexPath:" ref="a7a1979c7af6da8c2dc943d3e816a47bc" args="(UITableView *tableView,[willUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSIndexPath*) tableView: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.html">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">willUpdateObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a96aa481ecfee16bc78f32bc1ba3128d7"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::tableViewDidLoadModel:" ref="a96aa481ecfee16bc78f32bc1ba3128d7" args="(UITableView *tableView)" -->
 <div class="memitem">
 <div class="memproto">
@@ -484,75 +145,6 @@ Inheritance diagram for &lt;TTTableViewDataSource&gt;:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5f54b11f92cd485ac5dc4c81c26c978a"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForEmpty" ref="a5f54b11f92cd485ac5dc4c81c26c978a" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) titleForEmpty </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae950d5e9343de3514b99f7dfcc9c8bca"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForError:" ref="ae950d5e9343de3514b99f7dfcc9c8bca" args="(NSError *error)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) titleForError: </td>
-          <td></td>
-          <td class="paramtype">(NSError *)&nbsp;</td>
-          <td class="paramname"> <em>error</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a432044702db503f758eb6fb93cebd032"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::titleForLoading:" ref="a432044702db503f758eb6fb93cebd032" args="(BOOL reloading)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) titleForLoading: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>reloading</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Property Documentation</h2>
-<a class="anchor" id="aeb1d63fdb51ebb1608817e3d43a64ab6"></a><!-- doxytag: member="TTTableViewDataSource&#45;p::model" ref="aeb1d63fdb51ebb1608817e3d43a64ab6" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id&lt;<a class="el" href="interface_t_t_model.html">TTModel</a>&gt;) model<code> [read, write, retain]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Optional method to return a model object to delegate the <a class="el" href="interface_t_t_model.html" title="A default implementation of TTModel does nothing other than appear to be loaded.">TTModel</a> protocol to. </p>
-
-</div>
-</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
 <li>Three20/<a class="el" href="_t_t_table_view_data_source_8h_source.html">TTTableViewDataSource.h</a></li>
 </ul>
@@ -562,7 +154,7 @@ Inheritance diagram for &lt;TTTableViewDataSource&gt;:</div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

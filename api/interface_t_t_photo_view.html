@@ -62,9 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>TTPhotoView Class Reference</h1><!-- doxytag: class="TTPhotoView" --><!-- doxytag: inherits="TTImageView,TTImageViewDelegate-p" -->
-<p><code>#import &lt;<a class="el" href="_t_t_photo_view_8h_source.html">TTPhotoView.h</a>&gt;</code></p>
-<div class="dynheader">
+<h1>TTPhotoView Class Reference</h1><!-- doxytag: class="TTPhotoView" --><!-- doxytag: inherits="TTImageView,TTImageViewDelegate-p" --><div class="dynheader">
 Inheritance diagram for TTPhotoView:</div>
 <div class="dynsection">
  <div class="center">
@@ -83,258 +81,44 @@ Inheritance diagram for TTPhotoView:</div>
 <p><a href="class_t_t_photo_view-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_photo_view.html#a5faa2e4a4477fe3e0eebe74e8b546cfa">loadPreview:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_photo_view.html#a8da3fbba67a410f152f5fe563b7a886e">loadImage</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_photo_view.html#af1133eef881ee75aff1d9c015d45b881">showProgress:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_photo_view.html#a4b7b24fa6f5ae07a6c7a00727e013572">showStatus:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5faa2e4a4477fe3e0eebe74e8b546cfa"></a><!-- doxytag: member="TTPhotoView::loadPreview:" ref="a5faa2e4a4477fe3e0eebe74e8b546cfa" args="(BOOL fromNetwork)" -->
+(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loadPreview:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8da3fbba67a410f152f5fe563b7a886e"></a><!-- doxytag: member="TTPhotoView::loadImage" ref="a8da3fbba67a410f152f5fe563b7a886e" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loadImage</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1133eef881ee75aff1d9c015d45b881"></a><!-- doxytag: member="TTPhotoView::showProgress:" ref="af1133eef881ee75aff1d9c015d45b881" args="(CGFloat progress)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>showProgress:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b7b24fa6f5ae07a6c7a00727e013572"></a><!-- doxytag: member="TTPhotoView::showStatus:" ref="a4b7b24fa6f5ae07a6c7a00727e013572" args="(NSString *text)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>showStatus:</b></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#ac2769e75bb58227592e8d850541df86b">_photo</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIActivityIndicatorView *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a2f4fffba1564cd7c47cdebe05f316faf">_statusSpinner</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_label.html">TTLabel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a28e502b388061d1d6777a1eac1b00e14">_statusLabel</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_label.html">TTLabel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a74a6e4b39751616d14697083e7301f59">_captionLabel</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a6d663ac84c333e61612613e16fc3a1d7">_captionStyle</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_t_t_photo_version_8h.html#ae49cd29303a28857b1ba078e49949c79">TTPhotoVersion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a8b4e9eb2883e9fd75169f77a467cc4bc">_photoVersion</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a7016a309a71a841cefcaf73134cff0d4">_hidesExtras</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a3eb3798a9c3ca1e20cdba513f7bd64c2">_hidesCaption</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2769e75bb58227592e8d850541df86b"></a><!-- doxytag: member="TTPhotoView::_photo" ref="ac2769e75bb58227592e8d850541df86b" args="" -->
+id&lt; <a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_photo</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4fffba1564cd7c47cdebe05f316faf"></a><!-- doxytag: member="TTPhotoView::_statusSpinner" ref="a2f4fffba1564cd7c47cdebe05f316faf" args="" -->
+UIActivityIndicatorView *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_statusSpinner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28e502b388061d1d6777a1eac1b00e14"></a><!-- doxytag: member="TTPhotoView::_statusLabel" ref="a28e502b388061d1d6777a1eac1b00e14" args="" -->
+<a class="el" href="interface_t_t_label.html">TTLabel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_statusLabel</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74a6e4b39751616d14697083e7301f59"></a><!-- doxytag: member="TTPhotoView::_captionLabel" ref="a74a6e4b39751616d14697083e7301f59" args="" -->
+<a class="el" href="interface_t_t_label.html">TTLabel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_captionLabel</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d663ac84c333e61612613e16fc3a1d7"></a><!-- doxytag: member="TTPhotoView::_captionStyle" ref="a6d663ac84c333e61612613e16fc3a1d7" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_captionStyle</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b4e9eb2883e9fd75169f77a467cc4bc"></a><!-- doxytag: member="TTPhotoView::_photoVersion" ref="a8b4e9eb2883e9fd75169f77a467cc4bc" args="" -->
+TTPhotoVersion&nbsp;</td><td class="memItemRight" valign="bottom"><b>_photoVersion</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7016a309a71a841cefcaf73134cff0d4"></a><!-- doxytag: member="TTPhotoView::_hidesExtras" ref="a7016a309a71a841cefcaf73134cff0d4" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hidesExtras</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eb3798a9c3ca1e20cdba513f7bd64c2"></a><!-- doxytag: member="TTPhotoView::_hidesCaption" ref="a3eb3798a9c3ca1e20cdba513f7bd64c2" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hidesCaption</b></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#ac557444572725bb842972e20e164d740">photo</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a920b62b4e69a807de36428f02dac6bc7">captionStyle</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a091e65c8a802075da65a5c24fe81d2a0">hidesExtras</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_photo_view.html#a6a731e6e91de5899e45dd97ef760d7e9">hidesCaption</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac557444572725bb842972e20e164d740"></a><!-- doxytag: member="TTPhotoView::photo" ref="ac557444572725bb842972e20e164d740" args="" -->
+id&lt; <a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>photo</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a920b62b4e69a807de36428f02dac6bc7"></a><!-- doxytag: member="TTPhotoView::captionStyle" ref="a920b62b4e69a807de36428f02dac6bc7" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>captionStyle</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a091e65c8a802075da65a5c24fe81d2a0"></a><!-- doxytag: member="TTPhotoView::hidesExtras" ref="a091e65c8a802075da65a5c24fe81d2a0" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>hidesExtras</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a731e6e91de5899e45dd97ef760d7e9"></a><!-- doxytag: member="TTPhotoView::hidesCaption" ref="a6a731e6e91de5899e45dd97ef760d7e9" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>hidesCaption</b></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8da3fbba67a410f152f5fe563b7a886e"></a><!-- doxytag: member="TTPhotoView::loadImage" ref="a8da3fbba67a410f152f5fe563b7a886e" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) loadImage </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5faa2e4a4477fe3e0eebe74e8b546cfa"></a><!-- doxytag: member="TTPhotoView::loadPreview:" ref="a5faa2e4a4477fe3e0eebe74e8b546cfa" args="(BOOL fromNetwork)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) loadPreview: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>fromNetwork</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af1133eef881ee75aff1d9c015d45b881"></a><!-- doxytag: member="TTPhotoView::showProgress:" ref="af1133eef881ee75aff1d9c015d45b881" args="(CGFloat progress)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) showProgress: </td>
-          <td></td>
-          <td class="paramtype">(CGFloat)&nbsp;</td>
-          <td class="paramname"> <em>progress</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4b7b24fa6f5ae07a6c7a00727e013572"></a><!-- doxytag: member="TTPhotoView::showStatus:" ref="a4b7b24fa6f5ae07a6c7a00727e013572" args="(NSString *text)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) showStatus: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a>*)&nbsp;</td>
-          <td class="paramname"> <em>text</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a74a6e4b39751616d14697083e7301f59"></a><!-- doxytag: member="TTPhotoView::_captionLabel" ref="a74a6e4b39751616d14697083e7301f59" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_label.html">TTLabel</a>*) <a class="el" href="interface_t_t_photo_view.html#a74a6e4b39751616d14697083e7301f59">_captionLabel</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6d663ac84c333e61612613e16fc3a1d7"></a><!-- doxytag: member="TTPhotoView::_captionStyle" ref="a6d663ac84c333e61612613e16fc3a1d7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_style.html">TTStyle</a>*) <a class="el" href="interface_t_t_photo_view.html#a6d663ac84c333e61612613e16fc3a1d7">_captionStyle</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3eb3798a9c3ca1e20cdba513f7bd64c2"></a><!-- doxytag: member="TTPhotoView::_hidesCaption" ref="a3eb3798a9c3ca1e20cdba513f7bd64c2" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) <a class="el" href="interface_t_t_photo_view.html#a3eb3798a9c3ca1e20cdba513f7bd64c2">_hidesCaption</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7016a309a71a841cefcaf73134cff0d4"></a><!-- doxytag: member="TTPhotoView::_hidesExtras" ref="a7016a309a71a841cefcaf73134cff0d4" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) <a class="el" href="interface_t_t_photo_view.html#a7016a309a71a841cefcaf73134cff0d4">_hidesExtras</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac2769e75bb58227592e8d850541df86b"></a><!-- doxytag: member="TTPhotoView::_photo" ref="ac2769e75bb58227592e8d850541df86b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id&lt;<a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a>&gt;) <a class="el" href="interface_t_t_photo_view.html#ac2769e75bb58227592e8d850541df86b">_photo</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8b4e9eb2883e9fd75169f77a467cc4bc"></a><!-- doxytag: member="TTPhotoView::_photoVersion" ref="a8b4e9eb2883e9fd75169f77a467cc4bc" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="_t_t_photo_version_8h.html#ae49cd29303a28857b1ba078e49949c79">TTPhotoVersion</a>) <a class="el" href="interface_t_t_photo_view.html#a8b4e9eb2883e9fd75169f77a467cc4bc">_photoVersion</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a28e502b388061d1d6777a1eac1b00e14"></a><!-- doxytag: member="TTPhotoView::_statusLabel" ref="a28e502b388061d1d6777a1eac1b00e14" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_label.html">TTLabel</a>*) <a class="el" href="interface_t_t_photo_view.html#a28e502b388061d1d6777a1eac1b00e14">_statusLabel</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2f4fffba1564cd7c47cdebe05f316faf"></a><!-- doxytag: member="TTPhotoView::_statusSpinner" ref="a2f4fffba1564cd7c47cdebe05f316faf" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (UIActivityIndicatorView*) <a class="el" href="interface_t_t_photo_view.html#a2f4fffba1564cd7c47cdebe05f316faf">_statusSpinner</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Property Documentation</h2>
-<a class="anchor" id="a920b62b4e69a807de36428f02dac6bc7"></a><!-- doxytag: member="TTPhotoView::captionStyle" ref="a920b62b4e69a807de36428f02dac6bc7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_style.html">TTStyle</a>*) captionStyle<code> [read, write, retain]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6a731e6e91de5899e45dd97ef760d7e9"></a><!-- doxytag: member="TTPhotoView::hidesCaption" ref="a6a731e6e91de5899e45dd97ef760d7e9" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) hidesCaption<code> [read, write, assign]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a091e65c8a802075da65a5c24fe81d2a0"></a><!-- doxytag: member="TTPhotoView::hidesExtras" ref="a091e65c8a802075da65a5c24fe81d2a0" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) hidesExtras<code> [read, write, assign]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac557444572725bb842972e20e164d740"></a><!-- doxytag: member="TTPhotoView::photo" ref="ac557444572725bb842972e20e164d740" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id&lt;<a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a>&gt;) photo<code> [read, write, retain]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20/<a class="el" href="_t_t_photo_view_8h_source.html">TTPhotoView.h</a></li>
-<li><a class="el" href="_t_t_photo_view_8m.html">TTPhotoView.m</a></li>
+<li>TTPhotoView.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -342,7 +126,7 @@ Inheritance diagram for TTPhotoView:</div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

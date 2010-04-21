@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTViewController.h</h1><a href="_t_t_view_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTViewController.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -78,54 +77,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
 <a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_table_view_controller.html">TTTableViewController</a>, <a class="code" href="interface_t_t_search_display_controller.html" title="Shows search results using a TTTableViewController.">TTSearchDisplayController</a>;
-<a name="l00021"></a>00021 
-<a name="l00025"></a><a class="code" href="interface_t_t_view_controller.html">00025</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_view_controller.html" title="A view controller with some useful additions.">TTViewController</a> : <a class="code" href="class_u_i_view_controller.html">UIViewController</a> {
-<a name="l00026"></a>00026 <span class="keyword">@protected</span>
-<a name="l00027"></a><a class="code" href="interface_t_t_view_controller.html#af43fe353aa6246a24fdcf0a65171362e">00027</a>   <a class="code" href="class_n_s_dictionary.html">NSDictionary</a>*     <a class="code" href="interface_t_t_view_controller.html#af43fe353aa6246a24fdcf0a65171362e">_frozenState</a>;
-<a name="l00028"></a><a class="code" href="interface_t_t_view_controller.html#a61557f6ddfb740a7b5859dd1e1ede275">00028</a>   UIBarStyle        <a class="code" href="interface_t_t_view_controller.html#a61557f6ddfb740a7b5859dd1e1ede275">_navigationBarStyle</a>;
-<a name="l00029"></a><a class="code" href="interface_t_t_view_controller.html#a3c916bb99e7244dad2bd7bcc7af8c65b">00029</a>   <a class="code" href="class_u_i_color.html" title="Additions.">UIColor</a>*          <a class="code" href="interface_t_t_view_controller.html#a3c916bb99e7244dad2bd7bcc7af8c65b">_navigationBarTintColor</a>;
-<a name="l00030"></a><a class="code" href="interface_t_t_view_controller.html#a8bc5f1894795c3b75db4782c14a90ecc">00030</a>   UIStatusBarStyle  <a class="code" href="interface_t_t_view_controller.html#a8bc5f1894795c3b75db4782c14a90ecc">_statusBarStyle</a>;
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="interface_t_t_view_controller.html#a62bac03420a9ca3fe201915f64c710df">00032</a>   TTSearchDisplayController* <a class="code" href="interface_t_t_view_controller.html#a62bac03420a9ca3fe201915f64c710df">_searchController</a>;
-<a name="l00033"></a>00033 
-<a name="l00034"></a><a class="code" href="interface_t_t_view_controller.html#a12bc306ea6492436e10d3ff7d9f5a5e5">00034</a>   BOOL <a class="code" href="interface_t_t_view_controller.html#a12bc306ea6492436e10d3ff7d9f5a5e5">_isViewAppearing</a>;
-<a name="l00035"></a><a class="code" href="interface_t_t_view_controller.html#ab5549c3b8c2faba5fab33dce18f6d587">00035</a>   BOOL <a class="code" href="interface_t_t_view_controller.html#ab5549c3b8c2faba5fab33dce18f6d587">_hasViewAppeared</a>;
-<a name="l00036"></a><a class="code" href="interface_t_t_view_controller.html#ad4a684db951eaf9cc2c7ea89c1feb219">00036</a>   BOOL <a class="code" href="interface_t_t_view_controller.html#ad4a684db951eaf9cc2c7ea89c1feb219">_autoresizesForKeyboard</a>;
-<a name="l00037"></a>00037 }
-<a name="l00038"></a>00038 
-<a name="l00045"></a><a class="code" href="interface_t_t_view_controller.html#a3fb1c2a69525f8b85ebe124207cca1f3">00045</a> @property (nonatomic) UIBarStyle navigationBarStyle;
-<a name="l00046"></a>00046 
-<a name="l00053"></a><a class="code" href="interface_t_t_view_controller.html#a1d428a6ac87f278548145a0d92342487">00053</a> @property (nonatomic, retain) <a class="code" href="class_u_i_color.html" title="Additions.">UIColor</a>* navigationBarTintColor;
-<a name="l00054"></a>00054 
-<a name="l00060"></a><a class="code" href="interface_t_t_view_controller.html#a6f6ef587d6b1357f17cfa531d2cbc240">00060</a> @property (nonatomic) UIStatusBarStyle statusBarStyle;
-<a name="l00061"></a>00061 
-<a name="l00070"></a><a class="code" href="interface_t_t_view_controller.html#aee5cb350b30e5feefffd3f118df21f86">00070</a> @property (nonatomic, retain) <a class="code" href="interface_t_t_table_view_controller.html">TTTableViewController</a>* searchViewController;
-<a name="l00071"></a>00071 
-<a name="l00075"></a><a class="code" href="interface_t_t_view_controller.html#a3fad106e9b72dad803a0e3c3a36b071c">00075</a> @property (nonatomic, readonly) BOOL hasViewAppeared;
-<a name="l00076"></a>00076 
-<a name="l00080"></a><a class="code" href="interface_t_t_view_controller.html#a0f9eb32fa175f7eb735cdb44a9fe5a61">00080</a> @property (nonatomic, readonly) BOOL isViewAppearing;
-<a name="l00081"></a>00081 
-<a name="l00085"></a><a class="code" href="interface_t_t_view_controller.html#acc0ff2c5d115eb977aaac419cb64f62b">00085</a> @property (nonatomic) BOOL autoresizesForKeyboard;
-<a name="l00086"></a>00086 
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_table_view_controller.html">TTTableViewController</a>;
+<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_search_display_controller.html" title="Shows search results using a TTTableViewController.">TTSearchDisplayController</a>;
+<a name="l00022"></a>00022 
+<a name="l00026"></a><a class="code" href="interface_t_t_view_controller.html">00026</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_view_controller.html" title="A view controller with some useful additions.">TTViewController</a> : <a class="code" href="class_u_i_view_controller.html">UIViewController</a> {
+<a name="l00027"></a>00027 <span class="keyword">@protected</span>
+<a name="l00028"></a>00028   <a class="code" href="class_n_s_dictionary.html">NSDictionary</a>*     _frozenState;
+<a name="l00029"></a>00029   UIBarStyle        _navigationBarStyle;
+<a name="l00030"></a>00030   <a class="code" href="class_u_i_color.html" title="Additions.">UIColor</a>*          _navigationBarTintColor;
+<a name="l00031"></a>00031   UIStatusBarStyle  _statusBarStyle;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033   <a class="code" href="interface_t_t_search_display_controller.html" title="Shows search results using a TTTableViewController.">TTSearchDisplayController</a>* _searchController;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035   BOOL _isViewAppearing;
+<a name="l00036"></a>00036   BOOL _hasViewAppeared;
+<a name="l00037"></a>00037   BOOL _autoresizesForKeyboard;
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00046"></a><a class="code" href="interface_t_t_view_controller.html#a3fb1c2a69525f8b85ebe124207cca1f3">00046</a> @property (nonatomic) UIBarStyle navigationBarStyle;
+<a name="l00047"></a>00047 
+<a name="l00054"></a><a class="code" href="interface_t_t_view_controller.html#a1d428a6ac87f278548145a0d92342487">00054</a> @property (nonatomic, retain) <a class="code" href="class_u_i_color.html" title="Additions.">UIColor</a>* navigationBarTintColor;
+<a name="l00055"></a>00055 
+<a name="l00061"></a><a class="code" href="interface_t_t_view_controller.html#a6f6ef587d6b1357f17cfa531d2cbc240">00061</a> @property (nonatomic) UIStatusBarStyle statusBarStyle;
+<a name="l00062"></a>00062 
+<a name="l00071"></a><a class="code" href="interface_t_t_view_controller.html#aee5cb350b30e5feefffd3f118df21f86">00071</a> @property (nonatomic, retain) <a class="code" href="interface_t_t_table_view_controller.html">TTTableViewController</a>* searchViewController;
+<a name="l00072"></a>00072 
+<a name="l00076"></a><a class="code" href="interface_t_t_view_controller.html#a3fad106e9b72dad803a0e3c3a36b071c">00076</a> @property (nonatomic, readonly) BOOL hasViewAppeared;
+<a name="l00077"></a>00077 
+<a name="l00081"></a><a class="code" href="interface_t_t_view_controller.html#a0f9eb32fa175f7eb735cdb44a9fe5a61">00081</a> @property (nonatomic, readonly) BOOL isViewAppearing;
+<a name="l00082"></a>00082 
+<a name="l00086"></a><a class="code" href="interface_t_t_view_controller.html#acc0ff2c5d115eb977aaac419cb64f62b">00086</a> @property (nonatomic) BOOL autoresizesForKeyboard;
 <a name="l00087"></a>00087 
-<a name="l00091"></a>00091 - (<span class="keywordtype">void</span>)keyboardWillAppear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00092"></a>00092 
-<a name="l00096"></a>00096 - (<span class="keywordtype">void</span>)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00097"></a>00097 
-<a name="l00101"></a>00101 - (<span class="keywordtype">void</span>)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00102"></a>00102 
-<a name="l00106"></a>00106 - (<span class="keywordtype">void</span>)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00107"></a>00107 
+<a name="l00088"></a>00088 
+<a name="l00092"></a>00092 - (<span class="keywordtype">void</span>)keyboardWillAppear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00093"></a>00093 
+<a name="l00097"></a>00097 - (<span class="keywordtype">void</span>)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00098"></a>00098 
+<a name="l00102"></a>00102 - (<span class="keywordtype">void</span>)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00103"></a>00103 
+<a name="l00107"></a>00107 - (<span class="keywordtype">void</span>)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds;
 <a name="l00108"></a>00108 
-<a name="l00109"></a>00109 @end
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

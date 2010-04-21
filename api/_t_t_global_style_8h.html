@@ -63,17 +63,202 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <h1>Three20/TTGlobalStyle.h File Reference</h1><code>#import &lt;Foundation/Foundation.h&gt;</code><br/>
 <code>#import &lt;UIKit/UIKit.h&gt;</code><br/>
-<code>#import &quot;<a class="el" href="_t_t_position_8h_source.html">Three20/TTPosition.h</a>&quot;</code><br/>
 
 <p><a href="_t_t_global_style_8h_source.html">Go to the source code of this file.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#aa42ac31c91c4cd4d213bfd8fefbebde9">TT_ROUNDED</a>&nbsp;&nbsp;&nbsp;<a class="el" href="_t_t_global_style_8m.html#add131e46eb9fa5e2fc3d127362ae7075">ttkRounded</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deprecated macros for common constants.  <a href="#aa42ac31c91c4cd4d213bfd8fefbebde9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a8c95497c3ba480b658024236df4e5dc9">RGBCOLOR</a>(r, g, b)&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a4daacba7f109faac091a582ab498d188">RGBACOLOR</a>(r, g, b, a)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a590f62a4f46e36c6dd6855a325312917">HSVCOLOR</a>(h, s, v)&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithHue:(h) saturation:(s) value:(v) alpha:1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a5efd058629a3113224e1b57963e735a6">HSVACOLOR</a>(h, s, v, a)&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithHue:(h) saturation:(s) value:(v) alpha:(a)]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#aba32782053c6a2b01e3706d632d77895">RGBA</a>(r, g, b, a)&nbsp;&nbsp;&nbsp;(r)/255.0, (g)/255.0, (b)/255.0, (a)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a781439ee732394fef574bf7310212026">TTSTYLE</a>(_SELECTOR)&nbsp;&nbsp;&nbsp;[[<a class="el" href="interface_t_t_style_sheet.html">TTStyleSheet</a> globalStyleSheet] styleWithSelector:@#_SELECTOR]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a4d20dbb0f67044f0ea2f5679787edf01">TTSTYLESTATE</a>(_SELECTOR, _STATE)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a64363d1ab486dc27bfe003df71955dd0">TTSTYLESHEET</a>&nbsp;&nbsp;&nbsp;((id)[<a class="el" href="interface_t_t_style_sheet.html">TTStyleSheet</a> globalStyleSheet])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a898553a3d10993e8ca7d12f2b23cfb77">TTSTYLEVAR</a>(_VARNAME)&nbsp;&nbsp;&nbsp;[TTSTYLESHEET _VARNAME]</td></tr>
+<tr><td colspan="2"><h2>Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a91c3e2d79e5739ad567616cddebd79dd">TTRectContract</a> (CGRect rect, CGFloat dx, CGFloat dy)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a550d1e1f45a922a0521952b706d9b3c6">TTRectShift</a> (CGRect rect, CGFloat dx, CGFloat dy)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#a8fa4327d8d456dd27a83e753177d5b3e">TTRectInset</a> (CGRect rect, UIEdgeInsets insets)</td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_global_style_8h.html#add131e46eb9fa5e2fc3d127362ae7075">ttkRounded</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A constant denoting that a corner should be rounded.  <a href="#add131e46eb9fa5e2fc3d127362ae7075"></a><br/></td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a5efd058629a3113224e1b57963e735a6"></a><!-- doxytag: member="TTGlobalStyle.h::HSVACOLOR" ref="a5efd058629a3113224e1b57963e735a6" args="(h, s, v, a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HSVACOLOR</td>
+          <td>(</td>
+          <td class="paramtype">h, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">v, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">a&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithHue:(h) saturation:(s) value:(v) alpha:(a)]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a590f62a4f46e36c6dd6855a325312917"></a><!-- doxytag: member="TTGlobalStyle.h::HSVCOLOR" ref="a590f62a4f46e36c6dd6855a325312917" args="(h, s, v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HSVCOLOR</td>
+          <td>(</td>
+          <td class="paramtype">h, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">v&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithHue:(h) saturation:(s) value:(v) alpha:1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba32782053c6a2b01e3706d632d77895"></a><!-- doxytag: member="TTGlobalStyle.h::RGBA" ref="aba32782053c6a2b01e3706d632d77895" args="(r, g, b, a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGBA</td>
+          <td>(</td>
+          <td class="paramtype">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">a&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(r)/255.0, (g)/255.0, (b)/255.0, (a)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4daacba7f109faac091a582ab498d188"></a><!-- doxytag: member="TTGlobalStyle.h::RGBACOLOR" ref="a4daacba7f109faac091a582ab498d188" args="(r, g, b, a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGBACOLOR</td>
+          <td>(</td>
+          <td class="paramtype">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">a&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment">[<a class="code" href="class_u_i_color.html" title="Additions.">UIColor</a> colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 \
+alpha:(a)]
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a8c95497c3ba480b658024236df4e5dc9"></a><!-- doxytag: member="TTGlobalStyle.h::RGBCOLOR" ref="a8c95497c3ba480b658024236df4e5dc9" args="(r, g, b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGBCOLOR</td>
+          <td>(</td>
+          <td class="paramtype">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;[<a class="el" href="class_u_i_color.html">UIColor</a> colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa42ac31c91c4cd4d213bfd8fefbebde9"></a><!-- doxytag: member="TTGlobalStyle.h::TT_ROUNDED" ref="aa42ac31c91c4cd4d213bfd8fefbebde9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TT_ROUNDED&nbsp;&nbsp;&nbsp;<a class="el" href="_t_t_global_style_8m.html#add131e46eb9fa5e2fc3d127362ae7075">ttkRounded</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Deprecated macros for common constants. </p>
+
+</div>
+</div>
 <a class="anchor" id="a781439ee732394fef574bf7310212026"></a><!-- doxytag: member="TTGlobalStyle.h::TTSTYLE" ref="a781439ee732394fef574bf7310212026" args="(_SELECTOR)" -->
 <div class="memitem">
 <div class="memproto">
@@ -145,6 +330,123 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a91c3e2d79e5739ad567616cddebd79dd"></a><!-- doxytag: member="TTGlobalStyle.h::TTRectContract" ref="a91c3e2d79e5739ad567616cddebd79dd" args="(CGRect rect, CGFloat dx, CGFloat dy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGRect TTRectContract </td>
+          <td>(</td>
+          <td class="paramtype">CGRect&nbsp;</td>
+          <td class="paramname"> <em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CGFloat&nbsp;</td>
+          <td class="paramname"> <em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CGFloat&nbsp;</td>
+          <td class="paramname"> <em>dy</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>a rectangle with dx and dy subtracted from the width and height, respectively.</dd></dl>
+<p>Example result: CGRectMake(x, y, w - dx, h - dy) </p>
+
+</div>
+</div>
+<a class="anchor" id="a8fa4327d8d456dd27a83e753177d5b3e"></a><!-- doxytag: member="TTGlobalStyle.h::TTRectInset" ref="a8fa4327d8d456dd27a83e753177d5b3e" args="(CGRect rect, UIEdgeInsets insets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGRect TTRectInset </td>
+          <td>(</td>
+          <td class="paramtype">CGRect&nbsp;</td>
+          <td class="paramname"> <em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UIEdgeInsets&nbsp;</td>
+          <td class="paramname"> <em>insets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>a rectangle with the given insets.</dd></dl>
+<p>Example result: CGRectMake(x + left, y + top, w - (left + right), h - (top + bottom)) </p>
+
+</div>
+</div>
+<a class="anchor" id="a550d1e1f45a922a0521952b706d9b3c6"></a><!-- doxytag: member="TTGlobalStyle.h::TTRectShift" ref="a550d1e1f45a922a0521952b706d9b3c6" args="(CGRect rect, CGFloat dx, CGFloat dy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGRect TTRectShift </td>
+          <td>(</td>
+          <td class="paramtype">CGRect&nbsp;</td>
+          <td class="paramname"> <em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CGFloat&nbsp;</td>
+          <td class="paramname"> <em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CGFloat&nbsp;</td>
+          <td class="paramname"> <em>dy</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>a rectangle whose origin has been offset by dx, dy, and whose size has been contracted by dx, dy.</dd></dl>
+<p>Example result: CGRectMake(x + dx, y + dy, w - dx, h - dy) </p>
+
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="add131e46eb9fa5e2fc3d127362ae7075"></a><!-- doxytag: member="TTGlobalStyle.h::ttkRounded" ref="add131e46eb9fa5e2fc3d127362ae7075" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const CGFloat <a class="el" href="_t_t_global_style_8m.html#add131e46eb9fa5e2fc3d127362ae7075">ttkRounded</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>A constant denoting that a corner should be rounded. </p>
+<p>-1 </p>
 
 </div>
 </div>

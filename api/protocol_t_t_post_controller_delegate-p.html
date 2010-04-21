@@ -63,8 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>&lt;TTPostControllerDelegate&gt; Protocol Reference</h1><!-- doxytag: class="TTPostControllerDelegate-p" -->
-<p><code>#import &lt;<a class="el" href="_t_t_post_controller_delegate_8h_source.html">TTPostControllerDelegate.h</a>&gt;</code></p>
-
 <p><a href="protocol_t_t_post_controller_delegate-p-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
@@ -72,47 +70,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The user has posted text and an animation is about to show the text return to its origin.  <a href="#ada7cac9f62ccac0f51b15495458e32ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(CGRect)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_post_controller_delegate-p.html#aa514ef65b514deb575c358257ad605f0">postController:willAnimateTowards:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The text will animate towards a rectangle.  <a href="#aa514ef65b514deb575c358257ad605f0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_post_controller_delegate-p.html#aed11cf1f3285bd2b798f9d0bba992c56">postController:didPostText:withResult:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The text has been posted.  <a href="#aed11cf1f3285bd2b798f9d0bba992c56"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_post_controller_delegate-p.html#aa3fa7d8aba4a4164e7fe3632a19c5dd7">postControllerDidCancel:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The controller was cancelled before posting.  <a href="#aa3fa7d8aba4a4164e7fe3632a19c5dd7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed11cf1f3285bd2b798f9d0bba992c56"></a><!-- doxytag: member="TTPostControllerDelegate&#45;p::postController:didPostText:withResult:" ref="aed11cf1f3285bd2b798f9d0bba992c56" args="(TTPostController *postController,[didPostText] NSString *text,[withResult] id result)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_post_controller_delegate-p.html#aed11cf1f3285bd2b798f9d0bba992c56">postController:didPostText:withResult:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The text has been posted. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3fa7d8aba4a4164e7fe3632a19c5dd7"></a><!-- doxytag: member="TTPostControllerDelegate&#45;p::postControllerDidCancel:" ref="aa3fa7d8aba4a4164e7fe3632a19c5dd7" args="(TTPostController *postController)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_post_controller_delegate-p.html#aa3fa7d8aba4a4164e7fe3632a19c5dd7">postControllerDidCancel:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The controller was cancelled before posting. <br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aed11cf1f3285bd2b798f9d0bba992c56"></a><!-- doxytag: member="TTPostControllerDelegate&#45;p::postController:didPostText:withResult:" ref="aed11cf1f3285bd2b798f9d0bba992c56" args="(TTPostController *postController,[didPostText] NSString *text,[withResult] id result)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) postController: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_post_controller.html">TTPostController</a> *)&nbsp;</td>
-          <td class="paramname"> <em>postController</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didPostText:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td>
-          <td class="paramname"> <em>text</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withResult:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The text has been posted. </p>
-
-</div>
-</div>
 <a class="anchor" id="aa514ef65b514deb575c358257ad605f0"></a><!-- doxytag: member="TTPostControllerDelegate&#45;p::postController:willAnimateTowards:" ref="aa514ef65b514deb575c358257ad605f0" args="(TTPostController *postController,[willAnimateTowards] CGRect rect)" -->
 <div class="memitem">
 <div class="memproto">
@@ -173,26 +138,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="aa3fa7d8aba4a4164e7fe3632a19c5dd7"></a><!-- doxytag: member="TTPostControllerDelegate&#45;p::postControllerDidCancel:" ref="aa3fa7d8aba4a4164e7fe3632a19c5dd7" args="(TTPostController *postController)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) postControllerDidCancel: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_post_controller.html">TTPostController</a> *)&nbsp;</td>
-          <td class="paramname"> <em>postController</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The controller was cancelled before posting. </p>
-
-</div>
-</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
 <li>Three20/<a class="el" href="_t_t_post_controller_delegate_8h_source.html">TTPostControllerDelegate.h</a></li>
 </ul>
@@ -202,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

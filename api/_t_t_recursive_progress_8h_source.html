@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTRecursiveProgress.h</h1><a href="_t_t_recursive_progress_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTRecursiveProgress.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -86,11 +85,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032 
 <a name="l00065"></a><a class="code" href="interface_t_t_recursive_progress.html">00065</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_recursive_progress.html" title="A generic recursive progress object.">TTRecursiveProgress</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00066"></a><a class="code" href="interface_t_t_recursive_progress.html#ab26eef48986673d45971179b4838b931">00066</a>   id&lt;TTRecursiveProgressDelegate&gt;  <a class="code" href="interface_t_t_recursive_progress.html#ab26eef48986673d45971179b4838b931">_delegate</a>;  <span class="comment">// Only valid in the topmost node.</span>
-<a name="l00067"></a><a class="code" href="interface_t_t_recursive_progress.html#a6ae409ead9b5a64f13dca2efaef41e02">00067</a>   <a class="code" href="interface_t_t_recursive_progress.html" title="A generic recursive progress object.">TTRecursiveProgress</a>*              <a class="code" href="interface_t_t_recursive_progress.html#a6ae409ead9b5a64f13dca2efaef41e02">_parent</a>;    <span class="comment">// Only valid in child nodes.</span>
+<a name="l00066"></a>00066   id&lt;TTRecursiveProgressDelegate&gt;  _delegate;  <span class="comment">// Only valid in the topmost node.</span>
+<a name="l00067"></a>00067   <a class="code" href="interface_t_t_recursive_progress.html" title="A generic recursive progress object.">TTRecursiveProgress</a>*              _parent;    <span class="comment">// Only valid in child nodes.</span>
 <a name="l00068"></a>00068 
-<a name="l00069"></a><a class="code" href="interface_t_t_recursive_progress.html#ad0019ab1a8cccf57f4af4f9ea3474a9d">00069</a>   CGFloat <a class="code" href="interface_t_t_recursive_progress.html#ad0019ab1a8cccf57f4af4f9ea3474a9d">_firstPercent</a>;
-<a name="l00070"></a><a class="code" href="interface_t_t_recursive_progress.html#abe59ab78a5c9fe0204d69b0ebd30381e">00070</a>   CGFloat <a class="code" href="interface_t_t_recursive_progress.html#abe59ab78a5c9fe0204d69b0ebd30381e">_lastPercent</a>;
+<a name="l00069"></a>00069   CGFloat _firstPercent;
+<a name="l00070"></a>00070   CGFloat _lastPercent;
 <a name="l00071"></a>00071 }
 <a name="l00072"></a>00072 
 <a name="l00076"></a><a class="code" href="interface_t_t_recursive_progress.html#ac5fdc2742be5f63580410b793e7cfa79">00076</a> @property (nonatomic) CGFloat firstPercent;
@@ -123,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

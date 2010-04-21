@@ -62,9 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>TTURLRequestQueue Class Reference</h1><!-- doxytag: class="TTURLRequestQueue" --><!-- doxytag: inherits="NSObject" -->
-<p><code>#import &lt;<a class="el" href="_t_t_u_r_l_request_queue_8h_source.html">TTURLRequestQueue.h</a>&gt;</code></p>
-<div class="dynheader">
+<h1>TTURLRequestQueue Class Reference</h1><!-- doxytag: class="TTURLRequestQueue" --><!-- doxytag: inherits="NSObject" --><div class="dynheader">
 Inheritance diagram for TTURLRequestQueue:</div>
 <div class="dynsection">
  <div class="center">
@@ -82,28 +80,41 @@ Inheritance diagram for TTURLRequestQueue:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Load a request from the cache or the network if it is not in the cache.  <a href="#ad3b50d883f28dd7e9cccbbfa3b52236a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#adf048cfe3144a34a688db67f93908916">sendSynchronousRequest:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Synchronously load a request from the cache or the network if it is not in the cache.  <a href="#adf048cfe3144a34a688db67f93908916"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#a008ecf13892baab45a69f8051637aa51">cancelRequest:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel a request that is in progress.  <a href="#a008ecf13892baab45a69f8051637aa51"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a008ecf13892baab45a69f8051637aa51"></a><!-- doxytag: member="TTURLRequestQueue::cancelRequest:" ref="a008ecf13892baab45a69f8051637aa51" args="(TTURLRequest *request)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#a008ecf13892baab45a69f8051637aa51">cancelRequest:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel a request that is in progress. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#a263596b58314c7ea6c14f8b5718f7b26">cancelRequestsWithDelegate:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel all active or pending requests whose delegate or response is an object.  <a href="#a263596b58314c7ea6c14f8b5718f7b26"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#a42f6150b9df2681783bc7c534f43abc2">cancelAllRequests</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel all active or pending requests.  <a href="#a42f6150b9df2681783bc7c534f43abc2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSURLRequest *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#abf973b89da8bd792e80f4d545f72325d">createNSURLRequest:URL:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a Cocoa URL request from a Three20 URL request.  <a href="#abf973b89da8bd792e80f4d545f72325d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42f6150b9df2681783bc7c534f43abc2"></a><!-- doxytag: member="TTURLRequestQueue::cancelAllRequests" ref="a42f6150b9df2681783bc7c534f43abc2" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#a42f6150b9df2681783bc7c534f43abc2">cancelAllRequests</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel all active or pending requests. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf973b89da8bd792e80f4d545f72325d"></a><!-- doxytag: member="TTURLRequestQueue::createNSURLRequest:URL:" ref="abf973b89da8bd792e80f4d545f72325d" args="(TTURLRequest *request,[URL] NSURL *URL)" -->
+(NSURLRequest *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#abf973b89da8bd792e80f4d545f72325d">createNSURLRequest:URL:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a Cocoa URL request from a Three20 URL request. <br/></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a673dea0042c9dabea200b4ec4db4c3ba">mainQueue</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the shared cache singleton used across the application.  <a href="#a673dea0042c9dabea200b4ec4db4c3ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a5ff7462611d450532137bd017cdadb7f">setMainQueue:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the shared cache singleton used across the application.  <a href="#a5ff7462611d450532137bd017cdadb7f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673dea0042c9dabea200b4ec4db4c3ba"></a><!-- doxytag: member="TTURLRequestQueue::mainQueue" ref="a673dea0042c9dabea200b4ec4db4c3ba" args="()" -->
+(<a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a673dea0042c9dabea200b4ec4db4c3ba">mainQueue</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the shared cache singleton used across the application. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ff7462611d450532137bd017cdadb7f"></a><!-- doxytag: member="TTURLRequestQueue::setMainQueue:" ref="a5ff7462611d450532137bd017cdadb7f" args="(TTURLRequestQueue *queue)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a5ff7462611d450532137bd017cdadb7f">setMainQueue:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the shared cache singleton used across the application. <br/></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#ad91e5e3b2bcf872feae4288ca7313de0">_loaders</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#acdc9ccddd17d80fc8b877b756542ba22">_loaderQueue</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a75c408cdcce9da6163c432e89da32a14">_loaderQueueTimer</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#ae269d597ee56506e2e9b9627bbc2de8a">_totalLoading</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a865457dc1a713db91a7c5e4c005fbcee">_maxContentLength</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a9af3e54a3b617838ff3034ff2963d6fd">_userAgent</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#aec6d45fdf0a908da5d19a7fbf33240c1">_imageCompressionQuality</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a8bb0463a6e6d0a44e1a3140fb08ac0ef">_suspended</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad91e5e3b2bcf872feae4288ca7313de0"></a><!-- doxytag: member="TTURLRequestQueue::_loaders" ref="ad91e5e3b2bcf872feae4288ca7313de0" args="" -->
+<a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_loaders</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdc9ccddd17d80fc8b877b756542ba22"></a><!-- doxytag: member="TTURLRequestQueue::_loaderQueue" ref="acdc9ccddd17d80fc8b877b756542ba22" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_loaderQueue</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75c408cdcce9da6163c432e89da32a14"></a><!-- doxytag: member="TTURLRequestQueue::_loaderQueueTimer" ref="a75c408cdcce9da6163c432e89da32a14" args="" -->
+NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_loaderQueueTimer</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae269d597ee56506e2e9b9627bbc2de8a"></a><!-- doxytag: member="TTURLRequestQueue::_totalLoading" ref="ae269d597ee56506e2e9b9627bbc2de8a" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_totalLoading</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a865457dc1a713db91a7c5e4c005fbcee"></a><!-- doxytag: member="TTURLRequestQueue::_maxContentLength" ref="a865457dc1a713db91a7c5e4c005fbcee" args="" -->
+NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_maxContentLength</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9af3e54a3b617838ff3034ff2963d6fd"></a><!-- doxytag: member="TTURLRequestQueue::_userAgent" ref="a9af3e54a3b617838ff3034ff2963d6fd" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_userAgent</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec6d45fdf0a908da5d19a7fbf33240c1"></a><!-- doxytag: member="TTURLRequestQueue::_imageCompressionQuality" ref="aec6d45fdf0a908da5d19a7fbf33240c1" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>_imageCompressionQuality</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb0463a6e6d0a44e1a3140fb08ac0ef"></a><!-- doxytag: member="TTURLRequestQueue::_suspended" ref="a8bb0463a6e6d0a44e1a3140fb08ac0ef" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_suspended</b></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a8addd08d2cef4fa320cf0930b4c8c591">suspended</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the flag that determines if new load requests are allowed to reach the network.  <a href="#a8addd08d2cef4fa320cf0930b4c8c591"></a><br/></td></tr>
@@ -115,45 +126,6 @@ Inheritance diagram for TTURLRequestQueue:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The compression quality used for encoding images sent with HTTP posts.  <a href="#aa6818e451230a069a53bcb2026d14fa0"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a42f6150b9df2681783bc7c534f43abc2"></a><!-- doxytag: member="TTURLRequestQueue::cancelAllRequests" ref="a42f6150b9df2681783bc7c534f43abc2" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) cancelAllRequests </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Cancel all active or pending requests. </p>
-
-</div>
-</div>
-<a class="anchor" id="a008ecf13892baab45a69f8051637aa51"></a><!-- doxytag: member="TTURLRequestQueue::cancelRequest:" ref="a008ecf13892baab45a69f8051637aa51" args="(TTURLRequest *request)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) cancelRequest: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a>*)&nbsp;</td>
-          <td class="paramname"> <em>request</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Cancel a request that is in progress. </p>
-
-</div>
-</div>
 <a class="anchor" id="a263596b58314c7ea6c14f8b5718f7b26"></a><!-- doxytag: member="TTURLRequestQueue::cancelRequestsWithDelegate:" ref="a263596b58314c7ea6c14f8b5718f7b26" args="(id delegate)" -->
 <div class="memitem">
 <div class="memproto">
@@ -172,54 +144,6 @@ Inheritance diagram for TTURLRequestQueue:</div>
 
 <p>Cancel all active or pending requests whose delegate or response is an object. </p>
 <p>This is useful for when an object is about to be destroyed and you want to remove pointers to it from active requests to prevent crashes when those pointers are later referenced. </p>
-
-</div>
-</div>
-<a class="anchor" id="abf973b89da8bd792e80f4d545f72325d"></a><!-- doxytag: member="TTURLRequestQueue::createNSURLRequest:URL:" ref="abf973b89da8bd792e80f4d545f72325d" args="(TTURLRequest *request,[URL] NSURL *URL)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSURLRequest *) createNSURLRequest: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a>*)&nbsp;</td>
-          <td class="paramname"> <em>request</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">URL:</td>
-          <td></td>
-          <td class="paramtype">(NSURL*)&nbsp;</td>
-          <td class="paramname"> <em>URL</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Create a Cocoa URL request from a Three20 URL request. </p>
-
-</div>
-</div>
-<a class="anchor" id="a673dea0042c9dabea200b4ec4db4c3ba"></a><!-- doxytag: member="TTURLRequestQueue::mainQueue" ref="a673dea0042c9dabea200b4ec4db4c3ba" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (<a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *) mainQueue </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get the shared cache singleton used across the application. </p>
 
 </div>
 </div>
@@ -262,131 +186,6 @@ Inheritance diagram for TTURLRequestQueue:</div>
 
 <p>Synchronously load a request from the cache or the network if it is not in the cache. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>YES if the request was loaded from the cache. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5ff7462611d450532137bd017cdadb7f"></a><!-- doxytag: member="TTURLRequestQueue::setMainQueue:" ref="a5ff7462611d450532137bd017cdadb7f" args="(TTURLRequestQueue *queue)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (void) setMainQueue: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>*)&nbsp;</td>
-          <td class="paramname"> <em>queue</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Set the shared cache singleton used across the application. </p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="aec6d45fdf0a908da5d19a7fbf33240c1"></a><!-- doxytag: member="TTURLRequestQueue::_imageCompressionQuality" ref="aec6d45fdf0a908da5d19a7fbf33240c1" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (CGFloat) <a class="el" href="interface_t_t_u_r_l_request_queue.html#aec6d45fdf0a908da5d19a7fbf33240c1">_imageCompressionQuality</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acdc9ccddd17d80fc8b877b756542ba22"></a><!-- doxytag: member="TTURLRequestQueue::_loaderQueue" ref="acdc9ccddd17d80fc8b877b756542ba22" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_u_r_l_request_queue.html#acdc9ccddd17d80fc8b877b756542ba22">_loaderQueue</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a75c408cdcce9da6163c432e89da32a14"></a><!-- doxytag: member="TTURLRequestQueue::_loaderQueueTimer" ref="a75c408cdcce9da6163c432e89da32a14" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSTimer*) <a class="el" href="interface_t_t_u_r_l_request_queue.html#a75c408cdcce9da6163c432e89da32a14">_loaderQueueTimer</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad91e5e3b2bcf872feae4288ca7313de0"></a><!-- doxytag: member="TTURLRequestQueue::_loaders" ref="ad91e5e3b2bcf872feae4288ca7313de0" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a>*) <a class="el" href="interface_t_t_u_r_l_request_queue.html#ad91e5e3b2bcf872feae4288ca7313de0">_loaders</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a865457dc1a713db91a7c5e4c005fbcee"></a><!-- doxytag: member="TTURLRequestQueue::_maxContentLength" ref="a865457dc1a713db91a7c5e4c005fbcee" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSUInteger) <a class="el" href="interface_t_t_u_r_l_request_queue.html#a865457dc1a713db91a7c5e4c005fbcee">_maxContentLength</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8bb0463a6e6d0a44e1a3140fb08ac0ef"></a><!-- doxytag: member="TTURLRequestQueue::_suspended" ref="a8bb0463a6e6d0a44e1a3140fb08ac0ef" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) <a class="el" href="interface_t_t_u_r_l_request_queue.html#a8bb0463a6e6d0a44e1a3140fb08ac0ef">_suspended</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae269d597ee56506e2e9b9627bbc2de8a"></a><!-- doxytag: member="TTURLRequestQueue::_totalLoading" ref="ae269d597ee56506e2e9b9627bbc2de8a" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSInteger) <a class="el" href="interface_t_t_u_r_l_request_queue.html#ae269d597ee56506e2e9b9627bbc2de8a">_totalLoading</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9af3e54a3b617838ff3034ff2963d6fd"></a><!-- doxytag: member="TTURLRequestQueue::_userAgent" ref="a9af3e54a3b617838ff3034ff2963d6fd" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) <a class="el" href="interface_t_t_u_r_l_request_queue.html#a9af3e54a3b617838ff3034ff2963d6fd">_userAgent</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
 
 </div>
 </div>
@@ -459,7 +258,7 @@ Inheritance diagram for TTURLRequestQueue:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20/<a class="el" href="_t_t_u_r_l_request_queue_8h_source.html">TTURLRequestQueue.h</a></li>
-<li><a class="el" href="_t_t_u_r_l_request_queue_8m.html">TTURLRequestQueue.m</a></li>
+<li>TTURLRequestQueue.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -467,7 +266,7 @@ Inheritance diagram for TTURLRequestQueue:</div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

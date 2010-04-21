@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTStyledFrame.h</h1><a href="_t_t_styled_frame_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTStyledFrame.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -83,9 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022 <span class="keyword">@class</span> <a class="code" href="interface_t_t_styled_box_frame.html">TTStyledBoxFrame</a>;
 <a name="l00023"></a>00023 
 <a name="l00024"></a><a class="code" href="interface_t_t_styled_frame.html">00024</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_styled_frame.html">TTStyledFrame</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00025"></a><a class="code" href="interface_t_t_styled_frame.html#ad03f8db51cb723fc5e39421e6bb57aa5">00025</a>   <a class="code" href="interface_t_t_styled_element.html">TTStyledElement</a>*  <a class="code" href="interface_t_t_styled_frame.html#ad03f8db51cb723fc5e39421e6bb57aa5">_element</a>;
-<a name="l00026"></a><a class="code" href="interface_t_t_styled_frame.html#a5ae54400ddeca3d416f1fd3b9e3ddfb1">00026</a>   <a class="code" href="interface_t_t_styled_frame.html">TTStyledFrame</a>*    <a class="code" href="interface_t_t_styled_frame.html#a5ae54400ddeca3d416f1fd3b9e3ddfb1">_nextFrame</a>;
-<a name="l00027"></a><a class="code" href="interface_t_t_styled_frame.html#a24cf68c1443114c196c041743b8ee39e">00027</a>   CGRect            <a class="code" href="interface_t_t_styled_frame.html#a24cf68c1443114c196c041743b8ee39e">_bounds</a>;
+<a name="l00025"></a>00025   <a class="code" href="interface_t_t_styled_element.html">TTStyledElement</a>*  _element;
+<a name="l00026"></a>00026   <a class="code" href="interface_t_t_styled_frame.html">TTStyledFrame</a>*    _nextFrame;
+<a name="l00027"></a>00027   CGRect            _bounds;
 <a name="l00028"></a>00028 }
 <a name="l00029"></a>00029 
 <a name="l00033"></a><a class="code" href="interface_t_t_styled_frame.html#a67cc15e5eeaca5b7ad03e29bed795168">00033</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_styled_element.html">TTStyledElement</a>* element;
@@ -94,10 +93,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00039"></a>00039 
 <a name="l00043"></a><a class="code" href="interface_t_t_styled_frame.html#ab0bd9f22c306b1983ffe3889a3057971">00043</a> @property (nonatomic) CGRect bounds;
 <a name="l00044"></a>00044 
-<a name="l00045"></a><a class="code" href="interface_t_t_styled_frame.html#a2e4e82fffc643c459e0527325dcb6cda">00045</a> @property (nonatomic) CGFloat x;
-<a name="l00046"></a><a class="code" href="interface_t_t_styled_frame.html#a6dfa6d3f5a80762f9b0dda76a61ba9ac">00046</a> @property (nonatomic) CGFloat y;
-<a name="l00047"></a><a class="code" href="interface_t_t_styled_frame.html#ac52f801db1357e38f7cfc785264e55ea">00047</a> @property (nonatomic) CGFloat width;
-<a name="l00048"></a><a class="code" href="interface_t_t_styled_frame.html#a01628cb8596f1b94b801484be6bb321c">00048</a> @property (nonatomic) CGFloat height;
+<a name="l00045"></a>00045 @property (nonatomic) CGFloat x;
+<a name="l00046"></a>00046 @property (nonatomic) CGFloat y;
+<a name="l00047"></a>00047 @property (nonatomic) CGFloat width;
+<a name="l00048"></a>00048 @property (nonatomic) CGFloat height;
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050 - (<a class="code" href="class_u_i_font.html" title="Additions.">UIFont</a>*)font;
 <a name="l00051"></a>00051 
@@ -114,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

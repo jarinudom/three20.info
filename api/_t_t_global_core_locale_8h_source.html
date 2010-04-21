@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTGlobalCoreLocale.h</h1><a href="_t_t_global_core_locale_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTGlobalCoreLocale.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -77,20 +76,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 
-<a name="l00024"></a>00024 NSLocale* <a class="code" href="_t_t_global_core_locale_8h.html#a28c2237871af5c9e4680f3b767f81699" title="Gets the current system locale chosen by the user.">TTCurrentLocale</a>();
+<a name="l00024"></a>00024 NSLocale* TTCurrentLocale();
 <a name="l00025"></a>00025 
-<a name="l00029"></a>00029 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="_t_t_global_core_locale_8h.html#a3a3c40fe1b0f0e9aa6c4faa1c01069c6">TTLocalizedString</a>(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* key, <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* comment);
+<a name="l00029"></a>00029 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* TTLocalizedString(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* key, <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* comment);
 <a name="l00030"></a>00030 
-<a name="l00039"></a>00039 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="_t_t_global_core_locale_8h.html#ac3e08a7e0e83da724cf7a338cf49ce88">TTDescriptionForError</a>(NSError* error);
+<a name="l00039"></a>00039 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* TTDescriptionForError(NSError* error);
 <a name="l00040"></a>00040 
-<a name="l00046"></a>00046 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* <a class="code" href="_t_t_global_core_locale_8h.html#a0898dd6a860216d8ba30c8ac808cb272">TTFormatInteger</a>(NSInteger num);
+<a name="l00046"></a>00046 <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* TTFormatInteger(NSInteger num);
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

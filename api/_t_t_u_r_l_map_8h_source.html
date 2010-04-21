@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTURLMap.h</h1><a href="_t_t_u_r_l_map_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTURLMap.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -81,27 +80,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_navigator_pattern.html">TTURLNavigatorPattern</a>;
 <a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_generator_pattern.html">TTURLGeneratorPattern</a>;
 <a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8f">00023</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {
-<a name="l00024"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8fad3dd12ca7bb7a6a1561e96c4f50a2990">00024</a>   <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8fad3dd12ca7bb7a6a1561e96c4f50a2990">TTNavigationModeNone</a>,
-<a name="l00025"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faf6b514f33089fba276f38b2013a81640">00025</a>   <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faf6b514f33089fba276f38b2013a81640">TTNavigationModeCreate</a>,            <span class="comment">// a new view controller is created each time</span>
-<a name="l00026"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faa9d6d7a00c1e1fd3ec379f6eeddec146">00026</a>   <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faa9d6d7a00c1e1fd3ec379f6eeddec146">TTNavigationModeShare</a>,             <span class="comment">// a new view controller is created, cached and re-used</span>
-<a name="l00027"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8facbd1238f10c703640e8e1e9269bfa098">00027</a>   <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8facbd1238f10c703640e8e1e9269bfa098">TTNavigationModeModal</a>,             <span class="comment">// a new view controller is created and presented modally</span>
-<a name="l00028"></a><a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faf9b8b876d7e6bcff7b9c9c1a8ea9ded1">00028</a>   <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8faf9b8b876d7e6bcff7b9c9c1a8ea9ded1">TTNavigationModeExternal</a>,          <span class="comment">// an external app will be opened</span>
-<a name="l00029"></a>00029 } <a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8f">TTNavigationMode</a>;
+<a name="l00023"></a>00023 <span class="keyword">typedef</span> <span class="keyword">enum</span> {
+<a name="l00024"></a>00024   TTNavigationModeNone,
+<a name="l00025"></a>00025   TTNavigationModeCreate,            <span class="comment">// a new view controller is created each time</span>
+<a name="l00026"></a>00026   TTNavigationModeShare,             <span class="comment">// a new view controller is created, cached and re-used</span>
+<a name="l00027"></a>00027   TTNavigationModeModal,             <span class="comment">// a new view controller is created and presented modally</span>
+<a name="l00028"></a>00028   TTNavigationModeExternal,          <span class="comment">// an external app will be opened</span>
+<a name="l00029"></a>00029 } TTNavigationMode;
 <a name="l00030"></a>00030 
 <a name="l00031"></a><a class="code" href="interface_t_t_u_r_l_map.html">00031</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_u_r_l_map.html">TTURLMap</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00032"></a><a class="code" href="interface_t_t_u_r_l_map.html#a5333b7bee4f197991c7bd4ef38d7587d">00032</a>   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    <a class="code" href="interface_t_t_u_r_l_map.html#a5333b7bee4f197991c7bd4ef38d7587d">_objectMappings</a>;
+<a name="l00032"></a>00032   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    _objectMappings;
 <a name="l00033"></a>00033 
-<a name="l00034"></a><a class="code" href="interface_t_t_u_r_l_map.html#ab28daecbc0219664eb908afaee4650ac">00034</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         <a class="code" href="interface_t_t_u_r_l_map.html#ab28daecbc0219664eb908afaee4650ac">_objectPatterns</a>;
-<a name="l00035"></a><a class="code" href="interface_t_t_u_r_l_map.html#a14e729b56c763563b0fba0a0608b1dbb">00035</a>   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         <a class="code" href="interface_t_t_u_r_l_map.html#a14e729b56c763563b0fba0a0608b1dbb">_fragmentPatterns</a>;
-<a name="l00036"></a><a class="code" href="interface_t_t_u_r_l_map.html#a146e5d2d50107dcd0d0ab9f233f38275">00036</a>   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    <a class="code" href="interface_t_t_u_r_l_map.html#a146e5d2d50107dcd0d0ab9f233f38275">_stringPatterns</a>;
+<a name="l00034"></a>00034   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         _objectPatterns;
+<a name="l00035"></a>00035   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         _fragmentPatterns;
+<a name="l00036"></a>00036   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    _stringPatterns;
 <a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="interface_t_t_u_r_l_map.html#a7f69a28e850b1fedeb6c6c411e7d8028">00038</a>   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    <a class="code" href="interface_t_t_u_r_l_map.html#a7f69a28e850b1fedeb6c6c411e7d8028">_schemes</a>;
+<a name="l00038"></a>00038   <a class="code" href="class_n_s_mutable_dictionary.html" title="Additions.">NSMutableDictionary</a>*    _schemes;
 <a name="l00039"></a>00039 
-<a name="l00040"></a><a class="code" href="interface_t_t_u_r_l_map.html#a9bcb041d3890b906b58bb15f3768d772">00040</a>   <a class="code" href="interface_t_t_u_r_l_navigator_pattern.html">TTURLNavigatorPattern</a>*  <a class="code" href="interface_t_t_u_r_l_map.html#a9bcb041d3890b906b58bb15f3768d772">_defaultObjectPattern</a>;
-<a name="l00041"></a><a class="code" href="interface_t_t_u_r_l_map.html#af170991ccbdf0e6873eb4c5b47da9a72">00041</a>   <a class="code" href="interface_t_t_u_r_l_navigator_pattern.html">TTURLNavigatorPattern</a>*  <a class="code" href="interface_t_t_u_r_l_map.html#af170991ccbdf0e6873eb4c5b47da9a72">_hashPattern</a>;
+<a name="l00040"></a>00040   <a class="code" href="interface_t_t_u_r_l_navigator_pattern.html">TTURLNavigatorPattern</a>*  _defaultObjectPattern;
+<a name="l00041"></a>00041   <a class="code" href="interface_t_t_u_r_l_navigator_pattern.html">TTURLNavigatorPattern</a>*  _hashPattern;
 <a name="l00042"></a>00042 
-<a name="l00043"></a><a class="code" href="interface_t_t_u_r_l_map.html#acc60d326b4fbe5e0994bf843af005d8d">00043</a>   BOOL                    <a class="code" href="interface_t_t_u_r_l_map.html#acc60d326b4fbe5e0994bf843af005d8d">_invalidPatterns</a>;
+<a name="l00043"></a>00043   BOOL                    _invalidPatterns;
 <a name="l00044"></a>00044 }
 <a name="l00045"></a>00045 
 <a name="l00049"></a>00049 - (void)from:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL toObject:(<span class="keywordtype">id</span>)object;
@@ -147,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00143"></a>00143 
 <a name="l00147"></a>00147 - (id)dispatchURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL toTarget:(<span class="keywordtype">id</span>)target query:(<a class="code" href="class_n_s_dictionary.html">NSDictionary</a>*)query;
 <a name="l00148"></a>00148 
-<a name="l00152"></a>00152 - (<a class="code" href="_t_t_u_r_l_map_8h.html#ac4b2da7ab3c2de97d4a1170db8023f8f">TTNavigationMode</a>)navigationModeForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
+<a name="l00152"></a>00152 - (TTNavigationMode)navigationModeForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
 <a name="l00153"></a>00153 
 <a name="l00157"></a>00157 - (NSInteger)transitionForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
 <a name="l00158"></a>00158 
@@ -165,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

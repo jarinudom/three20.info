@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTBoxStyle.h</h1><a href="_t_t_box_style_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTBoxStyle.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -75,37 +74,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_style_8h.html">Three20/TTStyle.h</a>&quot;</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_position_8h.html">Three20/TTPosition.h</a>&quot;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a><a class="code" href="interface_t_t_box_style.html">00020</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a> : <a class="code" href="interface_t_t_style.html">TTStyle</a> {
-<a name="l00021"></a><a class="code" href="interface_t_t_box_style.html#a39d736eb3cb3374a7aaa89e8bca51fa2">00021</a>   UIEdgeInsets  <a class="code" href="interface_t_t_box_style.html#a39d736eb3cb3374a7aaa89e8bca51fa2">_margin</a>;
-<a name="l00022"></a><a class="code" href="interface_t_t_box_style.html#add82e52e1866b32c7c5a275d3b14326c">00022</a>   UIEdgeInsets  <a class="code" href="interface_t_t_box_style.html#add82e52e1866b32c7c5a275d3b14326c">_padding</a>;
-<a name="l00023"></a><a class="code" href="interface_t_t_box_style.html#a7f7ed23db2971caaf1af2e0acefaaabd">00023</a>   CGSize        <a class="code" href="interface_t_t_box_style.html#a7f7ed23db2971caaf1af2e0acefaaabd">_minSize</a>;
-<a name="l00024"></a><a class="code" href="interface_t_t_box_style.html#a35dbf5c695e330a0b7a57f443ab9635d">00024</a>   <a class="code" href="_t_t_position_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a>    <a class="code" href="interface_t_t_box_style.html#a35dbf5c695e330a0b7a57f443ab9635d">_position</a>;
-<a name="l00025"></a>00025 }
-<a name="l00026"></a>00026 
-<a name="l00027"></a><a class="code" href="interface_t_t_box_style.html#a942c3fb153a0e6577ba5367d6493e324">00027</a> @property (nonatomic) UIEdgeInsets  margin;
-<a name="l00028"></a><a class="code" href="interface_t_t_box_style.html#af5a3e9b2cb0b22fc0dbf9438c11d09cb">00028</a> @property (nonatomic) UIEdgeInsets  padding;
-<a name="l00029"></a><a class="code" href="interface_t_t_box_style.html#a8e5475c9a065ab72adb2ca9438424ff1">00029</a> @property (nonatomic) CGSize        minSize;
-<a name="l00030"></a><a class="code" href="interface_t_t_box_style.html#af34d37d473ee063758eab5e6eb32653a">00030</a> @property (nonatomic) <a class="code" href="_t_t_position_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a>    position;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00033"></a>00033 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithPadding:(UIEdgeInsets)padding next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00034"></a>00034 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithFloats:(<a class="code" href="_t_t_position_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a>)position next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00035"></a>00035 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin padding:(UIEdgeInsets)padding
-<a name="l00036"></a>00036                           next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00037"></a>00037 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin padding:(UIEdgeInsets)padding
-<a name="l00038"></a>00038                        minSize:(CGSize)minSize position:(<a class="code" href="_t_t_position_8h.html#a04eb0e8c539cf3f8ba46684c6f6bf710">TTPosition</a>)position next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 @end
+<a name="l00017"></a>00017 <span class="comment">// Style</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;Three20/TTStyle.h&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#import &quot;Three20/TTPosition.h&quot;</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="interface_t_t_box_style.html">00021</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a> : <a class="code" href="interface_t_t_style.html">TTStyle</a> {
+<a name="l00022"></a>00022   UIEdgeInsets  _margin;
+<a name="l00023"></a>00023   UIEdgeInsets  _padding;
+<a name="l00024"></a>00024   CGSize        _minSize;
+<a name="l00025"></a>00025   TTPosition    _position;
+<a name="l00026"></a>00026 }
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 @property (nonatomic) UIEdgeInsets  margin;
+<a name="l00029"></a>00029 @property (nonatomic) UIEdgeInsets  padding;
+<a name="l00030"></a>00030 @property (nonatomic) CGSize        minSize;
+<a name="l00031"></a>00031 @property (nonatomic) TTPosition    position;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00034"></a>00034 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithPadding:(UIEdgeInsets)padding next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00035"></a>00035 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithFloats:(TTPosition)position next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00036"></a>00036 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin padding:(UIEdgeInsets)padding
+<a name="l00037"></a>00037                           next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00038"></a>00038 + (<a class="code" href="interface_t_t_box_style.html">TTBoxStyle</a>*)styleWithMargin:(UIEdgeInsets)margin padding:(UIEdgeInsets)padding
+<a name="l00039"></a>00039                        minSize:(CGSize)minSize position:(TTPosition)position next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

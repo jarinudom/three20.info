@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTTextBarController.h</h1><a href="_t_t_text_bar_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTTextBarController.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -75,56 +74,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_popup_view_controller_8h.html">Three20/TTPopupViewController.h</a>&quot;</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_text_editor_delegate_8h.html">Three20/TTTextEditorDelegate.h</a>&quot;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@protocol </span>TTTextBarDelegate;
-<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_button.html">TTButton</a>;
-<a name="l00022"></a>00022 <span class="keyword">@class</span> <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="interface_t_t_text_bar_controller.html">00024</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_text_bar_controller.html">TTTextBarController</a> : <a class="code" href="interface_t_t_popup_view_controller.html" title="A view controller which, when displayed modally, inserts its view over the parent...">TTPopupViewController</a> &lt;<a class="code" href="protocol_t_t_text_editor_delegate-p.html">TTTextEditorDelegate</a>&gt; {
-<a name="l00025"></a>00025 <span class="keyword">@protected</span>
-<a name="l00026"></a><a class="code" href="interface_t_t_text_bar_controller.html#aa6f874f1c8904ba4bd846af4dea668af">00026</a>   <span class="keywordtype">id</span>                <a class="code" href="interface_t_t_text_bar_controller.html#aa6f874f1c8904ba4bd846af4dea668af">_result</a>;
-<a name="l00027"></a><a class="code" href="interface_t_t_text_bar_controller.html#ad36bdcda9275673553ac09ffe5a08096">00027</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*         <a class="code" href="interface_t_t_text_bar_controller.html#ad36bdcda9275673553ac09ffe5a08096">_defaultText</a>;
-<a name="l00028"></a><a class="code" href="interface_t_t_text_bar_controller.html#abe10f029baddfbe1d98e71fd5e9c688c">00028</a>   <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>*           <a class="code" href="interface_t_t_text_bar_controller.html#abe10f029baddfbe1d98e71fd5e9c688c">_textBar</a>;
-<a name="l00029"></a><a class="code" href="interface_t_t_text_bar_controller.html#a832a86d6e273831d183dfce7445f31b5">00029</a>   <a class="code" href="interface_t_t_text_editor.html">TTTextEditor</a>*     <a class="code" href="interface_t_t_text_bar_controller.html#a832a86d6e273831d183dfce7445f31b5">_textEditor</a>;
-<a name="l00030"></a><a class="code" href="interface_t_t_text_bar_controller.html#ab88b96062651f3aa0464083c2e052db0">00030</a>   <a class="code" href="interface_t_t_button.html">TTButton</a>*         <a class="code" href="interface_t_t_text_bar_controller.html#ab88b96062651f3aa0464083c2e052db0">_postButton</a>;
-<a name="l00031"></a><a class="code" href="interface_t_t_text_bar_controller.html#a159ee7b38c1f5a38067ee2aaef478a81">00031</a>   <a class="code" href="class_u_i_view.html">UIView</a>*           <a class="code" href="interface_t_t_text_bar_controller.html#a159ee7b38c1f5a38067ee2aaef478a81">_footerBar</a>;
-<a name="l00032"></a><a class="code" href="interface_t_t_text_bar_controller.html#aa28dd792161eeffd8ba083b2ca7a5af7">00032</a>   CGFloat           <a class="code" href="interface_t_t_text_bar_controller.html#aa28dd792161eeffd8ba083b2ca7a5af7">_originTop</a>;
-<a name="l00033"></a><a class="code" href="interface_t_t_text_bar_controller.html#afa4abb79b0f2d92dd0d5d1633df9b58a">00033</a>   UIBarButtonItem*  <a class="code" href="interface_t_t_text_bar_controller.html#afa4abb79b0f2d92dd0d5d1633df9b58a">_previousRightBarButtonItem</a>;
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="interface_t_t_text_bar_controller.html#a8f3de4afcfc8ebcaee13c7b8d08ad7f6">00035</a>   id &lt;TTTextBarDelegate&gt; <a class="code" href="interface_t_t_text_bar_controller.html#a8f3de4afcfc8ebcaee13c7b8d08ad7f6">_delegate</a>;
-<a name="l00036"></a>00036 }
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="interface_t_t_text_bar_controller.html#a4bd4432b994591d98febad9acf3d3fc1">00038</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_text_editor.html">TTTextEditor</a>* textEditor;
-<a name="l00039"></a><a class="code" href="interface_t_t_text_bar_controller.html#ab9b830273fef4b5af8778c27dd7726b2">00039</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_button.html">TTButton</a>*     postButton;
-<a name="l00040"></a><a class="code" href="interface_t_t_text_bar_controller.html#a3d1aefad9a68c143ea70dfd5f42c0051">00040</a> @property (nonatomic, retain)   <a class="code" href="class_u_i_view.html">UIView</a>*       footerBar;
-<a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="interface_t_t_text_bar_controller.html#a2e8c9f6472495969cebfeaf6672894c6">00042</a> @property (nonatomic, assign)   <span class="keywordtype">id</span> &lt;TTTextBarDelegate&gt; delegate;
-<a name="l00043"></a>00043 
-<a name="l00047"></a>00047 - (<span class="keywordtype">void</span>)post;
-<a name="l00048"></a>00048 
-<a name="l00052"></a>00052 - (<span class="keywordtype">void</span>)cancel;
-<a name="l00053"></a>00053 
-<a name="l00057"></a>00057 - (<span class="keywordtype">void</span>)dismissWithResult:(<span class="keywordtype">id</span>)result animated:(BOOL)animated;
-<a name="l00058"></a>00058 
-<a name="l00062"></a>00062 - (<span class="keywordtype">void</span>)failWithError:(NSError*)error;
-<a name="l00063"></a>00063 
-<a name="l00072"></a>00072 - (BOOL)willPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text;
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForActivity;
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForError:(NSError*)error;
-<a name="l00077"></a>00077 
+<a name="l00017"></a>00017 <span class="comment">// UI</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;Three20/TTPopupViewController.h&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#import &quot;Three20/TTTextEditorDelegate.h&quot;</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="keyword">@protocol </span>TTTextBarDelegate;
+<a name="l00022"></a>00022 <span class="keyword">@class</span> <a class="code" href="interface_t_t_button.html">TTButton</a>;
+<a name="l00023"></a>00023 <span class="keyword">@class</span> <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>;
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="interface_t_t_text_bar_controller.html">00025</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_text_bar_controller.html">TTTextBarController</a> : <a class="code" href="interface_t_t_popup_view_controller.html" title="A view controller which, when displayed modally, inserts its view over the parent...">TTPopupViewController</a> &lt;<a class="code" href="protocol_t_t_text_editor_delegate-p.html">TTTextEditorDelegate</a>&gt; {
+<a name="l00026"></a>00026 <span class="keyword">@protected</span>
+<a name="l00027"></a>00027   <span class="keywordtype">id</span>                _result;
+<a name="l00028"></a>00028   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*         _defaultText;
+<a name="l00029"></a>00029   <a class="code" href="interface_t_t_view.html" title="A UIView with an attached style and layout that are used to render and layout the...">TTView</a>*           _textBar;
+<a name="l00030"></a>00030   <a class="code" href="interface_t_t_text_editor.html">TTTextEditor</a>*     _textEditor;
+<a name="l00031"></a>00031   <a class="code" href="interface_t_t_button.html">TTButton</a>*         _postButton;
+<a name="l00032"></a>00032   <a class="code" href="class_u_i_view.html">UIView</a>*           _footerBar;
+<a name="l00033"></a>00033   CGFloat           _originTop;
+<a name="l00034"></a>00034   UIBarButtonItem*  _previousRightBarButtonItem;
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036   id &lt;TTTextBarDelegate&gt; _delegate;
+<a name="l00037"></a>00037 }
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 @property (nonatomic, readonly) <a class="code" href="interface_t_t_text_editor.html">TTTextEditor</a>* textEditor;
+<a name="l00040"></a>00040 @property (nonatomic, readonly) <a class="code" href="interface_t_t_button.html">TTButton</a>*     postButton;
+<a name="l00041"></a>00041 @property (nonatomic, retain)   <a class="code" href="class_u_i_view.html">UIView</a>*       footerBar;
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 @property (nonatomic, assign)   <span class="keywordtype">id</span> &lt;TTTextBarDelegate&gt; delegate;
+<a name="l00044"></a>00044 
+<a name="l00048"></a>00048 - (<span class="keywordtype">void</span>)post;
+<a name="l00049"></a>00049 
+<a name="l00053"></a>00053 - (<span class="keywordtype">void</span>)cancel;
+<a name="l00054"></a>00054 
+<a name="l00058"></a>00058 - (<span class="keywordtype">void</span>)dismissWithResult:(<span class="keywordtype">id</span>)result animated:(BOOL)animated;
+<a name="l00059"></a>00059 
+<a name="l00063"></a>00063 - (<span class="keywordtype">void</span>)failWithError:(NSError*)error;
+<a name="l00064"></a>00064 
+<a name="l00073"></a>00073 - (BOOL)willPostText:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)text;
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForActivity;
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)titleForError:(NSError*)error;
 <a name="l00078"></a>00078 
-<a name="l00079"></a>00079 @end
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

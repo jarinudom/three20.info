@@ -62,9 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>TTSectionedDataSource Class Reference</h1><!-- doxytag: class="TTSectionedDataSource" --><!-- doxytag: inherits="TTTableViewDataSource" -->
-<p><code>#import &lt;<a class="el" href="_t_t_sectioned_data_source_8h_source.html">TTSectionedDataSource.h</a>&gt;</code></p>
-<div class="dynheader">
+<h1>TTSectionedDataSource Class Reference</h1><!-- doxytag: class="TTSectionedDataSource" --><!-- doxytag: inherits="TTTableViewDataSource" --><div class="dynheader">
 Inheritance diagram for TTSectionedDataSource:</div>
 <div class="dynsection">
  <div class="center">
@@ -81,10 +79,14 @@ Inheritance diagram for TTSectionedDataSource:</div>
 <p><a href="class_t_t_sectioned_data_source-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_sectioned_data_source.html#aca54e8f25190b92ffe59b54851afc630">initWithItems:sections:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_sectioned_data_source.html#aeabf78103cc33db6bb7365a514e1a7a9">indexPathOfItemWithUserInfo:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_sectioned_data_source.html#ae8e2f6afb296fb65988857099651b063">removeItemAtIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_sectioned_data_source.html#a0d792ca53af589a65ebc584052344231">removeItemAtIndexPath:andSectionIfEmpty:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca54e8f25190b92ffe59b54851afc630"></a><!-- doxytag: member="TTSectionedDataSource::initWithItems:sections:" ref="aca54e8f25190b92ffe59b54851afc630" args="(NSArray *items,[sections] NSArray *sections)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithItems:sections:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeabf78103cc33db6bb7365a514e1a7a9"></a><!-- doxytag: member="TTSectionedDataSource::indexPathOfItemWithUserInfo:" ref="aeabf78103cc33db6bb7365a514e1a7a9" args="(id userInfo)" -->
+(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>indexPathOfItemWithUserInfo:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8e2f6afb296fb65988857099651b063"></a><!-- doxytag: member="TTSectionedDataSource::removeItemAtIndexPath:" ref="ae8e2f6afb296fb65988857099651b063" args="(NSIndexPath *indexPath)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>removeItemAtIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d792ca53af589a65ebc584052344231"></a><!-- doxytag: member="TTSectionedDataSource::removeItemAtIndexPath:andSectionIfEmpty:" ref="a0d792ca53af589a65ebc584052344231" args="(NSIndexPath *indexPath,[andSectionIfEmpty] BOOL andSection)" -->
+(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>removeItemAtIndexPath:andSectionIfEmpty:</b></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_sectioned_data_source.html">TTSectionedDataSource</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_sectioned_data_source.html#a756f7f746e49ed15b2bbe4399c9f49d6">dataSourceWithObjects:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Objects should be in this format:.  <a href="#a756f7f746e49ed15b2bbe4399c9f49d6"></a><br/></td></tr>
@@ -92,11 +94,15 @@ Inheritance diagram for TTSectionedDataSource:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Objects should be in this format:.  <a href="#a7bf1c5da277aad353af4360a9064e291"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_sectioned_data_source.html">TTSectionedDataSource</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_sectioned_data_source.html#acfe7d8e526b33f5dea06caf3b00b978a">dataSourceWithItems:sections:</a></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_sectioned_data_source.html#a28f70759b47769bce896a2b7275a22bf">_sections</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_sectioned_data_source.html#abf62ac62eb3fab69175788e3e7d34b6f">_items</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28f70759b47769bce896a2b7275a22bf"></a><!-- doxytag: member="TTSectionedDataSource::_sections" ref="a28f70759b47769bce896a2b7275a22bf" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_sections</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf62ac62eb3fab69175788e3e7d34b6f"></a><!-- doxytag: member="TTSectionedDataSource::_items" ref="abf62ac62eb3fab69175788e3e7d34b6f" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_items</b></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_sectioned_data_source.html#ae18ad5eee6d910e2e2d7870ae0ee7a2a">items</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_sectioned_data_source.html#a1978d447d2591561d6788b55e39ddd05">sections</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae18ad5eee6d910e2e2d7870ae0ee7a2a"></a><!-- doxytag: member="TTSectionedDataSource::items" ref="ae18ad5eee6d910e2e2d7870ae0ee7a2a" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1978d447d2591561d6788b55e39ddd05"></a><!-- doxytag: member="TTSectionedDataSource::sections" ref="a1978d447d2591561d6788b55e39ddd05" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>sections</b></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a7bf1c5da277aad353af4360a9064e291"></a><!-- doxytag: member="TTSectionedDataSource::dataSourceWithArrays:" ref="a7bf1c5da277aad353af4360a9064e291" args="(id object,[,]...)" -->
@@ -125,7 +131,8 @@ Inheritance diagram for TTSectionedDataSource:</div>
 <div class="memdoc">
 
 <p>Objects should be in this format:. </p>
-<p>"section title", arrayOfItems, @"section title", arrayOfItems, ... </p>
+<p>"section title", arrayOfItems, @"section title", arrayOfItems, ...</p>
+<p>Where arrayOfItems is generally an array of items of type <a class="el" href="interface_t_t_table_item.html">TTTableItem</a>. </p>
 
 </div>
 </div>
@@ -153,6 +160,14 @@ Inheritance diagram for TTSectionedDataSource:</div>
       </table>
 </div>
 <div class="memdoc">
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>items</em>&nbsp;</td><td>An array of arrays, where each array is the contents of a section, to be listed under the section title held in the corresponding index of the `section` array.</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sections</em>&nbsp;</td><td>An array of strings, where each string is the title of a section.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The items and sections arrays should be of equal length. </p>
 
 </div>
 </div>
@@ -182,157 +197,14 @@ Inheritance diagram for TTSectionedDataSource:</div>
 <div class="memdoc">
 
 <p>Objects should be in this format:. </p>
-<p>"section title", item, item, @"section title", item, item, ... </p>
-
-</div>
-</div>
-<a class="anchor" id="aeabf78103cc33db6bb7365a514e1a7a9"></a><!-- doxytag: member="TTSectionedDataSource::indexPathOfItemWithUserInfo:" ref="aeabf78103cc33db6bb7365a514e1a7a9" args="(id userInfo)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSIndexPath *) indexPathOfItemWithUserInfo: </td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>userInfo</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aca54e8f25190b92ffe59b54851afc630"></a><!-- doxytag: member="TTSectionedDataSource::initWithItems:sections:" ref="aca54e8f25190b92ffe59b54851afc630" args="(NSArray *items,[sections] NSArray *sections)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) initWithItems: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_array.html">NSArray</a>*)&nbsp;</td>
-          <td class="paramname"> <em>items</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">sections:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_array.html">NSArray</a>*)&nbsp;</td>
-          <td class="paramname"> <em>sections</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae8e2f6afb296fb65988857099651b063"></a><!-- doxytag: member="TTSectionedDataSource::removeItemAtIndexPath:" ref="ae8e2f6afb296fb65988857099651b063" args="(NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) removeItemAtIndexPath: </td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath*)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0d792ca53af589a65ebc584052344231"></a><!-- doxytag: member="TTSectionedDataSource::removeItemAtIndexPath:andSectionIfEmpty:" ref="a0d792ca53af589a65ebc584052344231" args="(NSIndexPath *indexPath,[andSectionIfEmpty] BOOL andSection)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) removeItemAtIndexPath: </td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath*)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">andSectionIfEmpty:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>andSection</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="abf62ac62eb3fab69175788e3e7d34b6f"></a><!-- doxytag: member="TTSectionedDataSource::_items" ref="abf62ac62eb3fab69175788e3e7d34b6f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_sectioned_data_source.html#abf62ac62eb3fab69175788e3e7d34b6f">_items</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a28f70759b47769bce896a2b7275a22bf"></a><!-- doxytag: member="TTSectionedDataSource::_sections" ref="a28f70759b47769bce896a2b7275a22bf" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) <a class="el" href="interface_t_t_sectioned_data_source.html#a28f70759b47769bce896a2b7275a22bf">_sections</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Property Documentation</h2>
-<a class="anchor" id="ae18ad5eee6d910e2e2d7870ae0ee7a2a"></a><!-- doxytag: member="TTSectionedDataSource::items" ref="ae18ad5eee6d910e2e2d7870ae0ee7a2a" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) items<code> [read, write, retain]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1978d447d2591561d6788b55e39ddd05"></a><!-- doxytag: member="TTSectionedDataSource::sections" ref="a1978d447d2591561d6788b55e39ddd05" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a>*) sections<code> [read, write, retain]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>"section title", item, item, @"section title", item, item, ...</p>
+<p>Where item is generally a type of <a class="el" href="interface_t_t_table_item.html">TTTableItem</a>. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20/<a class="el" href="_t_t_sectioned_data_source_8h_source.html">TTSectionedDataSource.h</a></li>
-<li><a class="el" href="_t_t_sectioned_data_source_8m.html">TTSectionedDataSource.m</a></li>
+<li>TTSectionedDataSource.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -340,7 +212,7 @@ Inheritance diagram for TTSectionedDataSource:</div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

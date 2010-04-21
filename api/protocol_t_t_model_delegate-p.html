@@ -62,14 +62,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>&lt;TTModelDelegate&gt; Protocol Reference</h1><!-- doxytag: class="TTModelDelegate-p" -->
-<p><code>#import &lt;<a class="el" href="_t_t_model_delegate_8h_source.html">TTModelDelegate.h</a>&gt;</code></p>
-<div class="dynheader">
+<h1>&lt;TTModelDelegate&gt; Protocol Reference</h1><!-- doxytag: class="TTModelDelegate-p" --><div class="dynheader">
 Inheritance diagram for &lt;TTModelDelegate&gt;:</div>
 <div class="dynsection">
  <div class="center">
   <img src="protocol_t_t_model_delegate-p.png" usemap="#&lt;TTModelDelegate&gt;_map" alt=""/>
   <map id="&lt;TTModelDelegate&gt;_map" name="&lt;TTModelDelegate&gt;_map">
+<area href="interface_mock_model_delegate.html" alt="MockModelDelegate" shape="rect" coords="0,56,153,80"/>
 <area href="interface_t_t_model_view_controller.html" alt="TTModelViewController" shape="rect" coords="448,56,601,80"/>
 <area href="interface_t_t_photo_view_controller.html" alt="TTPhotoViewController" shape="rect" coords="0,112,153,136"/>
 <area href="interface_t_t_popup_view_controller.html" alt="TTPopupViewController" shape="rect" coords="244,112,397,136"/>
@@ -87,147 +86,28 @@ Inheritance diagram for &lt;TTModelDelegate&gt;:</div>
 <p><a href="protocol_t_t_model_delegate-p-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a5df22439eaf4f407a261ad79c03f55c4">modelDidStartLoad:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a68a9663728353e79b48867bbda192d3a">modelDidFinishLoad:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a1d09bbb97be34017532f5705bac1aab0">model:didFailLoadWithError:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a0c05ffe2a2e74cea34275819610b3940">modelDidCancelLoad:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df22439eaf4f407a261ad79c03f55c4"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidStartLoad:" ref="a5df22439eaf4f407a261ad79c03f55c4" args="(id&lt; TTModel &gt; model)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidStartLoad:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a9663728353e79b48867bbda192d3a"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidFinishLoad:" ref="a68a9663728353e79b48867bbda192d3a" args="(id&lt; TTModel &gt; model)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidFinishLoad:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d09bbb97be34017532f5705bac1aab0"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didFailLoadWithError:" ref="a1d09bbb97be34017532f5705bac1aab0" args="(id&lt; TTModel &gt; model,[didFailLoadWithError] NSError *error)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didFailLoadWithError:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c05ffe2a2e74cea34275819610b3940"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidCancelLoad:" ref="a0c05ffe2a2e74cea34275819610b3940" args="(id&lt; TTModel &gt; model)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidCancelLoad:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a2f3a9659380ba388b9a475d6761e5143">modelDidChange:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model has changed in some fundamental way.  <a href="#a2f3a9659380ba388b9a475d6761e5143"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#af16cbcde168b818c04e8f97983ccb435">model:didUpdateObject:atIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#ae897d061f4b78ef523cb179bcbe498c3">model:didInsertObject:atIndexPath:</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a2f4f7858bd3ab9e36b4c54594f09e47e">model:didDeleteObject:atIndexPath:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af16cbcde168b818c04e8f97983ccb435"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didUpdateObject:atIndexPath:" ref="af16cbcde168b818c04e8f97983ccb435" args="(id&lt; TTModel &gt; model,[didUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didUpdateObject:atIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae897d061f4b78ef523cb179bcbe498c3"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didInsertObject:atIndexPath:" ref="ae897d061f4b78ef523cb179bcbe498c3" args="(id&lt; TTModel &gt; model,[didInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didInsertObject:atIndexPath:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4f7858bd3ab9e36b4c54594f09e47e"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didDeleteObject:atIndexPath:" ref="a2f4f7858bd3ab9e36b4c54594f09e47e" args="(id&lt; TTModel &gt; model,[didDeleteObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didDeleteObject:atIndexPath:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a58855366f525d711b76767007d99fd43">modelDidBeginUpdates:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model is about to begin a multi-stage update.  <a href="#a58855366f525d711b76767007d99fd43"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.html#a3aa2a5802f68a87df0605342d8b4ca7a">modelDidEndUpdates:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model has completed a multi-stage update.  <a href="#a3aa2a5802f68a87df0605342d8b4ca7a"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a2f4f7858bd3ab9e36b4c54594f09e47e"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didDeleteObject:atIndexPath:" ref="a2f4f7858bd3ab9e36b4c54594f09e47e" args="(id&lt; TTModel &gt; model,[didDeleteObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) model: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didDeleteObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1d09bbb97be34017532f5705bac1aab0"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didFailLoadWithError:" ref="a1d09bbb97be34017532f5705bac1aab0" args="(id&lt; TTModel &gt; model,[didFailLoadWithError] NSError *error)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) model: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didFailLoadWithError:</td>
-          <td></td>
-          <td class="paramtype">(NSError *)&nbsp;</td>
-          <td class="paramname"> <em>error</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae897d061f4b78ef523cb179bcbe498c3"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didInsertObject:atIndexPath:" ref="ae897d061f4b78ef523cb179bcbe498c3" args="(id&lt; TTModel &gt; model,[didInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) model: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didInsertObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af16cbcde168b818c04e8f97983ccb435"></a><!-- doxytag: member="TTModelDelegate&#45;p::model:didUpdateObject:atIndexPath:" ref="af16cbcde168b818c04e8f97983ccb435" args="(id&lt; TTModel &gt; model,[didUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) model: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didUpdateObject:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">atIndexPath:</td>
-          <td></td>
-          <td class="paramtype">(NSIndexPath *)&nbsp;</td>
-          <td class="paramname"> <em>indexPath</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a58855366f525d711b76767007d99fd43"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidBeginUpdates:" ref="a58855366f525d711b76767007d99fd43" args="(id&lt; TTModel &gt; model)" -->
 <div class="memitem">
 <div class="memproto">
@@ -246,24 +126,6 @@ Inheritance diagram for &lt;TTModelDelegate&gt;:</div>
 
 <p>Informs the delegate that the model is about to begin a multi-stage update. </p>
 <p>Models should use this method to condense multiple updates into a single visible update. This avoids having the view update multiple times for each change. Instead, the user will only see the end result of all of your changes when you call modelDidEndUpdates. </p>
-
-</div>
-</div>
-<a class="anchor" id="a0c05ffe2a2e74cea34275819610b3940"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidCancelLoad:" ref="a0c05ffe2a2e74cea34275819610b3940" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidCancelLoad: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
 
 </div>
 </div>
@@ -309,42 +171,6 @@ Inheritance diagram for &lt;TTModelDelegate&gt;:</div>
 
 </div>
 </div>
-<a class="anchor" id="a68a9663728353e79b48867bbda192d3a"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidFinishLoad:" ref="a68a9663728353e79b48867bbda192d3a" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidFinishLoad: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5df22439eaf4f407a261ad79c03f55c4"></a><!-- doxytag: member="TTModelDelegate&#45;p::modelDidStartLoad:" ref="a5df22439eaf4f407a261ad79c03f55c4" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidStartLoad: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.html">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
 <li>Three20/<a class="el" href="_t_t_model_delegate_8h_source.html">TTModelDelegate.h</a></li>
 </ul>
@@ -354,7 +180,7 @@ Inheritance diagram for &lt;TTModelDelegate&gt;:</div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Three20 Debugging tools.  <a href="#a1d7681ae7b0f65bdaff7cdfea4846441"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#a88a581f033f1c8b08060e2fe16722305">TTLOGLEVEL_WARNING</a>&nbsp;&nbsp;&nbsp;3</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#a7b7d91e1a17f3a828264d920092e4cb8">TTLOGLEVEL_ERROR</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#a9cd535cd3913b918fa74b35312dd2551">TTMAXLOGLEVEL</a>&nbsp;&nbsp;&nbsp;TTLOGLEVEL_WARNING</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#aa21e0a4c7ddde431e5611cd901dfb1e6">TTDPRINT</a>(xx,...)&nbsp;&nbsp;&nbsp;NSLog(@&quot;%s(%d): &quot; xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#a81627cbea8a0b885db183539d5c8802f">TTDPRINTMETHODNAME</a>()&nbsp;&nbsp;&nbsp;TTDPRINT(@&quot;%s&quot;, __PRETTY_FUNCTION__)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_t_t_debug_8h.html#a3d245aeb7a513462a0eea20eea4223c8">TTDASSERT</a>(xx)&nbsp;&nbsp;&nbsp;{ if(!(xx)) { TTDPRINT(@&quot;TTDASSERT failed: %s&quot;, #xx); } } ((void)0)</td></tr>
@@ -280,6 +281,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <table class="memname">
         <tr>
           <td class="memname">#define TTLOGLEVEL_WARNING&nbsp;&nbsp;&nbsp;3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9cd535cd3913b918fa74b35312dd2551"></a><!-- doxytag: member="TTDebug.h::TTMAXLOGLEVEL" ref="a9cd535cd3913b918fa74b35312dd2551" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTMAXLOGLEVEL&nbsp;&nbsp;&nbsp;TTLOGLEVEL_WARNING</td>
         </tr>
       </table>
 </div>

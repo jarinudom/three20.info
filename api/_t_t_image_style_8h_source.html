@@ -56,10 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
-      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTImageStyle.h</h1><a href="_t_t_image_style_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20/TTImageStyle.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -75,46 +74,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_t_t_style_8h.html">Three20/TTStyle.h</a>&quot;</span>
-<a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="interface_t_t_image_style.html">00019</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_image_style.html">TTImageStyle</a> : <a class="code" href="interface_t_t_style.html">TTStyle</a> {
-<a name="l00020"></a><a class="code" href="interface_t_t_image_style.html#a3d475e0e16de1e96a3e5cd13a573065c">00020</a>   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*         <a class="code" href="interface_t_t_image_style.html#a3d475e0e16de1e96a3e5cd13a573065c">_imageURL</a>;
-<a name="l00021"></a><a class="code" href="interface_t_t_image_style.html#a0c65a3c44cc836f65e64fb7f60fefd99">00021</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*          <a class="code" href="interface_t_t_image_style.html#a0c65a3c44cc836f65e64fb7f60fefd99">_image</a>;
-<a name="l00022"></a><a class="code" href="interface_t_t_image_style.html#a37f5adcb5d7047525a9ea02c6672e155">00022</a>   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*          <a class="code" href="interface_t_t_image_style.html#a37f5adcb5d7047525a9ea02c6672e155">_defaultImage</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="interface_t_t_image_style.html#a8ff3823f5c85729803db36b5c683f2e5">00024</a>   CGSize            <a class="code" href="interface_t_t_image_style.html#a8ff3823f5c85729803db36b5c683f2e5">_size</a>;
-<a name="l00025"></a>00025 
-<a name="l00026"></a><a class="code" href="interface_t_t_image_style.html#ab4ef993daadb9a4a2cf28526b7dedecc">00026</a>   UIViewContentMode <a class="code" href="interface_t_t_image_style.html#ab4ef993daadb9a4a2cf28526b7dedecc">_contentMode</a>;
-<a name="l00027"></a>00027 }
-<a name="l00028"></a>00028 
-<a name="l00029"></a><a class="code" href="interface_t_t_image_style.html#aa7fd6ed038831c80c120f3d932931e3f">00029</a> @property (nonatomic, copy)   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* imageURL;
-<a name="l00030"></a><a class="code" href="interface_t_t_image_style.html#a47150dd1b0f91cb59b9f80cc6a2de27d">00030</a> @property (nonatomic, retain) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  image;
-<a name="l00031"></a><a class="code" href="interface_t_t_image_style.html#ab7c4e1cf976c3f2733296ed09d7914bb">00031</a> @property (nonatomic, retain) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  defaultImage;
-<a name="l00032"></a><a class="code" href="interface_t_t_image_style.html#ac6cd4dfaf32610d22b1fa067ea322c28">00032</a> @property (nonatomic)         CGSize    size;
-<a name="l00033"></a>00033 
-<a name="l00034"></a><a class="code" href="interface_t_t_image_style.html#aea812b9d15e829db754f33dc83b8de13">00034</a> @property (nonatomic)         UIViewContentMode contentMode;
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00037"></a>00037 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
-<a name="l00038"></a>00038                               next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00039"></a>00039 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
-<a name="l00040"></a>00040                        contentMode:(UIViewContentMode)contentMode
-<a name="l00041"></a>00041                               size:(CGSize)size next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00042"></a>00042 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00043"></a>00043 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
-<a name="l00044"></a>00044                            next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00045"></a>00045 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
-<a name="l00046"></a>00046                     contentMode:(UIViewContentMode)contentMode
-<a name="l00047"></a>00047                            size:(CGSize)size next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 @end
+<a name="l00017"></a>00017 <span class="comment">// Style</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;Three20/TTStyle.h&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a><a class="code" href="interface_t_t_image_style.html">00020</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_image_style.html">TTImageStyle</a> : <a class="code" href="interface_t_t_style.html">TTStyle</a> {
+<a name="l00021"></a>00021   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*         _imageURL;
+<a name="l00022"></a>00022   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*          _image;
+<a name="l00023"></a>00023   <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*          _defaultImage;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025   CGSize            _size;
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   UIViewContentMode _contentMode;
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* imageURL;
+<a name="l00031"></a>00031 @property (nonatomic, retain) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  image;
+<a name="l00032"></a>00032 @property (nonatomic, retain) <a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*  defaultImage;
+<a name="l00033"></a>00033 @property (nonatomic)         CGSize    size;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 @property (nonatomic)         UIViewContentMode contentMode;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00038"></a>00038 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
+<a name="l00039"></a>00039                               next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00040"></a>00040 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImageURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)imageURL defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
+<a name="l00041"></a>00041                        contentMode:(UIViewContentMode)contentMode
+<a name="l00042"></a>00042                               size:(CGSize)size next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00043"></a>00043 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00044"></a>00044 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
+<a name="l00045"></a>00045                            next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00046"></a>00046 + (<a class="code" href="interface_t_t_image_style.html">TTImageStyle</a>*)styleWithImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)image defaultImage:(<a class="code" href="class_u_i_image.html" title="Additions.">UIImage</a>*)defaultImage
+<a name="l00047"></a>00047                     contentMode:(UIViewContentMode)contentMode
+<a name="l00048"></a>00048                            size:(CGSize)size next:(<a class="code" href="interface_t_t_style.html">TTStyle</a>*)next;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
