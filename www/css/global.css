@@ -316,7 +316,7 @@ em {
 }
 
 #content .sectiontags li,
-#content .navi li {
+#content .navi {
   font-size: 0.9em;
   list-style-type: none;
   float: left;
@@ -332,7 +332,9 @@ em {
   font-weight: bold;
 }
 
-#content .navi li {
+#content .navi {
+  font-size: 1.1em;
+  padding-top: 6px;
   background-color: #333;
   color: #FFF;
   font-weight: normal;
@@ -341,6 +343,7 @@ em {
 
 #content .naviblock {
   padding: 0 10px;
+  padding-top: 10px;
   border: 1px dashed #ccc;
   margin-bottom: 20px;
   background-color: #ddd;

@@ -428,6 +428,7 @@ class Markdown_Parser {
 		"doLists"           => 40,
 		"doCodeBlocks"      => 50,
 		"doBlockQuotes"     => 60,
+		"doNaviQuotes"      => 70,
 		);
 
 	function runBlockGamut($text) {
@@ -1225,6 +1226,50 @@ class Markdown_Parser {
 		$pre = $matches[1];
 		$pre = preg_replace('/^  /m', '', $pre);
 		return $pre;
+	}
+
+
+	function doNaviQuotes($text) {
+		$text = preg_replace_callback('/
+			  (								# Wrap whole match in $1
+				(?>
+				  ^[ ]*!>[ ]?			# "!>" at the start of a line
+					.+\n					# rest of the first line
+				  (.+\n)*					# subsequent consecutive lines
+				  \n*						# blanks
+				)+
+			  )
+			/xm',
+			array(&$this, '_doNaviQuotes_callback'), $text);
+
+		return $text;
+	}
+	function _doNaviQuotes_callback($matches) {
+		$bq = $matches[1];
+		# trim one level of quoting - trim whitespace-only lines
+		$bq = preg_replace('/^[ ]*!>[ ]?|^[ ]+$/m', '', $bq);
+		$bq = preg_replace_callback('/^[ ]*(!\*.+)/xm',
+		                            array(&$this, '_doNaviQuotes_callback3'), $bq);
+		$bq = $this->runBlockGamut($bq);		# recurse
+
+		$bq = preg_replace('/^/m', "  ", $bq);
+		# These leading spaces cause problem with <pre> content, 
+		# so we need to fix that:
+		$bq = preg_replace_callback('{(\s*<pre.+>.+?</pre>)}sx', 
+			array(&$this, '_doNaviQuotes_callback2'), $bq);
+
+		return "\n". $this->hashBlock("<div class=\"naviblock\">\n$bq\n</div>")."\n\n";
+	}
+	function _doNaviQuotes_callback2($matches) {
+		$pre = $matches[1];
+		$pre = preg_replace('/^  /m', '', $pre);
+		return $pre;
+	}
+	function _doNaviQuotes_callback3($matches) {
+		$list_item = $matches[1];
+		$list_item = $this->runSpanGamut($list_item);
+		$list_item = preg_replace('/^!\*[ ]*(.+$)/', '<div class="navi">$1</div>', $list_item);
+		return $list_item;
 	}
 
 	function formParagraphs($text) {

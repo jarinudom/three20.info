@@ -85,15 +85,13 @@ header (.h) and source (.m) files.
 
 This is required at the top of each source file.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>In the event that a given source file is copied into another project,
-this ensures to a reasonable extent that the license is preserved and that original ownership
-is noted.
-
-Open for debate: The size of the preamble could potentially be minimized to a single line.
-</div>
+!> !* Rationale
+!>
+!> In the event that a given source file is copied into another project,
+!> this ensures to a reasonable extent that the license is preserved and that original ownership
+!> is noted.
+!> 
+!> Open for debate: The size of the preamble could potentially be minimized to a single line.
 
 <div class="permalink" markdown="1">[Permalink](#imports)</div>
 ### Imports {#imports}
@@ -110,13 +108,11 @@ Group all imports into their logical Three20 section and prefix a given section 
 stating which section you intend it to be. Remember, Three20 is split into Core,
 Network, Style, and UI.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-By grouping imports into logical groups, it's easier to read and quickly understand
-what dependencies this source has with respect to the given sections of Three20.
-</div>
+!> !* Rationale
+!>
+!> By grouping imports into logical groups, it's easier to read and quickly understand
+!> what dependencies this source has with respect to the given sections of Three20.
+
 
 <div class="permalink" markdown="1">[Permalink](#importorder)</div>
 <div id="importorder" markdown="1">The order of imports should always be the following:</div>
@@ -127,64 +123,52 @@ what dependencies this source has with respect to the given sections of Three20.
 * Core
 * Apple Frameworks
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-By placing the Apple Frameworks at the bottom, we decrease the chances of import order
-mattering. For example:
-
-    #import <Foundation/Foundation.h>
-
-    // UI
-    #import "Three20/TTURLNavigatorPattern.h"
-
-Let's say that TTURLNavigatorPattern.h depended on Foundation.h for NSObject, but it didn't
-actually include Foundation.h within itself. If this is the only place that
-TTURLNavigatorPattern is imported, the project will build successfully right now. But if we
-then try to import ***only*** TTURLNavigatorPattern.h somewhere else, without placing
-Foundation.h above it, we'll get a build error.
-</div>
+!> !* Rationale
+!>
+!> By placing the Apple Frameworks at the bottom, we decrease the chances of import order
+!> mattering. For example:
+!> 
+!>     #import <Foundation/Foundation.h>
+!>     
+!>     // UI
+!>     #import "Three20/TTURLNavigatorPattern.h"
+!> 
+!> Let's say that TTURLNavigatorPattern.h depended on Foundation.h for NSObject, but it didn't
+!> actually include Foundation.h within itself. If this is the only place that
+!> TTURLNavigatorPattern is imported, the project will build successfully right now. But if we
+!> then try to import ***only*** TTURLNavigatorPattern.h somewhere else, without placing
+!> Foundation.h above it, we'll get a build error.
 
 Within a group, TTGlobal* headers should come first (e.g. `TTGlobalCore.h`).
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This rationale is contrary to the above goal of reducing import order errors. The goal of
-placing TTGlobal* imports at the top of a logical group is to make it easy to absorb the set of
-imports used in any given group.
-
-This guideline is subject to debate.
-</div>
+!> !* Rationale
+!>
+!> This rationale is contrary to the above goal of reducing import order errors. The goal of
+!> placing TTGlobal* imports at the top of a logical group is to make it easy to absorb the set of
+!> imports used in any given group.
+!> 
+!> This guideline is subject to debate.
 
 <div class="permalink" markdown="1">[Permalink](#minimalimports)</div>
 <div id="minimalimports" markdown="1">Make an effort to include the minimal number of
 header files in each source file.</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This will reduce incremental build times and make it clear as to which objects the
-given class legitimately depends on.
-</div>
+!> !* Rationale
+!>
+!> This will reduce incremental build times and make it clear as to which objects the
+!> given class legitimately depends on.
 
 ### General style guidelines
 
 <div class="permalink" markdown="1">[Permalink](#maxlinelength)</div>
 <div id="maxlinelength" markdown="1">The maximum line length is 100 characters.</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-Due to the verboseness of Objective-C, the difference between 100 characters and 80 is quite
-noticeable. We're also not using strict 80 character terminals for development anymore. 100 was
-chosen due to the ability of laying out two source files side-by-side on the screen, while still
-seeing all code.
-</div>
+!> !* Rationale
+!>
+!> Due to the verboseness of Objective-C, the difference between 100 characters and 80 is quite
+!> noticeable. We're also not using strict 80 character terminals for development anymore. 100 was
+!> chosen due to the ability of laying out two source files side-by-side on the screen, while still
+!> seeing all code.
 
 
 
@@ -202,40 +186,32 @@ Objects that don't inherit from any other TT* object should import the required
 frameworks for the object in question. For example, `TTURLRequestQueue` needs Foundation.h in
 order to inherit from NSObject and it needs UIKit.h for a CGFloat instance variable.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-Three20 does, in fact, import the above frameworks in the precompiled header. However, the goal
-of Three20 is to be independent of precompiled headers if a developer ever needed to build
-a subset of Three20 without a precompiled header. For this reason, we must import frameworks
-as necessary.
-
-In order to verify that you are doing this correctly, use the "Debug Dev" build, which is a
-special internal build that does not use precompiled headers. A nice side effect of this is
-that if it builds in Debug Dev, it's guaranteed to build in Debug and Release (the inverse
-is not strictly true).
-
-Side note: Debug and Release Three20 builds both use a precompiled header.
-</div>
+!> !* Rationale
+!>
+!> Three20 does, in fact, import the above frameworks in the precompiled header. However, the goal
+!> of Three20 is to be independent of precompiled headers if a developer ever needed to build
+!> a subset of Three20 without a precompiled header. For this reason, we must import frameworks
+!> as necessary.
+!> 
+!> In order to verify that you are doing this correctly, use the "Debug Dev" build, which is a
+!> special internal build that does not use precompiled headers. A nice side effect of this is
+!> that if it builds in Debug Dev, it's guaranteed to build in Debug and Release (the inverse
+!> is not strictly true).
+!> 
+!> Side note: Debug and Release Three20 builds both use a precompiled header.
 
     // Network
     #import "Three20/TTURLResponse.h"
 
 For objects that inherit from other TT* objects, you don't need to import the frameworks.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-The inherited class file is sufficient because it will generally import the required frameworks.
-
-<div class="navi" markdown="1">
-* Exception
-</div>
-Sometimes the inherited class file won't import all of the necessary frameworks. If this happens,
-import the frameworks, still keeping in mind the [import order](#imports).
-</div>
+!> !* Rationale
+!>
+!> The inherited class file is sufficient because it will generally import the required frameworks.
+!> 
+!> !* Exception
+!> Sometimes the inherited class file won't import all of the necessary frameworks. If this happens,
+!> import the frameworks, still keeping in mind the [import order](#imports).
 
 <div class="permalink" markdown="1">[Permalink](#advancedecls)</div>
 ### Required classes/prototypes {#advancedecls}
@@ -246,12 +222,9 @@ Unless you're inheriting from a class or implementing a protocol, it is adequate
 to provide an advance declaration of the class instead of importing the header file for
 the class.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This will reduce header file dependencies and therefor improve incremental build times.
-</div>
+!> !* Rationale
+!>
+!> This will reduce header file dependencies and therefor improve incremental build times.
 
 <div class="permalink" markdown="1">[Permalink](#classdefs)</div>
 ### Class definition {#classdefs}
@@ -261,12 +234,9 @@ This will reduce header file dependencies and therefor improve incremental build
 Three20 classes are always prefixed with TT. This is an example of an object that inherits from
 another Three20 class and implements a Three20 protocol.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-Class prefixing is a common practice for avoiding namespace conflicts.
-</div>
+!> !* Rationale
+!>
+!> Class prefixing is a common practice for avoiding namespace conflicts.
 
     @interface CustomModelViewController : TTViewController <
       TTModelDelegate,
@@ -276,13 +246,10 @@ Class prefixing is a common practice for avoiding namespace conflicts.
 If the object implements multiple protocols, split the protocol list into
 separate lines with the above format, one protocol on each line.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This improves the readability of diffs if/when you change the protocols that this class imports.
-This also makes it easier to quickly read the set of implemented protocols.
-</div>
+!> !* Rationale
+!>
+!> This improves the readability of diffs if/when you change the protocols that this class imports.
+!> This also makes it easier to quickly read the set of implemented protocols.
 
 <div class="permalink" markdown="1">[Permalink](#classivars)</div>
 ### Class ivars {#classivars}
@@ -295,66 +262,51 @@ This also makes it easier to quickly read the set of implemented protocols.
 
 Instance variables (ivars) are explicitly declared private.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-Ivars should never be accessed directly from an outside class; this is what
-[properties](#properties) are for.
-</div>
+!> !* Rationale
+!>
+!> Ivars should never be accessed directly from an outside class; this is what
+!> [properties](#properties) are for.
 
 <div class="permalink" markdown="1">[Permalink](#ivarprefix)</div>
 <div id="ivarprefix" markdown="1">Ivar names are prefixed with an underscore (`_`).</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This makes it easy to differentiate between a property accessor (`self.userInfo`)
-and accessing a private ivar (`_userInfo`).
-
-`_` is a prefix instead of a suffix because it immediately narrows down autocompletion
-to private ivars when you type `_`. This is counter to Apple's recommendation of using `_` as a
-suffix for private ivars.
-</div>
+!> !* Rationale
+!>
+!> This makes it easy to differentiate between a property accessor (`self.userInfo`)
+!> and accessing a private ivar (`_userInfo`).
+!> 
+!> `_` is a prefix instead of a suffix because it immediately narrows down autocompletion
+!> to private ivars when you type `_`. This is counter to Apple's recommendation of using `_` as a
+!> suffix for private ivars.
 
 <div class="permalink" markdown="1">[Permalink](#ivarcasing)</div>
 <div id="ivarcasing" markdown="1">Ivar names always begin with a lower-case letter
 and are camelCased.</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This then transfers to property names, making it easy to begin typing a property name with
-only one keypress (no shift key involved).
-
-With respect to acronyms, you should still use use a lowercase first letter. For example:
-`_urlPath`, instead of `_URLPath`.
-</div>
+!> !* Rationale
+!>
+!> This then transfers to property names, making it easy to begin typing a property name with
+!> only one keypress (no shift key involved).
+!> 
+!> With respect to acronyms, you should still use use a lowercase first letter. For example:
+!> `_urlPath`, instead of `_URLPath`.
 
 <div class="permalink" markdown="1">[Permalink](#ivargrouping)</div>
 <div id="ivargrouping" markdown="1">Ivars must be grouped in some logical grouping.</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-This makes it easier to understand the contents of the class. Space the ivar names such
-that they align vertically in each logical group.
-</div>
+!> !* Rationale
+!>
+!> This makes it easier to understand the contents of the class. Space the ivar names such
+!> that they align vertically in each logical group.
 
 <div class="permalink" markdown="1">[Permalink](#ivardelegates)</div>
 <div id="ivardelegates" markdown="1">Delegates and other protocol objects must
 be placed at the bottom of the ivar definitions.</div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-Delegates are generally much longer declarations and would otherwise throw off the alignment of
-the other ivars.
-</div>
+!> !* Rationale
+!>
+!> Delegates are generally much longer declarations and would otherwise throw off the alignment of
+!> the other ivars.
 
 <div class="permalink" markdown="1">[Permalink](#properties)</div>
 ### Properties {#properties}
@@ -376,12 +328,9 @@ the API docs, and any subsequent lines will be in the "more details" section.
 
 Unless you're certain of what you're doing, use `nonatomic` when declaring properties.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Rationale
-</div>
-The alternative is atomic, which has potential performance implications that may be undesirable.
-</div>
+!> !* Rationale
+!>
+!> The alternative is atomic, which has potential performance implications that may be undesirable.
 
 Be specific about the access level of the property. For example, properties that shouldn't
 be modifiable outside of the class should be `readonly`.
