@@ -46,7 +46,6 @@
   </div>
 </div>
 <div id="pageheadershadow"></div>
-
 <div class="fixedwidth">
 <?php include 'toc.php'; ?>
 

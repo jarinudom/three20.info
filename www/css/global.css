@@ -112,7 +112,7 @@
 #footer a {
   text-decoration: none;
   color: #333;
-  padding: 3px;
+  padding: 0px;
   background-color: #FED;
 }
 
@@ -281,12 +281,16 @@ code {
   padding: 3px;
   background-color: #ddd;
   color: #333;
-  font-size: 1em;
   line-height: 1.5em;
+  text-shadow: none;
 }
 
 strong {
   font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 .code {
@@ -330,16 +334,20 @@ strong {
 
 #content .navi li {
   background-color: #333;
-  color: #fff;
+  color: #FFF;
   font-weight: normal;
   text-shadow: none;
 }
 
 #content .naviblock {
-  padding: 0 15px;
+  padding: 0 10px;
   border: 1px dashed #ccc;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: #ddd;
+}
+
+#content .permalink {
+  float: right;
 }
 
 #apilookup {
@@ -351,10 +359,6 @@ strong {
   text-align: right;
   font-size: 0.8em;
   padding: 10px;
-}
-
-strong {
-  font-weight: bold;
 }
 
 #kohana-profiler {

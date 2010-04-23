@@ -1002,6 +1002,10 @@ class Markdown_Parser {
 	  $class  =& $matches[1];
 		$code   =  $matches[2];
 
+    if (!$class) {
+      $class = 'brush: obj-c';
+    }
+
 		$code = $this->outdent($code);
 		$code = htmlspecialchars($code, ENT_NOQUOTES);
 
@@ -1222,7 +1226,6 @@ class Markdown_Parser {
 		$pre = preg_replace('/^  /m', '', $pre);
 		return $pre;
 	}
-
 
 	function formParagraphs($text) {
 	#
