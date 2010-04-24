@@ -174,6 +174,27 @@ The maximum line length is 100 characters.
 !> seeing all code.
 
 
+[Permalink]."permalink"(#spaces)
+<div id="spaces"></div>
+Three20 uses spaces, not tabs.
+
+!> !* Rationale
+!>
+!> It is impossible to guarantee that everyone is using the same IDE with the same tab spacing.
+!> Also, Three20 frequently uses alignment to make code more readable. As such, we use spaces
+!> instead of tabs to guarantee that the code is always presented consistently.
+
+
+[Permalink]."permalink"(#indentation)
+<div id="indentation"></div>
+Three20 uses two spaces for indentation.
+
+!> !* Rationale
+!>
+!> This point is purely religious. Two spaces was chosen due to historical use, as well as the
+!> minimal amount of space it uses (compared to four spaces).
+
+
 
 
 Guidelines for .h files {#headerguidelines}
