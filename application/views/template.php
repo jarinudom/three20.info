@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta property="fb:app_id" content="114720825217072"/>
   <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="Three20.info"/>
+  <meta property="og:title" content="three20.info"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://Three20.info/"/>
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
