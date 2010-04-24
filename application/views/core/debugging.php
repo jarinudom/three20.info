@@ -31,6 +31,9 @@ If you want to enable logging for Three20, you will need to add a preprocessor d
 Three20 lib like so: `TTMAXLOGLEVEL=TTLOGLEVEL_INFO`. You'll need to actually open the Three20
 project and change its settings for this to work.
 
+If you want to enable logging for **your own project**, you will need to add a preprocessor
+definition to your project like so: `TTMAXLOGLEVEL=TTLOGLEVEL_INFO`.
+
 !> !* Hey, listen!
 !> 
 !> Be sure that you do **not** have "All Configuration Settings" selected when you do
