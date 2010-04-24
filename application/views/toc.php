@@ -7,7 +7,7 @@
     <li><a href="/overview">Three20 Overview</a></li>
     <li><a href="/setup/existing">Add it to your project</a></li>
     <li><a href="/setup/templates">Create projects with it</a></li>
-    <li><a href="http://scope.three20.info/">Three20 Scope</a></li>
+    <li><a href="http://three20.stackexchange.com/">Three20 Scope</a></li>
   </ul>
 
   <div class="header">Tutorials</div>
