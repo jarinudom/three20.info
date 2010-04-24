@@ -35,6 +35,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -64,6 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_prop.html"><span>Properties</span></a></li>
     </ul>
   </div>
@@ -100,11 +102,13 @@ Here is a list of all documented class members with links to the class documenta
 
 <h3><a class="anchor" id="index_c">- c -</a></h3><ul>
 <li>cacheExpirationAge
-: <a class="el" href="interface_t_t_u_r_l_request.html#aa0f7d2b7001143d1b9f1d3635449a4f1">TTURLRequest</a>
+: <a class="el" href="interface_t_t_request_loader.html#a91e393e0d058d3a789e3d782bbd02357">TTRequestLoader</a>
+, <a class="el" href="interface_t_t_u_r_l_request.html#aa0f7d2b7001143d1b9f1d3635449a4f1">TTURLRequest</a>
 </li>
 <li>cacheKey
 : <a class="el" href="interface_t_t_u_r_l_request.html#ace472f23740be06aa40dffdbdca99953">TTURLRequest</a>
 , <a class="el" href="interface_t_t_u_r_l_request_model.html#a2127dc12c0ef3b45dd099f37f6337d2b">TTURLRequestModel</a>
+, <a class="el" href="interface_t_t_request_loader.html#afc70c6b8ef860ee13fef091dae10ca41">TTRequestLoader</a>
 </li>
 <li>cachePath
 : <a class="el" href="interface_t_t_u_r_l_cache.html#a52da998d5df61ba519db1469597a54a3">TTURLCache</a>
@@ -116,7 +120,8 @@ Here is a list of all documented class members with links to the class documenta
 : <a class="el" href="interface_t_t_u_r_l_cache.html#a5d5753453f34e8004d4f718e003ac8d2">TTURLCache</a>
 </li>
 <li>cachePolicy
-: <a class="el" href="interface_t_t_u_r_l_request.html#a34ad517e5d5fe222baec6702b9eb4cde">TTURLRequest</a>
+: <a class="el" href="interface_t_t_request_loader.html#a73a04e9934fd4e34b369c60c31578227">TTRequestLoader</a>
+, <a class="el" href="interface_t_t_u_r_l_request.html#a34ad517e5d5fe222baec6702b9eb4cde">TTURLRequest</a>
 </li>
 <li>cacheWithName:
 : <a class="el" href="interface_t_t_u_r_l_cache.html#ae99fab5ff227b3cb42a6fc3544932ab9">TTURLCache</a>
@@ -129,6 +134,7 @@ Here is a list of all documented class members with links to the class documenta
 </li>
 <li>cancel:
 : <a class="el" href="interface_t_t_message_controller.html#aa164519b99a08d60155c75fe422f3489">TTMessageController</a>
+, <a class="el" href="interface_t_t_request_loader.html#a41f21a57f28ebf81b3ce99343c5e8ea7">TTRequestLoader</a>
 </li>
 <li>cancelAllRequests
 : <a class="el" href="interface_t_t_u_r_l_request_queue.html#a42f6150b9df2681783bc7c534f43abc2">TTURLRequestQueue</a>
@@ -206,7 +212,7 @@ Here is a list of all documented class members with links to the class documenta
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

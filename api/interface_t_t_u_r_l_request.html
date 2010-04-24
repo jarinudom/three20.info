@@ -35,6 +35,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -341,7 +342,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="memdoc">
 
 <p>The content type of the data in the request. </p>
-<p>If not provided and httpMethod is POST/PUT, then contentType is multipart/form-data. </p>
+<p>If not provided and httpMethod is POST/PUT, then contentType is "multipart/form-data". </p>
 
 </div>
 </div>
@@ -391,7 +392,11 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>An object that handles the response data and may parse and validate it. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="interface_t_t_u_r_l_data_response.html" title="An implementation of the TTURLResponse protocal for generic NSData objects.">TTURLDataResponse</a> </dd>
 <dd>
-<a class="el" href="interface_t_t_u_r_l_image_response.html" title="An implementation of the TTURLResponse protocal for UIImage objects.">TTURLImageResponse</a> </dd></dl>
+<a class="el" href="interface_t_t_u_r_l_image_response.html" title="An implementation of the TTURLResponse protocal for UIImage objects.">TTURLImageResponse</a> </dd>
+<dd>
+<a class="el" href="interface_t_t_u_r_l_x_m_l_response.html" title="An implementation of the TTURLResponse protocal for turning XML responses into NSObjects...">TTURLXMLResponse</a> </dd>
+<dd>
+<a class="el" href="interface_t_t_u_r_l_j_s_o_n_response.html" title="An implementation of the TTURLResponse protocal for turning JSON responses into NSObjects...">TTURLJSONResponse</a> </dd></dl>
 
 </div>
 </div>
@@ -444,7 +449,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

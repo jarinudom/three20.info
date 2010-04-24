@@ -35,6 +35,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -85,57 +86,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>;
 <a name="l00026"></a>00026 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>;
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 
-<a name="l00029"></a><a class="code" href="interface_t_t_request_loader.html">00029</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_request_loader.html">TTRequestLoader</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00030"></a>00030   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               _urlPath;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032   <a class="code" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>*      _queue;
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               _cacheKey;
-<a name="l00035"></a>00035   TTURLRequestCachePolicy _cachePolicy;
-<a name="l00036"></a>00036   NSTimeInterval          _cacheExpirationAge;
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         _requests;
-<a name="l00039"></a>00039   NSURLConnection*        _connection;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   NSHTTPURLResponse*      _response;
-<a name="l00042"></a>00042   NSMutableData*          _responseData;
+<a name="l00039"></a><a class="code" href="interface_t_t_request_loader.html">00039</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_request_loader.html" title="The loader manages a set of TTURLRequests and makes the necessary callbacks for each...">TTRequestLoader</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
+<a name="l00040"></a>00040   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               _urlPath;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>*      _queue;
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <span class="keywordtype">int</span>                     _retriesLeft;
-<a name="l00045"></a>00045 }
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 @property (nonatomic, readonly) <a class="code" href="class_n_s_array.html" title="Additions.">NSArray</a>*                requests;
-<a name="l00048"></a>00048 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               urlPath;
-<a name="l00049"></a>00049 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               cacheKey;
-<a name="l00050"></a>00050 @property (nonatomic, readonly) TTURLRequestCachePolicy cachePolicy;
-<a name="l00051"></a>00051 @property (nonatomic, readonly) NSTimeInterval          cacheExpirationAge;
-<a name="l00052"></a>00052 @property (nonatomic, readonly) BOOL                    isLoading;
+<a name="l00044"></a>00044   <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               _cacheKey;
+<a name="l00045"></a>00045   TTURLRequestCachePolicy _cachePolicy;
+<a name="l00046"></a>00046   NSTimeInterval          _cacheExpirationAge;
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*         _requests;
+<a name="l00049"></a>00049   NSURLConnection*        _connection;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   NSHTTPURLResponse*      _response;
+<a name="l00052"></a>00052   NSMutableData*          _responseData;
 <a name="l00053"></a>00053 
-<a name="l00058"></a><a class="code" href="interface_t_t_request_loader.html#aec8806d4912142a8fef5a28e8be5c089">00058</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*               URL __TTDEPRECATED_METHOD;
+<a name="l00057"></a><a class="code" href="interface_t_t_request_loader.html#a1cc65bcca993cbe5e3c1f5657185cc9d">00057</a>   <span class="keywordtype">int</span>                     <a class="code" href="interface_t_t_request_loader.html#a1cc65bcca993cbe5e3c1f5657185cc9d" title="When load requests fail we&amp;#39;ll attempt the request again, as many as 2 times by...">_retriesLeft</a>;
+<a name="l00058"></a>00058 }
 <a name="l00059"></a>00059 
-<a name="l00060"></a>00060 - (<span class="keywordtype">id</span>)initForRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request queue:(<a class="code" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>*)queue;
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 - (<span class="keywordtype">void</span>)addRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
-<a name="l00063"></a>00063 - (<span class="keywordtype">void</span>)removeRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
+<a name="l00063"></a><a class="code" href="interface_t_t_request_loader.html#a812d3c16cac62020a431ac4e46853041">00063</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_array.html" title="Additions.">NSArray</a>* requests;
 <a name="l00064"></a>00064 
-<a name="l00065"></a>00065 - (<span class="keywordtype">void</span>)load:(NSURL*)URL;
-<a name="l00066"></a>00066 - (<span class="keywordtype">void</span>)loadSynchronously:(NSURL*)URL;
-<a name="l00067"></a>00067 - (BOOL)cancel:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069 - (NSError*)processResponse:(NSHTTPURLResponse*)response data:(<span class="keywordtype">id</span>)data;
-<a name="l00070"></a>00070 - (<span class="keywordtype">void</span>)dispatchError:(NSError*)error;
-<a name="l00071"></a>00071 - (<span class="keywordtype">void</span>)dispatchLoaded:(<a class="code" href="class_n_s_date.html" title="Additions.">NSDate</a>*)timestamp;
-<a name="l00072"></a>00072 - (<span class="keywordtype">void</span>)dispatchAuthenticationChallenge:(NSURLAuthenticationChallenge*)challenge;
-<a name="l00073"></a>00073 - (<span class="keywordtype">void</span>)cancel;
+<a name="l00068"></a><a class="code" href="interface_t_t_request_loader.html#ae05ab957f8610bdf6d8dc6c55561cf18">00068</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* urlPath;
+<a name="l00069"></a>00069 
+<a name="l00073"></a><a class="code" href="interface_t_t_request_loader.html#afc70c6b8ef860ee13fef091dae10ca41">00073</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* cacheKey;
 <a name="l00074"></a>00074 
-<a name="l00075"></a>00075 @end
+<a name="l00078"></a><a class="code" href="interface_t_t_request_loader.html#a73a04e9934fd4e34b369c60c31578227">00078</a> @property (nonatomic, readonly) TTURLRequestCachePolicy cachePolicy;
+<a name="l00079"></a>00079 
+<a name="l00083"></a><a class="code" href="interface_t_t_request_loader.html#a91e393e0d058d3a789e3d782bbd02357">00083</a> @property (nonatomic, readonly) NSTimeInterval cacheExpirationAge;
+<a name="l00084"></a>00084 
+<a name="l00088"></a><a class="code" href="interface_t_t_request_loader.html#a26e45bc2d7677cfbae03d6a20905f78a">00088</a> @property (nonatomic, readonly) BOOL isLoading;
+<a name="l00089"></a>00089 
+<a name="l00094"></a><a class="code" href="interface_t_t_request_loader.html#aec8806d4912142a8fef5a28e8be5c089">00094</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL __TTDEPRECATED_METHOD;
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 - (<span class="keywordtype">id</span>)initForRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request queue:(<a class="code" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a>*)queue;
+<a name="l00098"></a>00098 
+<a name="l00102"></a>00102 - (<span class="keywordtype">void</span>)addRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
+<a name="l00103"></a>00103 - (<span class="keywordtype">void</span>)removeRequest:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
+<a name="l00104"></a>00104 
+<a name="l00109"></a>00109 - (<span class="keywordtype">void</span>)load:(NSURL*)URL;
+<a name="l00110"></a>00110 
+<a name="l00117"></a>00117 - (<span class="keywordtype">void</span>)loadSynchronously:(NSURL*)URL;
+<a name="l00118"></a>00118 
+<a name="l00125"></a>00125 - (BOOL)cancel:(<a class="code" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 - (NSError*)processResponse:(NSHTTPURLResponse*)response data:(<span class="keywordtype">id</span>)data;
+<a name="l00128"></a>00128 - (<span class="keywordtype">void</span>)dispatchError:(NSError*)error;
+<a name="l00129"></a>00129 - (<span class="keywordtype">void</span>)dispatchLoaded:(<a class="code" href="class_n_s_date.html" title="Additions.">NSDate</a>*)timestamp;
+<a name="l00130"></a>00130 - (<span class="keywordtype">void</span>)dispatchAuthenticationChallenge:(NSURLAuthenticationChallenge*)challenge;
+<a name="l00131"></a>00131 - (<span class="keywordtype">void</span>)cancel;
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 @end
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

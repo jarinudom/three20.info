@@ -35,6 +35,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -98,7 +99,16 @@ Inheritance diagram for TTURLRequestQueue:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ff7462611d450532137bd017cdadb7f"></a><!-- doxytag: member="TTURLRequestQueue::setMainQueue:" ref="a5ff7462611d450532137bd017cdadb7f" args="(TTURLRequestQueue *queue)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a5ff7462611d450532137bd017cdadb7f">setMainQueue:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the shared cache singleton used across the application. <br/></td></tr>
-<tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
+<tr><td colspan="2"><h2>Properties</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a8addd08d2cef4fa320cf0930b4c8c591">suspended</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the flag that determines if new load requests are allowed to reach the network.  <a href="#a8addd08d2cef4fa320cf0930b4c8c591"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#ac12fd4da800c6c86a1c9c8cf22a5906f">maxContentLength</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum size of a download that is allowed.  <a href="#ac12fd4da800c6c86a1c9c8cf22a5906f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#af57cab87b15e0b1c7fa7b6b90e6aa3aa">userAgent</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The user-agent string that is sent with all HTTP requests.  <a href="#af57cab87b15e0b1c7fa7b6b90e6aa3aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#aa6818e451230a069a53bcb2026d14fa0">imageCompressionQuality</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The compression quality used for encoding images sent with HTTP posts.  <a href="#aa6818e451230a069a53bcb2026d14fa0"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad91e5e3b2bcf872feae4288ca7313de0"></a><!-- doxytag: member="TTURLRequestQueue::_loaders" ref="ad91e5e3b2bcf872feae4288ca7313de0" args="" -->
 <a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_loaders</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdc9ccddd17d80fc8b877b756542ba22"></a><!-- doxytag: member="TTURLRequestQueue::_loaderQueue" ref="acdc9ccddd17d80fc8b877b756542ba22" args="" -->
@@ -115,15 +125,6 @@ NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_maxContentLeng
 CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>_imageCompressionQuality</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb0463a6e6d0a44e1a3140fb08ac0ef"></a><!-- doxytag: member="TTURLRequestQueue::_suspended" ref="a8bb0463a6e6d0a44e1a3140fb08ac0ef" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_suspended</b></td></tr>
-<tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#a8addd08d2cef4fa320cf0930b4c8c591">suspended</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the flag that determines if new load requests are allowed to reach the network.  <a href="#a8addd08d2cef4fa320cf0930b4c8c591"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#ac12fd4da800c6c86a1c9c8cf22a5906f">maxContentLength</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum size of a download that is allowed.  <a href="#ac12fd4da800c6c86a1c9c8cf22a5906f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#af57cab87b15e0b1c7fa7b6b90e6aa3aa">userAgent</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The user-agent string that is sent with all HTTP requests.  <a href="#af57cab87b15e0b1c7fa7b6b90e6aa3aa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_request_queue.html#aa6818e451230a069a53bcb2026d14fa0">imageCompressionQuality</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The compression quality used for encoding images sent with HTTP posts.  <a href="#aa6818e451230a069a53bcb2026d14fa0"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a263596b58314c7ea6c14f8b5718f7b26"></a><!-- doxytag: member="TTURLRequestQueue::cancelRequestsWithDelegate:" ref="a263596b58314c7ea6c14f8b5718f7b26" args="(id delegate)" -->
@@ -266,7 +267,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_suspended</b></td></
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

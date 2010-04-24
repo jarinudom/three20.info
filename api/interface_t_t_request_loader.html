@@ -35,6 +35,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -62,7 +63,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>TTRequestLoader Class Reference</h1><!-- doxytag: class="TTRequestLoader" --><!-- doxytag: inherits="NSObject" --><div class="dynheader">
+<h1>TTRequestLoader Class Reference</h1><!-- doxytag: class="TTRequestLoader" --><!-- doxytag: inherits="NSObject" -->
+<p>The loader manages a set of TTURLRequests and makes the necessary callbacks for each.  
+<a href="#_details">More...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_t_t_request_loader_8h_source.html">TTRequestLoader.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for TTRequestLoader:</div>
 <div class="dynsection">
  <div class="center">
@@ -79,15 +85,17 @@ Inheritance diagram for TTRequestLoader:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae198412b81cf9c9e6e69ab0907732e96"></a><!-- doxytag: member="TTRequestLoader::initForRequest:queue:" ref="ae198412b81cf9c9e6e69ab0907732e96" args="(TTURLRequest *request,[queue] TTURLRequestQueue *queue)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initForRequest:queue:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80e53e7e043439a4318efaaf0041923e"></a><!-- doxytag: member="TTRequestLoader::addRequest:" ref="a80e53e7e043439a4318efaaf0041923e" args="(TTURLRequest *request)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addRequest:</b></td></tr>
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#a80e53e7e043439a4318efaaf0041923e">addRequest:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Duplication is possible due to the use of an <a class="el" href="class_n_s_array.html" title="Additions.">NSArray</a> for the request list. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab39ce0ed071430e83044272faf2d5e75"></a><!-- doxytag: member="TTRequestLoader::removeRequest:" ref="ab39ce0ed071430e83044272faf2d5e75" args="(TTURLRequest *request)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>removeRequest:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0adf69252f9b71af69549ccf12caf5e"></a><!-- doxytag: member="TTRequestLoader::load:" ref="ab0adf69252f9b71af69549ccf12caf5e" args="(NSURL *URL)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>load:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af55154b4f51bcf3da52d955fd8e850c3"></a><!-- doxytag: member="TTRequestLoader::loadSynchronously:" ref="af55154b4f51bcf3da52d955fd8e850c3" args="(NSURL *URL)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loadSynchronously:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41f21a57f28ebf81b3ce99343c5e8ea7"></a><!-- doxytag: member="TTRequestLoader::cancel:" ref="a41f21a57f28ebf81b3ce99343c5e8ea7" args="(TTURLRequest *request)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>cancel:</b></td></tr>
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#ab0adf69252f9b71af69549ccf12caf5e">load:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If the loader isn't already active, create the NSURLRequest from the first <a class="el" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a> added to this loader and fire it off. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#af55154b4f51bcf3da52d955fd8e850c3">loadSynchronously:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">As with load:, will create the NSURLRequest from the first <a class="el" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a> added to the loader.  <a href="#af55154b4f51bcf3da52d955fd8e850c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_request_loader.html#a41f21a57f28ebf81b3ce99343c5e8ea7">cancel:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel only the given request.  <a href="#a41f21a57f28ebf81b3ce99343c5e8ea7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d62026b7741e6cc455be0f41b0cbe0e"></a><!-- doxytag: member="TTRequestLoader::processResponse:data:" ref="a7d62026b7741e6cc455be0f41b0cbe0e" args="(NSHTTPURLResponse *response,[data] id data)" -->
 (NSError *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>processResponse:data:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05e78b3b1d4daaf52d90815522694e6d"></a><!-- doxytag: member="TTRequestLoader::dispatchError:" ref="a05e78b3b1d4daaf52d90815522694e6d" args="(NSError *error)" -->
@@ -118,23 +126,79 @@ NSHTTPURLResponse *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_respo
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5dde8ebaa5fa38c73b7515839dbbacc"></a><!-- doxytag: member="TTRequestLoader::_responseData" ref="af5dde8ebaa5fa38c73b7515839dbbacc" args="" -->
 NSMutableData *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_responseData</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cc65bcca993cbe5e3c1f5657185cc9d"></a><!-- doxytag: member="TTRequestLoader::_retriesLeft" ref="a1cc65bcca993cbe5e3c1f5657185cc9d" args="" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>_retriesLeft</b></td></tr>
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a1cc65bcca993cbe5e3c1f5657185cc9d">_retriesLeft</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">When load requests fail we'll attempt the request again, as many as 2 times by default. <br/></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a812d3c16cac62020a431ac4e46853041"></a><!-- doxytag: member="TTRequestLoader::requests" ref="a812d3c16cac62020a431ac4e46853041" args="" -->
-<a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>requests</b></td></tr>
+<a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a812d3c16cac62020a431ac4e46853041">requests</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of TTURLRequests currently attached to this loader. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae05ab957f8610bdf6d8dc6c55561cf18"></a><!-- doxytag: member="TTRequestLoader::urlPath" ref="ae05ab957f8610bdf6d8dc6c55561cf18" args="" -->
-<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>urlPath</b></td></tr>
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#ae05ab957f8610bdf6d8dc6c55561cf18">urlPath</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The common urlPath shared by every request. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc70c6b8ef860ee13fef091dae10ca41"></a><!-- doxytag: member="TTRequestLoader::cacheKey" ref="afc70c6b8ef860ee13fef091dae10ca41" args="" -->
-<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>cacheKey</b></td></tr>
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#afc70c6b8ef860ee13fef091dae10ca41">cacheKey</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The common cacheKey shared by every request. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73a04e9934fd4e34b369c60c31578227"></a><!-- doxytag: member="TTRequestLoader::cachePolicy" ref="a73a04e9934fd4e34b369c60c31578227" args="" -->
-TTURLRequestCachePolicy&nbsp;</td><td class="memItemRight" valign="bottom"><b>cachePolicy</b></td></tr>
+TTURLRequestCachePolicy&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a73a04e9934fd4e34b369c60c31578227">cachePolicy</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The common cache policy shared by every request. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e393e0d058d3a789e3d782bbd02357"></a><!-- doxytag: member="TTRequestLoader::cacheExpirationAge" ref="a91e393e0d058d3a789e3d782bbd02357" args="" -->
-NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><b>cacheExpirationAge</b></td></tr>
+NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a91e393e0d058d3a789e3d782bbd02357">cacheExpirationAge</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The common cache expiration age shared by ever request. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26e45bc2d7677cfbae03d6a20905f78a"></a><!-- doxytag: member="TTRequestLoader::isLoading" ref="a26e45bc2d7677cfbae03d6a20905f78a" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isLoading</b></td></tr>
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#a26e45bc2d7677cfbae03d6a20905f78a">isLoading</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Whether or not any of the requests in this loader are loading. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *URL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_request_loader.html#aec8806d4912142a8fef5a28e8be5c089">__TTDEPRECATED_METHOD</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deprecated due to name ambiguity.  <a href="#aec8806d4912142a8fef5a28e8be5c089"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>The loader manages a set of TTURLRequests and makes the necessary callbacks for each. </p>
+<p>It implements the NSURLConnectionDelegate protocol and calls the required operations on the queue as the protocol methods are invoked.</p>
+<p>NSURLErrorCannotFindHost errors are retried at least twice before completely giving up.</p>
+<p>The loader collects identical GET TTURLRequests into a single object. This logic is handled in TTURLRequestQueue's sendRequest. For all other <a class="el" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a> types, they will each have their own loader. </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a41f21a57f28ebf81b3ce99343c5e8ea7"></a><!-- doxytag: member="TTRequestLoader::cancel:" ref="a41f21a57f28ebf81b3ce99343c5e8ea7" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) cancel: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a>*)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cancel only the given request. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>NO If there are no requests left. YES If there are any requests left. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af55154b4f51bcf3da52d955fd8e850c3"></a><!-- doxytag: member="TTRequestLoader::loadSynchronously:" ref="af55154b4f51bcf3da52d955fd8e850c3" args="(NSURL *URL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) loadSynchronously: </td>
+          <td></td>
+          <td class="paramtype">(NSURL*)&nbsp;</td>
+          <td class="paramname"> <em>URL</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>As with load:, will create the NSURLRequest from the first <a class="el" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a> added to the loader. </p>
+<p>Unlike load:, this method will not return until the request has been fully completed.</p>
+<p>This is useful for threads that need to block while waiting for resources from the net. </p>
+
+</div>
+</div>
 <hr/><h2>Property Documentation</h2>
 <a class="anchor" id="aec8806d4912142a8fef5a28e8be5c089"></a><!-- doxytag: member="TTRequestLoader::__TTDEPRECATED_METHOD" ref="aec8806d4912142a8fef5a28e8be5c089" args="" -->
 <div class="memitem">
@@ -162,7 +226,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isLoading</b></td></t
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
