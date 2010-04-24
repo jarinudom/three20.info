@@ -338,12 +338,27 @@ Unless you're certain of what you're doing, use `nonatomic` when declaring prope
 !>
 !> The alternative is atomic, which has potential performance implications that may be undesirable.
 
+[Permalink]."permalink"(#ivaraccess)
+<div id="ivaraccess"></div>
 Be specific about the access level of the property. For example, properties that shouldn't
 be modifiable outside of the class should be `readonly`.
 
+!> !* Rationale
+!>
+!> Don't depend on people's memory to recall what the default property access levels are.
+!> Unless you're 100% confident that 100% of people reading the code will remember the implicit
+!> access level, make it explicit.
+
+[Permalink]."permalink"(#ivarmemory)
+<div id="ivarmemory"></div>
 Understand the difference between the `retain`, `copy`, and `assign` keywords. A general
 rule of thumb is to use `copy` for NSStrings, `retain` for objects whose lifetime you want
 to guarantee, and `assign` for delegates.
+
+!> !* Rationale
+!>
+!> This doesn't need much explaining. You either do this right, or you don't and suffer the
+!> memory hazards as a result.
 
 
 
@@ -351,5 +366,47 @@ to guarantee, and `assign` for delegates.
 Guidelines for .m files {#sourceguidelines}
 -----------------------
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+[Permalink]."permalink"(#commentlines)
+<div id="commentlines"></div>
 
+Before every method declaration there should be a comment line that is exactly 99 characters wide.
+
+Before every class declaration there should be three of the above comment lines.
+
+!> !* Rationale
+!>
+!> These comment lines help bring focus to the start of a method better than simple whitespace.
+!> They also act as a bounds checker when writing long lines of code.
+
+### Initialization and deallocation
+
+[Permalink]."permalink"(#initdealloc)
+<div id="initdealloc"></div>
+
+init and dealloc methods should always be the first methods in the class implementation.
+
+!> !* Rationale
+!>
+!> init and dealloc are two most common methods used in classes, and therefor should be the
+!> easiest to find.
+
+    - (id)init {
+      if (self = [self initWithTarget:nil]) {
+      }
+
+      return self;
+    }
+
+[Permalink]."permalink"(#designatedinitializer)
+<div id="designatedinitializer"></div>
+
+Every class should have a designated initializer which calls the `super` class's designated
+initializer. All other init methods for the class should call the local class's designated
+initializer using `self`.
+
+!> !* Rationale
+!>
+!> See the Apple documentation on [designated initializers](http://developer.apple.com/mac/library/documentation/cocoa/conceptual/ObjectiveC/Articles/ocAllocInit.html#//apple_ref/doc/uid/TP30001163-CH22-SW8)
+!> for more details.
