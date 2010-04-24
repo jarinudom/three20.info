@@ -9,7 +9,7 @@
   <meta property="fb:admins" content="122605446"/>
   <meta property="og:title" content="http://Three20.info/"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info<?= $_SERVER['REQUEST_URI'] ?>"/>
+  <meta property="og:url" content="http://Three20.info/"/>
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
