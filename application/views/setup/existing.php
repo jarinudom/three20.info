@@ -2,13 +2,10 @@
 =============
 <div class="source">Source: <a href="http://github.com/facebook/Three20">github</a></div>
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Hey, listen!
-</div>
-Starting a new project with Three20?  
-Skip these steps with the [Three20 Xcode project templates](/setup/templates).
-</div>
+!> !* Hey, listen!
+!>
+!> Starting a new project with Three20?  
+!> Skip these steps with the [Three20 Xcode project templates](/setup/templates).
 
 Three20 is compiled as a static library and the easiest way to add it to your project is to use
 Xcode's "dependent project" facilities. Here's how:

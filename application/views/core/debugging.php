@@ -31,23 +31,19 @@ If you want to enable logging for Three20, you will need to add a preprocessor d
 Three20 lib like so: `TTMAXLOGLEVEL=TTLOGLEVEL_INFO`. You'll need to actually open the Three20
 project and change its settings for this to work.
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Hey, listen!
-</div>
-Be sure that you do <strong>not</strong> have "All Configuration Settings" selected when you do
-this! When the DEBUG flag is defined, Three20 will include a set of debug utilities in your binary
-that is unsafe for the App Store. This could cause your app to be rejected.
-
-<strong>Don't</strong> submit DEBUG builds to the App Store!
-</div>
+!> !* Hey, listen!
+!> 
+!> Be sure that you do **not** have "All Configuration Settings" selected when you do
+!> this! When the DEBUG flag is defined, Three20 will include a set of debug utilities in your binary
+!> that is unsafe for the App Store. This could cause your app to be rejected.
+!> 
+!> **Don't** submit DEBUG builds to the App Store!
 
 Logging {#logging}
 =======
 
 The logging system introduces a new set of macros.
 
-."brush: obj-c;"
     TTDERROR(text, ...)    // Log level 1
     TTDWARNING(text, ...)  // Log level 3
     TTDINFO(text, ...)     // Log level 5
@@ -60,7 +56,6 @@ warning and error logs will be displayed.
 
 The standard output of `TTDPRINT` looks something like this:
 
-."brush: obj-c;"
     TTDPRINT(@"Is this thing on?");
     2009-11-20 13:46:49.613 AppName /path/to/file/Filename.m(86): Is this thing on?
 
@@ -72,7 +67,6 @@ Conditional Logging {#conditionlogging}
 Conditional logging allows you to use logging methods that only produce output when
 a certain condition is met. A quick example:
 
-."brush: obj-c;"
     TTDCONDITIONLOG(TTDFLAG_URLREQUEST, @"Request parameters: %@", request.parameters)
 
 This will only produce the log if the flag `TTDFLAG_URLREQUEST` is set to a non-zero value. You can
@@ -96,7 +90,6 @@ never know they existed.
 
 Consider this example:
 
-."brush: obj-c;"
     -(void)safeAddSubview:(UIView*)view {
       TTDASSERT(nil != view);
       if (nil == view) {
@@ -109,7 +102,7 @@ Let's say we then call `[myView safeAddSubview:nil]`. In debug builds of the app
 will now toss us into the debugger at the culprit line and output a quick log explaining the
 problem.
 
-."brush: obj-c;"
+."brush: bash"
     2009-11-20 14:10:53.096 AppName...
       /path/to/file/Filename.m(86): TTDASSERT failed: nil != view
 

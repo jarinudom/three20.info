@@ -1,15 +1,12 @@
 Roadmap
 =======
 
-Latest Three20 release: `1.0`
-
-Version 1.1 Roadmap
--------------------
-
-### Goals for v1.1
+### Goals
 
 * Create new tutorials and improve the documentation
  * Created a TTTwitter sample app
+ * Created a TTFacebook sample app
+ * Created sample apps for Core and Network basics
 * Begin trimming down the bug list
 * Ensure support for the iPad
  * Began work on iPad support
@@ -28,7 +25,7 @@ A good example project will show a developer a set of examples that clearly demo
 the controller in working code.
 
 #### TTWebController
-#### TTMessageController
+#### <strike>TTMessageController</strike>
 #### TTPopupViewController
 #### TTAlertViewController
 #### TTActionSheetController

@@ -6,7 +6,6 @@ This is a brief overview of Three20 styles. Expect more in the near future.
 Examples {#examples}
 ========
 
-."brush: obj-c"
     [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:4.5] next:
     [TTShadowStyle styleWithColor:RGBCOLOR(255,255,255)
                    blur:1
@@ -23,7 +22,6 @@ Examples {#examples}
 
 <div class="image darker" markdown=1>![Toolbar Button](/gfx/api/style/toolbarbutton.png 144x48)</div>
 
-."brush: obj-c"
     [TTShapeStyle styleWithShape:[TTSpeechBubbleShape shapeWithRadius:5
                                                       pointLocation:60
                                                       pointAngle:90
@@ -33,7 +31,6 @@ Examples {#examples}
 
 <div class="image darker" markdown=1>![Speech Bubble](/gfx/api/style/speechbubble.png 144x48)</div>
 
-."brush: obj-c"
     [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:6] next:
     [TTInsetStyle styleWithInset:UIEdgeInsetsMake(1, 1, 2, 1) next:
     [TTReflectiveFillStyle styleWithColor:RGBCOLOR(170, 1, 2)

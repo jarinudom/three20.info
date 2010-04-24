@@ -13,19 +13,16 @@ the file "install_projects" and simply type
 ."brush: bash"
     bash install_projects
 
-<div class="naviblock" markdown="1">
-<div class="navi" markdown="1">
-* Hey, listen!
-</div>
-If you haven't already downloaded the Three20 source, run the following line in the directory
-where your projects will live. I generally use ~/Projects/.
-
-."brush: bash"
-    cd ~/Projects/
-    git clone git://github.com/facebook/three20.git
-
-If you don't use git, you can also [download the source](http://github.com/facebook/three20).
-</div>
+!> !* Hey, listen!
+!> 
+!> If you haven't already downloaded the Three20 source, run the following line in the directory
+!> where your projects will live. I generally use ~/Projects/.
+!> 
+!> ."brush: bash"
+!>     cd ~/Projects/
+!>     git clone git://github.com/facebook/three20.git
+!> 
+!> If you don't use git, you can also [download the source](http://github.com/facebook/three20).
 
 To create a new project using Three20, start Xcode and open the "New Project" dialog. You
 should now see a "User Projects" directory with the Three20 projects listed. The latest set of
