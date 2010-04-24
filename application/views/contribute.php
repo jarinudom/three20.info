@@ -48,6 +48,7 @@ For features:
   implement the feature to the best of your knowledge. The more information you provide, the more
   likely your feature will be realized.
 
+[Permalink]."permalink"(#styleguidelines)
 Source code style guidelines {#styleguidelines}
 ============================
 
