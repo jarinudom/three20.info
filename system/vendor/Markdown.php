@@ -560,17 +560,20 @@ class Markdown_Parser {
 			  \[
 				('.$this->nested_brackets_re.')	# link text = $2
 			  \]
+			  (?:
+			    \."(.+?)" # optional class name = $3
+			  )?
 			  \(			# literal paren
 				[ \n]*
 				(?:
-					<(.+?)>	# href = $3
+					<(.+?)>	# href = $4
 				|
-					('.$this->nested_url_parenthesis_re.')	# href = $4
+					('.$this->nested_url_parenthesis_re.')	# href = $5
 				)
 				[ \n]*
-				(			# $5
-				  ([\'"])	# quote char = $6
-				  (.*?)		# Title = $7
+				(			# $6
+				  ([\'"])	# quote char = $7
+				  (.*?)		# Title = $8
 				  \6		# matching quote
 				  [ \n]*	# ignore any spaces/tabs between closing quote and )
 				)?			# title is optional
@@ -633,8 +636,9 @@ class Markdown_Parser {
 	function _doAnchors_inline_callback($matches) {
 		$whole_match	=  $matches[1];
 		$link_text		=  $this->runSpanGamut($matches[2]);
-		$url			=  $matches[3] == '' ? $matches[4] : $matches[3];
-		$title			=& $matches[7];
+		$class		=  $matches[3];
+		$url			=  $matches[4] == '' ? $matches[5] : $matches[4];
+		$title			=& $matches[8];
 
 		$url = $this->encodeAttribute($url);
 
@@ -642,6 +646,9 @@ class Markdown_Parser {
 		if (isset($title)) {
 			$title = $this->encodeAttribute($title);
 			$result .=  " title=\"$title\"";
+		}
+		if ($class) {
+		  $result .= " class=\"$class\"";
 		}
 		
 		$link_text = $this->runSpanGamut($link_text);

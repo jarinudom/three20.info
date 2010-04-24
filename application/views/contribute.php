@@ -59,12 +59,12 @@ Any code that does not follow these guidelines will not be merged into the mainl
 
 General Guidelines {#general}
 ------------------
-<div class="permalink" markdown="1">[Permalink](#general)</div>
+[Permalink]."permalink"(#general)
 
 Presented below are a site of guidelines that apply to every source file in Three20. This includes
 header (.h) and source (.m) files.
 
-<div class="permalink" markdown="1">[Permalink](#preamble)</div>
+[Permalink]."permalink"(#preamble)
 ### The Preamble {#preamble}
 
     //
@@ -93,7 +93,7 @@ This is required at the top of each source file.
 !> 
 !> Open for debate: The size of the preamble could potentially be minimized to a single line.
 
-<div class="permalink" markdown="1">[Permalink](#imports)</div>
+[Permalink]."permalink"(#imports)
 ### Imports {#imports}
 
     // UI
@@ -114,8 +114,9 @@ Network, Style, and UI.
 !> what dependencies this source has with respect to the given sections of Three20.
 
 
-<div class="permalink" markdown="1">[Permalink](#importorder)</div>
-<div id="importorder" markdown="1">The order of imports should always be the following:</div>
+[Permalink]."permalink"(#importorder)
+<div id="importorder"></div>
+The order of imports should always be the following:
 
 * UI
 * Style
@@ -149,9 +150,9 @@ Within a group, TTGlobal* headers should come first (e.g. `TTGlobalCore.h`).
 !> 
 !> This guideline is subject to debate.
 
-<div class="permalink" markdown="1">[Permalink](#minimalimports)</div>
-<div id="minimalimports" markdown="1">Make an effort to include the minimal number of
-header files in each source file.</div>
+[Permalink]."permalink"(#minimalimports)
+<div id="minimalimports"></div>
+Make an effort to include the minimal number of header files in each source file.
 
 !> !* Rationale
 !>
@@ -160,8 +161,9 @@ header files in each source file.</div>
 
 ### General style guidelines
 
-<div class="permalink" markdown="1">[Permalink](#maxlinelength)</div>
-<div id="maxlinelength" markdown="1">The maximum line length is 100 characters.</div>
+[Permalink]."permalink"(#maxlinelength)
+<div id="maxlinelength"></div>
+The maximum line length is 100 characters.
 
 !> !* Rationale
 !>
@@ -176,7 +178,7 @@ header files in each source file.</div>
 Guidelines for .h files {#headerguidelines}
 -----------------------
 
-<div class="permalink" markdown="1">[Permalink](#headerimports)</div>
+[Permalink]."permalink"(#headerimports)
 ### Header Imports {#headerimports}
 
     #import <Foundation/Foundation.h>
@@ -213,7 +215,7 @@ For objects that inherit from other TT* objects, you don't need to import the fr
 !> Sometimes the inherited class file won't import all of the necessary frameworks. If this happens,
 !> import the frameworks, still keeping in mind the [import order](#imports).
 
-<div class="permalink" markdown="1">[Permalink](#advancedecls)</div>
+[Permalink]."permalink"(#advancedecls)
 ### Required classes/prototypes {#advancedecls}
 
     @class TTURLRequest;
@@ -226,7 +228,7 @@ the class.
 !>
 !> This will reduce header file dependencies and therefor improve incremental build times.
 
-<div class="permalink" markdown="1">[Permalink](#classdefs)</div>
+[Permalink]."permalink"(#classdefs)
 ### Class definition {#classdefs}
 
     @interface TTModelViewController : TTViewController <TTModelDelegate> {
@@ -251,7 +253,7 @@ separate lines with the above format, one protocol on each line.
 !> This improves the readability of diffs if/when you change the protocols that this class imports.
 !> This also makes it easier to quickly read the set of implemented protocols.
 
-<div class="permalink" markdown="1">[Permalink](#classivars)</div>
+[Permalink]."permalink"(#classivars)
 ### Class ivars {#classivars}
 
     @private
@@ -267,8 +269,9 @@ Instance variables (ivars) are explicitly declared private.
 !> Ivars should never be accessed directly from an outside class; this is what
 !> [properties](#properties) are for.
 
-<div class="permalink" markdown="1">[Permalink](#ivarprefix)</div>
-<div id="ivarprefix" markdown="1">Ivar names are prefixed with an underscore (`_`).</div>
+[Permalink]."permalink"(#ivarprefix)
+<div id="ivarprefix"></div>
+Ivar names are prefixed with an underscore (`_`).
 
 !> !* Rationale
 !>
@@ -279,9 +282,9 @@ Instance variables (ivars) are explicitly declared private.
 !> to private ivars when you type `_`. This is counter to Apple's recommendation of using `_` as a
 !> suffix for private ivars.
 
-<div class="permalink" markdown="1">[Permalink](#ivarcasing)</div>
-<div id="ivarcasing" markdown="1">Ivar names always begin with a lower-case letter
-and are camelCased.</div>
+[Permalink]."permalink"(#ivarcasing)
+<div id="ivarcasing"></div>
+Ivar names always begin with a lower-case letter and are camelCased.
 
 !> !* Rationale
 !>
@@ -291,24 +294,25 @@ and are camelCased.</div>
 !> With respect to acronyms, you should still use use a lowercase first letter. For example:
 !> `_urlPath`, instead of `_URLPath`.
 
-<div class="permalink" markdown="1">[Permalink](#ivargrouping)</div>
-<div id="ivargrouping" markdown="1">Ivars must be grouped in some logical grouping.</div>
+[Permalink]."permalink"(#ivargrouping)
+<div id="ivargrouping"></div>
+Ivars must be grouped in some logical grouping.
 
 !> !* Rationale
 !>
 !> This makes it easier to understand the contents of the class. Space the ivar names such
 !> that they align vertically in each logical group.
 
-<div class="permalink" markdown="1">[Permalink](#ivardelegates)</div>
-<div id="ivardelegates" markdown="1">Delegates and other protocol objects must
-be placed at the bottom of the ivar definitions.</div>
+[Permalink]."permalink"(#ivardelegates)
+<div id="ivardelegates"></div>
+Delegates and other protocol objects must be placed at the bottom of the ivar definitions.
 
 !> !* Rationale
 !>
 !> Delegates are generally much longer declarations and would otherwise throw off the alignment of
 !> the other ivars.
 
-<div class="permalink" markdown="1">[Permalink](#properties)</div>
+[Permalink]."permalink"(#properties)
 ### Properties {#properties}
 
     /**
@@ -326,6 +330,8 @@ Due to our use of Doxygen to generate the API documentation, we use javadoc-styl
 syntax throughout the source. The first sentence of a comment will be the "summary" line shown in
 the API docs, and any subsequent lines will be in the "more details" section.
 
+[Permalink]."permalink"(#ivarnonatomic)
+<div id="ivarnonatomic"></div>
 Unless you're certain of what you're doing, use `nonatomic` when declaring properties.
 
 !> !* Rationale
