@@ -48,7 +48,7 @@ Next, within the .m file, add the following code.
     @synthesize username = _username;
 
     - (id)initWithUsername:(NSString*)username {
-      if( self = [self init] ) {
+      if (self = [super init]) {
         self.username = username;
       }
 
@@ -61,7 +61,7 @@ Next, within the .m file, add the following code.
     }
 
     - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more {
-      if( !self.isLoading && TTIsStringWithAnyText(_username) ) {
+      if (!self.isLoading && TTIsStringWithAnyText(_username)) {
         NSString* url = [@"http://github.com/api/v2/xml/user/show/"
           stringByAppendingString:_username];
 
@@ -115,7 +115,7 @@ Next, within the .m file, add the following code.
     @implementation UserDataSource
 
     - (id)initWithUsername:(NSString*)username {
-      if( self = [self init] ) {
+      if (self = [self init]) {
         _usermodel = [[UserModel alloc] initWithUsername:username];
       }
 

@@ -12,9 +12,6 @@ We're going to build a GitHub iPhone app using the public [GitHub api](http://de
 The goal throughout these tutorials is to introduce you to the various aspects of three20 while
 building something with a clear final result and purpose.
 
-Before we begin, I want to give thanks to Joe Hewitt for his work on the three20 library.
-Building an app like this would take a lot longer to develop and design without it.
-
 Let's get started!
 
 To begin, let's start a new project. We're going to build this app using Core Data (don't worry if
@@ -38,7 +35,6 @@ Open AppDelegate.m and look at the following code in `applicationDidFinishLaunch
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.persistenceMode = TTNavigatorPersistenceModeAll;
 
@@ -52,7 +48,6 @@ to none.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     navigator.persistenceMode = TTNavigatorPersistenceModeNone;
 
 Now let's look at the URL mappings.
@@ -62,11 +57,10 @@ Now let's look at the URL mappings.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     TTURLMap* map = navigator.URLMap;
     [map from:@"*" toViewController:[TTWebController class]];
 
-This is where we start adding the basic navigation mappings. The @"*" mapping will catch any url
+This is where we start adding the basic navigation mappings. The `@"*"` mapping will catch any url
 and open it with the standard three20 web controller, which displays a web view with standard
 toolbar buttons. We could easily change this to map to a different controller if we chose, but for
 this tutorial we'll leave it alone.
@@ -80,7 +74,6 @@ load three20.info.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     if (![navigator restoreViewControllers]) {
       [navigator openURL:@"http://three20.info" animated:NO];
     }
@@ -110,7 +103,6 @@ we'll also add a username property.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     @interface UserViewController : TTTableViewController {
       NSString* _username;
     }
@@ -127,7 +119,6 @@ Then, in the .m file, we'll add the following initializers.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     @implementation UserViewController
 
     @synthesize username = _username;
@@ -170,7 +161,6 @@ Then add the following mapping to `applicationDidFinishLaunching`.
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     #import "UserViewController.h"
 
     - (void)applicationDidFinishLaunching:(UIApplication *)application {
@@ -194,9 +184,9 @@ So let's see it in action. We'll modify the default URL we open the app with:
 </div>
 <div class="clearfix"></div>
 
-."brush: obj-c"
     if (![navigator restoreViewControllers]) {
-      [navigator openURL:@"http://github.com/your_username" animated:NO];
+      [navigator openURLAction:[TTURLAction
+        actionWithURLPath:@"http://github.com/your_username"]];
     }
 
 Try running the app now and this is what you should see.
@@ -205,8 +195,8 @@ Try running the app now and this is what you should see.
 
 ### Troubleshooting
 
-**After changing the URL in `navigator openURL` and running the app, it still loads the web view.
-What gives?**
+**After changing the URL in `navigator openURLAction` and running the app, it still loads the
+web view. What gives?**
 
 > This is a result of `[navigator restoreViewControllers]`. The app stores its navigation history
 > when the app closes, so if you closed the app with the web view open and the persistence
