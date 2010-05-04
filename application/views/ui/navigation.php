@@ -41,8 +41,8 @@ Here's an example to get started. Typically this appears in your Application Del
     navigator.window = window;
 
     TTURLMap* map = navigator.URLMap;
-    [map from:@"tt://restaurant/(initWithName:)"
-    toViewController:[RestaurantController class]];
+    [map          from:@"tt://restaurant/(initWithName:)"
+      toViewController:[RestaurantController class]];
 
 The above refers to a class, `RestaurantController`, with a selector,
 `initWithName:`
@@ -70,9 +70,11 @@ context" and be done with it.
 With TTNavigator, just open this url with:
 
 ."brush: obj-c;"
-    [[TTNavigator navigator] openURL:@"tt://restaurant/Chotchkie's" animated:YES]
+    [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://github.com/jverkoey"]];
+    [[TTNavigator navigator] openURLAction:
+      [[TTURLAction actionWithURLPath:@"tt://restaurant/Chotchkie's"] applyAnimated:YES]]
 
-When `openURL:animated:` is called, an instance of `RestaurantController` will be allocated, and
+When `openURLAction:` is called, an instance of `RestaurantController` will be allocated, and
 then the `initWithName:` selector will be invoked with `@"Chotchkie's"` as the value of the first
 parameter.
 
@@ -82,7 +84,7 @@ Persistence {#persistence}
 One huge advantage of using `TTNavigator` is the fact that the user's entire navigation state can
 be persisted automatically based on these URLs. This means that if you have a tab bar with
 navigation controllers, `TTNavigator` will remember the "stack" of urls that the user has navigated
-using `openURL:animated:`. The next time the application is launched, the user will be shown exactly
+using `openURLAction:`. The next time the application is launched, the user will be shown exactly
 the navigation state as the last time they launched the application.
 
 `TTNavigator` is smart enough to only persist the URLs, and avoid re-instantiating a whole stack of
