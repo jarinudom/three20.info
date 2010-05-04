@@ -92,6 +92,16 @@ Inheritance diagram for TTURLRequestQueue:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf973b89da8bd792e80f4d545f72325d"></a><!-- doxytag: member="TTURLRequestQueue::createNSURLRequest:URL:" ref="abf973b89da8bd792e80f4d545f72325d" args="(TTURLRequest *request,[URL] NSURL *URL)" -->
 (NSURLRequest *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_request_queue.html#abf973b89da8bd792e80f4d545f72325d">createNSURLRequest:URL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a Cocoa URL request from a Three20 URL request. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af07a6b6413e7f900ad49930becef11ca"></a><!-- doxytag: member="TTURLRequestQueue::loader:didReceiveAuthenticationChallenge:" ref="af07a6b6413e7f900ad49930becef11ca" args="(TTRequestLoader *loader,[didReceiveAuthenticationChallenge] NSURLAuthenticationChallenge *challenge)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loader:didReceiveAuthenticationChallenge:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56cd12cf8059400023c2b127fcc1c9e4"></a><!-- doxytag: member="TTURLRequestQueue::loader:didLoadResponse:data:" ref="a56cd12cf8059400023c2b127fcc1c9e4" args="(TTRequestLoader *loader,[didLoadResponse] NSHTTPURLResponse *response,[data] id data)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loader:didLoadResponse:data:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab44d38d5dbccd180eda6979f0eb6ce55"></a><!-- doxytag: member="TTURLRequestQueue::loader:didLoadUnmodifiedResponse:" ref="ab44d38d5dbccd180eda6979f0eb6ce55" args="(TTRequestLoader *loader,[didLoadUnmodifiedResponse] NSHTTPURLResponse *response)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loader:didLoadUnmodifiedResponse:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae426cf8f191b900113fc57e79841a6c5"></a><!-- doxytag: member="TTURLRequestQueue::loader:didFailLoadWithError:" ref="ae426cf8f191b900113fc57e79841a6c5" args="(TTRequestLoader *loader,[didFailLoadWithError] NSError *error)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loader:didFailLoadWithError:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5407435b27f536711d3a015195739c5f"></a><!-- doxytag: member="TTURLRequestQueue::loaderDidCancel:wasLoading:" ref="a5407435b27f536711d3a015195739c5f" args="(TTRequestLoader *loader,[wasLoading] BOOL wasLoading)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>loaderDidCancel:wasLoading:</b></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673dea0042c9dabea200b4ec4db4c3ba"></a><!-- doxytag: member="TTURLRequestQueue::mainQueue" ref="a673dea0042c9dabea200b4ec4db4c3ba" args="()" -->
 (<a class="el" href="interface_t_t_u_r_l_request_queue.html">TTURLRequestQueue</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_request_queue.html#a673dea0042c9dabea200b4ec4db4c3ba">mainQueue</a></td></tr>
@@ -258,8 +268,8 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_suspended</b></td></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20/<a class="el" href="_t_t_u_r_l_request_queue_8h_source.html">TTURLRequestQueue.h</a></li>
-<li>TTURLRequestQueue.m</li>
+<li>Three20Network/Headers/<a class="el" href="_t_t_u_r_l_request_queue_8h_source.html">TTURLRequestQueue.h</a></li>
+<li>Three20Network/Sources/TTURLRequestQueue.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -267,7 +277,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_suspended</b></td></
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

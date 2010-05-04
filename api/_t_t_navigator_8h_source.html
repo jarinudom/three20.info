@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Three20 API: Three20/TTNavigator.h Source File</title>
+<title>Three20 API: Three20UI/Headers/TTNavigator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -57,9 +57,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
+      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Three20/TTNavigator.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<h1>Three20UI/Headers/TTNavigator.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -75,111 +76,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@protocol </span>TTNavigatorDelegate;
-<a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&amp;#39;s...">TTURLAction</a>;
-<a name="l00022"></a>00022 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_map.html">TTURLMap</a>;
-<a name="l00023"></a>00023 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_pattern.html">TTURLPattern</a>;
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025 <span class="keyword">typedef</span> <span class="keyword">enum</span> {
-<a name="l00026"></a>00026   TTNavigatorPersistenceModeNone,  <span class="comment">// no persistence</span>
-<a name="l00027"></a>00027   TTNavigatorPersistenceModeTop,   <span class="comment">// persists only the top-level controller</span>
-<a name="l00028"></a>00028   TTNavigatorPersistenceModeAll,   <span class="comment">// persists all navigation paths</span>
-<a name="l00029"></a>00029 } TTNavigatorPersistenceMode;
+<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;Three20UINavigator/TTBaseNavigator.h&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00022"></a>00022 <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* TTOpenURL(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL);
+<a name="l00023"></a>00023 
+<a name="l00028"></a><a class="code" href="interface_t_t_navigator.html">00028</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> : <a class="code" href="interface_t_t_base_navigator.html" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a> {
+<a name="l00029"></a>00029 }
 <a name="l00030"></a>00030 
-<a name="l00034"></a><a class="code" href="interface_t_t_navigator.html">00034</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> : <a class="code" href="class_n_s_object.html" title="Additions.">NSObject</a> {
-<a name="l00035"></a>00035   id&lt;TTNavigatorDelegate&gt;     _delegate;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037   <a class="code" href="interface_t_t_u_r_l_map.html">TTURLMap</a>*                   _URLMap;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <a class="code" href="class_u_i_window.html" title="Additions.">UIWindow</a>*                   _window;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <a class="code" href="class_u_i_view_controller.html">UIViewController</a>*           _rootViewController;
-<a name="l00042"></a>00042   <a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*             _delayedControllers;
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   TTNavigatorPersistenceMode  _persistenceMode;
-<a name="l00045"></a>00045   NSTimeInterval              _persistenceExpirationAge;
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047   BOOL                        _delayCount;
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049   BOOL                        _supportsShakeToReload;
-<a name="l00050"></a>00050   BOOL                        _opensExternalURLs;
-<a name="l00051"></a>00051 }
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 @property (nonatomic, assign) id&lt;TTNavigatorDelegate&gt; delegate;
-<a name="l00054"></a>00054 
-<a name="l00060"></a><a class="code" href="interface_t_t_navigator.html#a506d27c735336b1ffe3da5e2b405fc03">00060</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_u_r_l_map.html">TTURLMap</a>* URLMap;
-<a name="l00061"></a>00061 
-<a name="l00068"></a><a class="code" href="interface_t_t_navigator.html#af0833fba02eab7bf4c34551e9cb845f1">00068</a> @property (nonatomic, retain) <a class="code" href="class_u_i_window.html" title="Additions.">UIWindow</a>* window;
-<a name="l00069"></a>00069 
-<a name="l00073"></a><a class="code" href="interface_t_t_navigator.html#a29b52674ef751da2f1f71f3ee3c8af51">00073</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* rootViewController;
-<a name="l00074"></a>00074 
-<a name="l00078"></a><a class="code" href="interface_t_t_navigator.html#a003aba692095816eae198cd4adbc83a8">00078</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* visibleViewController;
-<a name="l00079"></a>00079 
-<a name="l00086"></a><a class="code" href="interface_t_t_navigator.html#a24089580d55187867a125a80820d295c">00086</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* topViewController;
-<a name="l00087"></a>00087 
-<a name="l00093"></a><a class="code" href="interface_t_t_navigator.html#a9599b731bf76d670281fc17d73f4ea0b">00093</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL;
-<a name="l00094"></a>00094 
-<a name="l00100"></a><a class="code" href="interface_t_t_navigator.html#aab763aee46b00979ffd6a72f345f56c9">00100</a> @property (nonatomic) TTNavigatorPersistenceMode persistenceMode;
-<a name="l00101"></a>00101 
-<a name="l00113"></a><a class="code" href="interface_t_t_navigator.html#a0be6e4f476debbbcee49ecdad95e45fa">00113</a> @property (nonatomic) NSTimeInterval persistenceExpirationAge;
-<a name="l00114"></a>00114 
-<a name="l00120"></a><a class="code" href="interface_t_t_navigator.html#a4f5765e37905f3717d8ef447003eafd0">00120</a> @property (nonatomic) BOOL supportsShakeToReload;
-<a name="l00121"></a>00121 
-<a name="l00127"></a><a class="code" href="interface_t_t_navigator.html#af4e60a1043b819a7cfaa329e2b25db0e">00127</a> @property (nonatomic) BOOL opensExternalURLs;
-<a name="l00128"></a>00128 
-<a name="l00134"></a><a class="code" href="interface_t_t_navigator.html#ae80108abf4a917eebaf2164748b1e9eb">00134</a> @property (nonatomic, readonly) BOOL isDelayed;
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136 
-<a name="l00137"></a>00137 + (<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator;
-<a name="l00138"></a>00138 
-<a name="l00157"></a>00157 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)openURLAction:(<a class="code" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&amp;#39;s...">TTURLAction</a>*)URLAction;
-<a name="l00158"></a>00158 
-<a name="l00164"></a>00164 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)openURLs:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL,...;
-<a name="l00165"></a>00165 
-<a name="l00171"></a>00171 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL;
-<a name="l00172"></a>00172 
-<a name="l00178"></a>00178 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.html">NSDictionary</a>*)query;
-<a name="l00179"></a>00179 
-<a name="l00185"></a>00185 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.html">NSDictionary</a>*)query
-<a name="l00186"></a>00186                      pattern:(<a class="code" href="interface_t_t_u_r_l_pattern.html">TTURLPattern</a>**)pattern;
-<a name="l00187"></a>00187 
-<a name="l00195"></a>00195 - (<span class="keywordtype">void</span>)beginDelay;
-<a name="l00196"></a>00196 
-<a name="l00200"></a>00200 - (<span class="keywordtype">void</span>)endDelay;
-<a name="l00201"></a>00201 
-<a name="l00205"></a>00205 - (<span class="keywordtype">void</span>)cancelDelay;
-<a name="l00206"></a>00206 
-<a name="l00210"></a>00210 - (<span class="keywordtype">void</span>)persistViewControllers;
-<a name="l00211"></a>00211 
-<a name="l00215"></a>00215 - (<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)restoreViewControllers;
-<a name="l00216"></a>00216 
-<a name="l00223"></a>00223 - (<span class="keywordtype">void</span>)persistController:(<a class="code" href="class_u_i_view_controller.html">UIViewController</a>*)controller path:(<a class="code" href="class_n_s_mutable_array.html" title="Additions.">NSMutableArray</a>*)path;
-<a name="l00224"></a>00224 
-<a name="l00228"></a>00228 - (<span class="keywordtype">void</span>)removeAllViewControllers;
-<a name="l00229"></a>00229 
-<a name="l00233"></a>00233 - (<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)pathForObject:(<span class="keywordtype">id</span>)<span class="keywordtype">object</span>;
-<a name="l00234"></a>00234 
-<a name="l00238"></a>00238 - (<span class="keywordtype">id</span>)objectForPath:(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>*)path;
-<a name="l00239"></a>00239 
-<a name="l00243"></a>00243 - (<span class="keywordtype">void</span>)resetDefaults;
-<a name="l00244"></a>00244 
-<a name="l00248"></a>00248 - (<span class="keywordtype">void</span>)reload;
-<a name="l00249"></a>00249 
-<a name="l00250"></a>00250 @end
-<a name="l00251"></a>00251 
-<a name="l00253"></a>00253 <span class="comment">// global</span>
-<a name="l00254"></a>00254 
-<a name="l00258"></a>00258 <a class="code" href="class_u_i_view_controller.html">UIViewController</a>* TTOpenURL(<a class="code" href="class_n_s_string.html" title="Additions.">NSString</a>* URL);
+<a name="l00031"></a>00031 + (<a class="code" href="interface_t_t_navigator.html" title="A URL-based navigation system with built-in persistence.">TTNavigator</a>*)navigator;
+<a name="l00032"></a>00032 
+<a name="l00036"></a>00036 - (void)reload;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keyword">@end</span>
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

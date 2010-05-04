@@ -63,7 +63,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>TTURLCache Class Reference</h1><!-- doxytag: class="TTURLCache" --><!-- doxytag: inherits="NSObject" --><div class="dynheader">
+<h1>TTURLCache Class Reference</h1><!-- doxytag: class="TTURLCache" --><!-- doxytag: inherits="NSObject" -->
+<p>A general purpose URL cache for caching data in memory and on disk.  
+<a href="#_details">More...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_t_t_u_r_l_cache_8h_source.html">TTURLCache.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for TTURLCache:</div>
 <div class="dynsection">
  <div class="center">
@@ -88,9 +93,17 @@ Inheritance diagram for TTURLCache:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b1cb4ca924ee2144bdcabdac4f6ee74"></a><!-- doxytag: member="TTURLCache::cachePathForKey:" ref="a2b1cb4ca924ee2144bdcabdac4f6ee74" args="(NSString *key)" -->
 (<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a2b1cb4ca924ee2144bdcabdac4f6ee74">cachePathForKey:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the path in the cache where a key may be stored. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a5f35c6a68025bc64559a56c58bc0ebd0">etagCachePathForKey:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Etag cache files are stored in the following way: File name: &lt;key&gt; File data: &lt;etag value&gt;=""&gt;.  <a href="#a5f35c6a68025bc64559a56c58bc0ebd0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5c6cc1d7631a29c2039d3e754bf299a"></a><!-- doxytag: member="TTURLCache::hasDataForURL:" ref="ab5c6cc1d7631a29c2039d3e754bf299a" args="(NSString *URL)" -->
 (BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#ab5c6cc1d7631a29c2039d3e754bf299a">hasDataForURL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if there is a cache entry for a URL. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c6b16b19a2f1c578e1c6797fb1f9d62"></a><!-- doxytag: member="TTURLCache::hasDataForKey:expires:" ref="a8c6b16b19a2f1c578e1c6797fb1f9d62" args="(NSString *key,[expires] NSTimeInterval expirationAge)" -->
+(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a8c6b16b19a2f1c578e1c6797fb1f9d62">hasDataForKey:expires:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if there is a cache entry for a key. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebbee649e80e3efa16db0983174dbef8"></a><!-- doxytag: member="TTURLCache::hasImageForURL:fromDisk:" ref="aebbee649e80e3efa16db0983174dbef8" args="(NSString *URL,[fromDisk] BOOL fromDisk)" -->
+(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#aebbee649e80e3efa16db0983174dbef8">hasImageForURL:fromDisk:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if there is an image cache entry for a URL. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_data.html">NSData</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a23a138144b637eaff05ebc6265c0738a">dataForURL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the data for a URL from the cache if it exists.  <a href="#a23a138144b637eaff05ebc6265c0738a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_data.html">NSData</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a2fb56c2577ac1491dedae42f406ae265">dataForURL:expires:timestamp:</a></td></tr>
@@ -101,6 +114,9 @@ Inheritance diagram for TTURLCache:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets an image from the in-memory image cache.  <a href="#a6724011388079896acfc7dec95415f81"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb5760c833fc84782e5494192fdcaaaa"></a><!-- doxytag: member="TTURLCache::imageForURL:fromDisk:" ref="aeb5760c833fc84782e5494192fdcaaaa" args="(NSString *URL,[fromDisk] BOOL fromDisk)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForURL:fromDisk:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66e2c79a1704ebe558169bb750c29feb"></a><!-- doxytag: member="TTURLCache::etagForKey:" ref="a66e2c79a1704ebe558169bb750c29feb" args="(NSString *key)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a66e2c79a1704ebe558169bb750c29feb">etagForKey:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get an etag value for a given cache key. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90aa8c209dfc64985de3a656400889c"></a><!-- doxytag: member="TTURLCache::storeData:forURL:" ref="ab90aa8c209dfc64985de3a656400889c" args="(NSData *data,[forURL] NSString *URL)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#ab90aa8c209dfc64985de3a656400889c">storeData:forURL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores a data on disk. <br/></td></tr>
@@ -109,6 +125,9 @@ Inheritance diagram for TTURLCache:</div>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca5d856ab7094ce6d72cee55e9339380"></a><!-- doxytag: member="TTURLCache::storeImage:forURL:" ref="aca5d856ab7094ce6d72cee55e9339380" args="(UIImage *image,[forURL] NSString *URL)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#aca5d856ab7094ce6d72cee55e9339380">storeImage:forURL:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores an image in the memory cache. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeace0fb3b0b0882148e50ab64ab50d45"></a><!-- doxytag: member="TTURLCache::storeEtag:forKey:" ref="aeace0fb3b0b0882148e50ab64ab50d45" args="(NSString *etag,[forKey] NSString *key)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#aeace0fb3b0b0882148e50ab64ab50d45">storeEtag:forKey:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores an etag value in the etag cache. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a38466e8969b44bd07cc3cc355a4293db">storeTemporaryImage:toDisk:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convenient way to create a temporary URL for some data and cache it in memory.  <a href="#a38466e8969b44bd07cc3cc355a4293db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_cache.html#a76ceb19bd18c4c5eeff762ff99c3ef49">storeTemporaryData:</a></td></tr>
@@ -172,21 +191,26 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_disableDiskCache</b>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9b1d0155b9f1572034904e484262a0e"></a><!-- doxytag: member="TTURLCache::_disableImageCache" ref="af9b1d0155b9f1572034904e484262a0e" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_disableImageCache</b></td></tr>
 <tr><td colspan="2"><h2>Properties</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d1220ae6f57ec0c86f5f93351dc0a1b"></a><!-- doxytag: member="TTURLCache::disableDiskCache" ref="a2d1220ae6f57ec0c86f5f93351dc0a1b" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#a2d1220ae6f57ec0c86f5f93351dc0a1b">disableDiskCache</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Disables the disk cache. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#a2d1220ae6f57ec0c86f5f93351dc0a1b">disableDiskCache</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Disables the disk cache.  <a href="#a2d1220ae6f57ec0c86f5f93351dc0a1b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbfcc7dd613e62be6a8930f146a2c2bf"></a><!-- doxytag: member="TTURLCache::disableImageCache" ref="adbfcc7dd613e62be6a8930f146a2c2bf" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#adbfcc7dd613e62be6a8930f146a2c2bf">disableImageCache</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Disables the in-memory cache for images. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52da998d5df61ba519db1469597a54a3"></a><!-- doxytag: member="TTURLCache::cachePath" ref="a52da998d5df61ba519db1469597a54a3" args="" -->
 <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#a52da998d5df61ba519db1469597a54a3">cachePath</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the path to the directory of the disk cache. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c768d564e500fb4a2744244e274fab"></a><!-- doxytag: member="TTURLCache::etagCachePath" ref="ad4c768d564e500fb4a2744244e274fab" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#ad4c768d564e500fb4a2744244e274fab">etagCachePath</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the path to the directory of the disk cache for etags. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#a6dc964b9bbbd1b7c99af928faaf01992">maxPixelCount</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum number of pixels to keep in memory for cached images.  <a href="#a6dc964b9bbbd1b7c99af928faaf01992"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bec99453fca73fc8e4942737a9ad263"></a><!-- doxytag: member="TTURLCache::invalidationAge" ref="a2bec99453fca73fc8e4942737a9ad263" args="" -->
 NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_u_r_l_cache.html#a2bec99453fca73fc8e4942737a9ad263">invalidationAge</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The amount of time to set back the modification timestamp on files when invalidating them. <br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>A general purpose URL cache for caching data in memory and on disk. </p>
+<p>Etags are supported. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a23a138144b637eaff05ebc6265c0738a"></a><!-- doxytag: member="TTURLCache::dataForURL:" ref="a23a138144b637eaff05ebc6265c0738a" args="(NSString *URL)" -->
 <div class="memitem">
@@ -242,6 +266,27 @@ NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 <p>Gets the data for a URL from the cache if it exists and is newer than a minimum timestamp. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>nil if hthe URL is not cached or if the cache entry is older than the minimum. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f35c6a68025bc64559a56c58bc0ebd0"></a><!-- doxytag: member="TTURLCache::etagCachePathForKey:" ref="a5f35c6a68025bc64559a56c58bc0ebd0" args="(NSString *key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a> *) etagCachePathForKey: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_n_s_string.html">NSString</a>*)&nbsp;</td>
+          <td class="paramname"> <em>key</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Etag cache files are stored in the following way: File name: &lt;key&gt; File data: &lt;etag value&gt;=""&gt;. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The etag cache path for the given key. </dd></dl>
 
 </div>
 </div>
@@ -390,6 +435,22 @@ NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <hr/><h2>Property Documentation</h2>
+<a class="anchor" id="a2d1220ae6f57ec0c86f5f93351dc0a1b"></a><!-- doxytag: member="TTURLCache::disableDiskCache" ref="a2d1220ae6f57ec0c86f5f93351dc0a1b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) disableDiskCache<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Disables the disk cache. </p>
+<p>Disables etag support as well. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6dc964b9bbbd1b7c99af928faaf01992"></a><!-- doxytag: member="TTURLCache::maxPixelCount" ref="a6dc964b9bbbd1b7c99af928faaf01992" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -407,8 +468,8 @@ NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20/<a class="el" href="_t_t_u_r_l_cache_8h_source.html">TTURLCache.h</a></li>
-<li>TTURLCache.m</li>
+<li>Three20Network/Headers/<a class="el" href="_t_t_u_r_l_cache_8h_source.html">TTURLCache.h</a></li>
+<li>Three20Network/Sources/TTURLCache.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -416,7 +477,7 @@ NSTimeInterval&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" 
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

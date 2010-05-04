@@ -67,22 +67,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a href="protocol_t_t_navigator_delegate-p-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#aa397a4ac420c20d19ff12e416ab8e658">navigator:shouldOpenURL:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to prevent it.  <a href="#aa397a4ac420c20d19ff12e416ab8e658"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(NSURL *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a91faf5dcf531fb2132da8e0be3e85081">navigator:URLToOpen:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to return a different URL to open instead.  <a href="#a91faf5dcf531fb2132da8e0be3e85081"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a54778a039a9c1fc2d1242cd43dfa9c23">navigator:willOpenURL:inViewController:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL is about to be opened in a controller.  <a href="#a54778a039a9c1fc2d1242cd43dfa9c23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#ac204e45ddb34b5383f48facfacf0b800">navigator:shouldOpenURL:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to prevent it.  <a href="#ac204e45ddb34b5383f48facfacf0b800"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSURL *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a7d91f7752fc517c89b139e1b6bbaec0e">navigator:URLToOpen:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asks if the URL should be opened and allows the delegate to return a different URL to open instead.  <a href="#a7d91f7752fc517c89b139e1b6bbaec0e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_navigator_delegate-p.html#a0502598c7cebd0b064ae151be2145bfc">navigator:willOpenURL:inViewController:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URL is about to be opened in a controller.  <a href="#a0502598c7cebd0b064ae151be2145bfc"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa397a4ac420c20d19ff12e416ab8e658"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:shouldOpenURL:" ref="aa397a4ac420c20d19ff12e416ab8e658" args="(TTNavigator *navigator,[shouldOpenURL] NSURL *URL)" -->
+<a class="anchor" id="ac204e45ddb34b5383f48facfacf0b800"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:shouldOpenURL:" ref="ac204e45ddb34b5383f48facfacf0b800" args="(TTBaseNavigator *navigator,[shouldOpenURL] NSURL *URL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (BOOL) navigator: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_navigator.html">TTNavigator</a> *)&nbsp;</td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_base_navigator.html">TTBaseNavigator</a> *)&nbsp;</td>
           <td class="paramname"> <em>navigator</em></td>
         </tr>
         <tr>
@@ -105,14 +105,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a91faf5dcf531fb2132da8e0be3e85081"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:URLToOpen:" ref="a91faf5dcf531fb2132da8e0be3e85081" args="(TTNavigator *navigator,[URLToOpen] NSURL *URL)" -->
+<a class="anchor" id="a7d91f7752fc517c89b139e1b6bbaec0e"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:URLToOpen:" ref="a7d91f7752fc517c89b139e1b6bbaec0e" args="(TTBaseNavigator *navigator,[URLToOpen] NSURL *URL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (NSURL*) navigator: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_navigator.html">TTNavigator</a> *)&nbsp;</td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_base_navigator.html">TTBaseNavigator</a> *)&nbsp;</td>
           <td class="paramname"> <em>navigator</em></td>
         </tr>
         <tr>
@@ -136,14 +136,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a54778a039a9c1fc2d1242cd43dfa9c23"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:willOpenURL:inViewController:" ref="a54778a039a9c1fc2d1242cd43dfa9c23" args="(TTNavigator *navigator,[willOpenURL] NSURL *URL,[inViewController] UIViewController *controller)" -->
+<a class="anchor" id="a0502598c7cebd0b064ae151be2145bfc"></a><!-- doxytag: member="TTNavigatorDelegate&#45;p::navigator:willOpenURL:inViewController:" ref="a0502598c7cebd0b064ae151be2145bfc" args="(TTBaseNavigator *navigator,[willOpenURL] NSURL *URL,[inViewController] UIViewController *controller)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (void) navigator: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_t_navigator.html">TTNavigator</a> *)&nbsp;</td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_base_navigator.html">TTBaseNavigator</a> *)&nbsp;</td>
           <td class="paramname"> <em>navigator</em></td>
         </tr>
         <tr>
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>Three20/<a class="el" href="_t_t_navigator_delegate_8h_source.html">TTNavigatorDelegate.h</a></li>
+<li>Three20UINavigator/Headers/<a class="el" href="_t_t_navigator_delegate_8h_source.html">TTNavigatorDelegate.h</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -181,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

@@ -64,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>TTURLAction Class Reference</h1><!-- doxytag: class="TTURLAction" --><!-- doxytag: inherits="NSObject" -->
-<p>This object bundles up a set of parameters and ships them off to TTNavigator's openURLAction method.  
+<p>This object bundles up a set of parameters and ships them off to TTBasicNavigator's openURLAction method.  
 <a href="#_details">More...</a></p>
 
 <p><code>#import &lt;<a class="el" href="_t_t_u_r_l_action_8h_source.html">TTURLAction.h</a>&gt;</code></p>
@@ -83,7 +83,7 @@ Inheritance diagram for TTURLAction:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.html#a6b4e366c94a2175e67a166975d4e788a">initWithURLPath:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialize a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> object with a URL path.  <a href="#a6b4e366c94a2175e67a166975d4e788a"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialize a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> object with a URL path.  <a href="#a6b4e366c94a2175e67a166975d4e788a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad8f6ce474886786cfc111c41f556cb5"></a><!-- doxytag: member="TTURLAction::applyParentURLPath:" ref="aad8f6ce474886786cfc111c41f556cb5" args="(NSString *parentURLPath)" -->
 (<a class="el" href="interface_t_t_u_r_l_action.html">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.html#aad8f6ce474886786cfc111c41f556cb5">applyParentURLPath:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nil <br/></td></tr>
@@ -104,7 +104,7 @@ Inheritance diagram for TTURLAction:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">UIViewAnimationTransitionNone <br/></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_action.html#a5f1a15f21d5a747f8dd4eafe4dbcdfdf">actionWithURLPath:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> object with a URL path.  <a href="#a5f1a15f21d5a747f8dd4eafe4dbcdfdf"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> object with a URL path.  <a href="#a5f1a15f21d5a747f8dd4eafe4dbcdfdf"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae599096d72afde4f86f1eb4f268cda9f"></a><!-- doxytag: member="TTURLAction::_urlPath" ref="ae599096d72afde4f86f1eb4f268cda9f" args="" -->
 <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_urlPath</b></td></tr>
@@ -137,9 +137,9 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>withDelay</b></td></t
 UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>transition</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This object bundles up a set of parameters and ships them off to TTNavigator's openURLAction method. </p>
-<p>This object is designed with the chaining principle in mind. Once you've created a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> object, you can apply any other property to the object via the apply* methods. Each of these methods returns self, allowing you to chain them.</p>
-<p>Example: [[<a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> actionWithURLPath:"tt://some/path"] applyAnimated:YES];
+<p>This object bundles up a set of parameters and ships them off to TTBasicNavigator's openURLAction method. </p>
+<p>This object is designed with the chaining principle in mind. Once you've created a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> object, you can apply any other property to the object via the apply* methods. Each of these methods returns self, allowing you to chain them.</p>
+<p>Example: [[<a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> actionWithURLPath:"tt://some/path"] applyAnimated:YES];
  Create an autoreleased URL action object with the path @"tt://some/path" that is animated.</p>
 <p>For the default values, see the apply method documentation below. </p>
 <hr/><h2>Member Function Documentation</h2>
@@ -159,7 +159,7 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
 </div>
 <div class="memdoc">
 
-<p>Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> object with a URL path. </p>
+<p>Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> object with a URL path. </p>
 <p>The path is required. </p>
 
 </div>
@@ -180,14 +180,15 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
 </div>
 <div class="memdoc">
 
-<p>Initialize a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTNavigator&#39;s...">TTURLAction</a> object with a URL path. </p>
-<p>The path is required. </p>
+<p>Initialize a <a class="el" href="interface_t_t_u_r_l_action.html" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s...">TTURLAction</a> object with a URL path. </p>
+<p>The path is required.</p>
+<p>Designated initializer. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20/<a class="el" href="_t_t_u_r_l_action_8h_source.html">TTURLAction.h</a></li>
-<li>TTURLAction.m</li>
+<li>Three20UINavigator/Headers/<a class="el" href="_t_t_u_r_l_action_8h_source.html">TTURLAction.h</a></li>
+<li>Three20UINavigator/Sources/TTURLAction.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -195,7 +196,7 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
