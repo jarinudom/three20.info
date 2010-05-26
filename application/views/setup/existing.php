@@ -12,9 +12,12 @@ Xcode's "dependent project" facilities. Here's how:
 
 * Clone the Three20 git repository:  
   `git clone git://github.com/facebook/three20.git`
-* Locate the "Three20.xcodeproj" file under "Three20/src".  Drag Three20.xcodeproj and drop it onto
+* Locate the "Three20.xcodeproj" file under "three20/src/Three20".  Drag Three20.xcodeproj and drop it onto
   the root of your Xcode project's "Groups and Files"  sidebar.  A dialog will appear -- make sure 
-  "Copy items" is unchecked and "Reference Type" is "Relative to Project" before clicking "Add".
+  "Copy items" is unchecked and "Reference Type" is "Relative to Project" before clicking "Add".    
+  Note: Ensure that you are grabbing the correct Three20.xcodeproj! The one in three20/src is the
+  legacy project which is being phased out. The correct Three20.xcodeproj is in the
+  `three20/src/Three20/` subdirectory.
   <div class="image" markdown=1>![Add to existing project](/gfx/setup/existing/addtoproject.png 380x156)</div>
 
 * Now you need to link the Three20 static library to your project.  Click the "Three20.xcodeproj" 
@@ -40,9 +43,9 @@ Xcode's "dependent project" facilities. Here's how:
 * Finally, we need to tell your project where to find the Three20 headers.  Open your
   "Project Settings" and go to the "Build" tab. Be sure to select the appropriate active configuration 
   (eg, Release vs. Debug -- eventually you'll need to change both). Look for "Header Search Paths" and 
-  double-click it.  Add the relative path from your project's directory to the "Three20/src" directory. 
+  double-click it.  Add the relative path from your project's directory to the "three20/Build/Products/three20" directory. 
   If your project and the Three20 source are in the same parent, you would enter
-  "../Three20/src".
+  "../three20/Build/Products/three20".
 * While you are in Project Settings, go to "Other Linker Flags" under the "Linker" section, and
   add "-ObjC" and "-all_load" to the list of flags.
 * You're ready to go.  Just `#import "Three20/Three20.h"` anywhere you want to use Three20 classes
