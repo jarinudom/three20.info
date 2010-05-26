@@ -125,6 +125,11 @@
   background-color: #FC9;
 }
 
+#pageheader a:hover {
+  background-color: transparent;
+  text-shadow: 1px 1px 1px #444;
+}
+
 #page-wrapper a.nohighlight,
 #page-wrapper a.nohighlight:hover {
   background-color: transparent;
