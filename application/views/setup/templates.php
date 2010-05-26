@@ -4,25 +4,12 @@
 If you're planning to make a new project using Three20 then you can save some time by using
 custom Three20 project templates. They're easy to install.
 
-First, you'll want to
-[download the projects](http://cloud.github.com/downloads/jverkoey/three20.info/three20Projects.zip).
+First, you'll want to [get the Three20 source](http://github.com/facebook/three20).
 
-Once you've downloaded and unzipped the package, open Terminal to the directory containing
-the file "install_projects" and simply type
+Once you have the source, open Terminal to the `templates/` directory and simply type:
 
 ."brush: bash"
-    bash install_projects
-
-!> !* Hey, listen!
-!> 
-!> If you haven't already downloaded the Three20 source, run the following line in the directory
-!> where your projects will live. I generally use ~/Projects/.
-!> 
-!> ."brush: bash"
-!>     cd ~/Projects/
-!>     git clone git://github.com/facebook/three20.git
-!> 
-!> If you don't use git, you can also [download the source](http://github.com/facebook/three20).
+    bash InstallTemplates.Command
 
 To create a new project using Three20, start Xcode and open the "New Project" dialog. You
 should now see a "User Projects" directory with the Three20 projects listed. The latest set of
