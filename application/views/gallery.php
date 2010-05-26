@@ -8,6 +8,8 @@ UH Guide
 
 <div class="source">Created by: CampusGuide, University of Houston CS Dept.</div>
 
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/uh-guide/id347382575?mt=8">![UH Guide](/gfx/appstore.png 230x80)</a></div>
+
 The UH Guide iPhone application assists you in finding your way around the University of Houston
 (main campus) as well as staying updated with what is going on on-campus.
 
@@ -37,6 +39,8 @@ Hacker News
 -----------
 
 <div class="source">Created by: Michael Grinich.</div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/hacker-news/id339408916?mt=8">![UH Guide](/gfx/appstore.png 230x80)</a></div>
 
 A native Hacker News reader for iPhone.
 

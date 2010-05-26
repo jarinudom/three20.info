@@ -358,6 +358,21 @@ em {
   float: right;
 }
 
+#content .appstore {
+  float: right;
+  background-color: #FFF;
+  padding: 20px;
+  margin-left: 10px;
+  width: 230px;
+  height: 80px;
+  border: 1px solid #DDD;
+}
+
+#content .appstore a {
+  border: none;
+  background-color: transparent;
+}
+
 #apilookup {
   border: 1px solid #999;
   padding: 3px;

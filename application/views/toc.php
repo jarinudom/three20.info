@@ -1,7 +1,7 @@
 <div id="toc">
 <iframe src="http://www.facebook.com/widgets/like.php?href=http://three20.info<?= $_SERVER['REQUEST_URI'] ?>"
         scrolling="no" frameborder="0"
-        style="background-color:transparent;border:none; width:170px; height:80px"></iframe>
+        style="background-color:transparent;border:none; width:170px; height:140px"></iframe>
   <div class="header">Getting Started</div>
   <ul>
     <li><a href="/overview">Three20 Overview</a></li>
