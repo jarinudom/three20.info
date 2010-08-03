@@ -325,10 +325,14 @@ And the corresponding output:
 
         } else if( [_activePropertyType isEqualToString:@"datetime"] ) {
           NSString* property = [_properties objectForKey:_activePropertyKey];
-
+          
+          // Remove the last colon for iOS4 NSDateFormatter pickiness
+          property = [[property substringToIndex:[property length] - 3]
+                                stringByAppendingString:@"00"];
+                                
           NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
           [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-          [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZ"];
+          [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZ"];
 
           NSDate* date = [dateFormatter dateFromString:property];
           TT_RELEASE_SAFELY(dateFormatter);
